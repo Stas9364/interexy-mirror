@@ -1,30 +1,29 @@
-import Link from "next/link";
-import { Logo } from "./Logo";
+import { Container } from "../container/Container";
+import { InterexyLink } from "../link/InterexyLink";
+import { Logo } from "../logo/Logo";
 import MobileNavigation from "./mobile-nav-menu/MobileNavigation";
 import MainNavigation from "./nav-menu/MainNavigation";
 
 const Header = () => {
   return (
-    <header className="hover:bg-transparent">
-      <div className="container">
-        <div className="h-[100px]">
-          <nav className=" h-full">
+    <header className="fixed top-0 w-full z-[10000] bg-transparent">
+      <Container>
+        <div className="h-header">
+          <nav className="h-full">
             <div className="flex h-full justify-between items-center ">
-              <Logo />
+              <Logo href={'/'} src={'/logo/logo-purple.svg'} alt={'Header Interexy Logo'} width={155} height={45} />
 
               <MainNavigation />
 
               <MobileNavigation />
 
               <div className="hidden lg:block">
-                <Link href={"/"} className="btn btn--main">
-                  Contact us
-                </Link>
+                <InterexyLink href="/" text="Contact us" variant={"primary"} />
               </div>
             </div>
           </nav>
         </div>
-      </div>
+      </Container>
     </header>
   );
 };

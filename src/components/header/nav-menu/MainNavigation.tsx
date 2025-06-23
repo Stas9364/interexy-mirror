@@ -41,7 +41,6 @@ const MainNavigation = () => {
                           link={el.link}
                         >
                           {el.items.map((item) => {
-                            console.log(item);
 
                             return (
                               <CategoryItem key={item.title} item={item} />

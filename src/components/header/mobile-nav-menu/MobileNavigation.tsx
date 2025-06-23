@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import { menuData } from "../nav-menu-list";
 import Link from "next/link";
+import { InterexyLink } from "@/components/link/InterexyLink";
 
 export function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,8 +27,9 @@ export function MobileNavigation() {
       >
         <span></span>
       </div>
+      
       <div
-        className={`absolute top-[100px] left-0 bg-[#f9f9f9] h-[550px] w-full transition-all duration-500 ease-in-out ${
+        className={`absolute top-[100px] left-0 bg-[#f9f9f9] h-[550px] overflow-y-auto w-full transition-all duration-500 ease-in-out  ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -93,7 +95,6 @@ export function MobileNavigation() {
                     </AccordionContent>
                   </>
                 ) : (
-                    
                   <Link
                     href={link}
                     className="text-lg block w-full font-bold py-4"
@@ -104,6 +105,14 @@ export function MobileNavigation() {
               </AccordionItem>
             </Accordion>
           ))}
+
+          <InterexyLink
+            href="/"
+            text="Contact us"
+            variant={"primary"}
+            size={"sm"}
+            className="mt-5"
+          />
         </div>
       </div>
     </>

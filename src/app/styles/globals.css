@@ -1,13 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import './core.css';
+@import "./core.css";
 
 @theme {
   --color-primary: #101018;
   --color-secondary: #555;
-  --color-accent: #5067F4;
-  --color-btn: #6579F4;
+  --color-accent: #5067f4;
   --color-white: #fff;
+
+  --color-btn: #6579f4;
+  --color-btn-hover: #2254cd;
+
+  --height-header: 100px;
 }
 
 :root {
@@ -26,7 +30,7 @@
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: #5067F4;
+  --accent: #5067f4;
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
@@ -85,15 +89,7 @@ nav {
   margin: 0;
 }
 
-
 img {
   display: block;
   max-width: 100%;
 }
-
-@media  (max-width: 1280px) {
-  :root {
-    --container-padding: 0 15px;
-  }
-}
-
