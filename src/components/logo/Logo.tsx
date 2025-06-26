@@ -7,12 +7,14 @@ export const Logo = ({
   alt,
   width,
   height,
+  priority = false
 }: {
   href: string;
   src: string;
   alt: string;
   width: number;
   height: number;
+  priority?: boolean
 }) => {
   return (
     <div className="flex items-center">
@@ -23,7 +25,7 @@ export const Logo = ({
             src={src}
             width={width}
             height={height}
-            priority
+            priority={priority}
           />
         </Link>
       </div>
