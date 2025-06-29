@@ -10,11 +10,17 @@ export const CategoryItems = ({
   link: string;
 }) => {
   return (
-    <div key={category} className="space-y-3 ">
-      <h3 className="text-primary text-md mb-5">
-        {link ? <Link href={link} className='hover:text-accent'>{category}</Link> : category}
+    <div key={category} className='space-y-3'>
+      <h3 className='text-primary text-md mb-5'>
+        {link ? (
+          <Link href={link} className='hover:text-accent'>
+            {category}
+          </Link>
+        ) : (
+          category
+        )}
       </h3>
-      <ul className="space-y-2 flex flex-col ">{children}</ul>
+      <ul className='flex flex-col space-y-2'>{children}</ul>
     </div>
   );
 };

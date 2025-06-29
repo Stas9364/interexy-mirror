@@ -1,11 +1,11 @@
-import { Accordion } from "@/components/ui/accordion";
-import { NavLinkWithChildren } from "./NavLinkWithChildren";
-import { NavLinksWithoutChildren } from "./NavLinksWithoutChildren";
-import type { Submenu } from "../../data/footer-menu-list";
+import { Accordion } from '@/components/ui/accordion';
+import { NavLinkWithChildren } from './NavLinkWithChildren';
+import { NavLinksWithoutChildren } from './NavLinksWithoutChildren';
+import type { Submenu } from '../../data/footer-menu-list';
 
 export const NavMenuColumn = ({ submenu }: { submenu: Submenu[] }) => {
   return (
-    <Accordion type="single" collapsible className="flex flex-col">
+    <Accordion type='single' collapsible className='flex flex-col'>
       {submenu.map(({ title: subtitle, link, items }) => (
         <div key={subtitle}>
           {subtitle ? (
