@@ -1,8 +1,7 @@
 import { Hero } from '@/components/blocks/hero/Hero';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 import { InfiniteImageScroll } from '@/components/blocks/infinite-image-scroll/InfiniteImageScroll';
-
-
+import { OurAchievements } from '@/components/blocks/our-achievements/OurAchievements';
 
 export default function Home() {
   return (
@@ -11,7 +10,7 @@ export default function Home() {
 
       <InfiniteImageScroll
         images={images}
-        second={30}
+        second={35}
         imageWidth={100}
         imageHeight={0}
         spacing={0}
@@ -19,6 +18,8 @@ export default function Home() {
         className=' '
         imageClassName=''
       />
+
+      <OurAchievements />
     </main>
   );
 }
