@@ -27,6 +27,11 @@ export function MobileNavigation() {
       >
         <span></span>
       </div>
+      <div
+        className={`fixed top-0 left-0 z-1 h-[100px] w-full bg-white transition-all duration-500 ease-in-out ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      ></div>
 
       <div
         className={`absolute top-[100px] left-0 h-[550px] w-full overflow-y-auto bg-[#f9f9f9] transition-all duration-500 ease-in-out ${
@@ -34,9 +39,9 @@ export function MobileNavigation() {
         }`}
       >
         <div className='px-4 py-8'>
-          {menuData.map(({ title, submenu, link }, idx) => (
-            <Accordion key={title} type='single' collapsible className='w-full'>
-              <AccordionItem value={`main-${idx}`}>
+          <Accordion type='single' collapsible className='w-full'>
+            {menuData.map(({ title, submenu, link }, idx) => (
+              <AccordionItem key={title} value={`main-${idx}`}>
                 {submenu.length > 0 ? (
                   <>
                     <AccordionTrigger className='border-b border-b-[#d3d3d3] text-lg font-bold'>
@@ -94,8 +99,8 @@ export function MobileNavigation() {
                   </Link>
                 )}
               </AccordionItem>
-            </Accordion>
-          ))}
+            ))}
+          </Accordion>
 
           <InterexyLink
             href='/'
