@@ -1,4 +1,4 @@
-import { Container } from '../../container/Container';
+import { Container } from '../container/Container';
 import { InterexyLink } from '../../link/InterexyLink';
 import { Logo } from '../../logo/Logo';
 import MobileNavigation from './components/mobile-nav-menu/MobileNavigation';
@@ -6,7 +6,7 @@ import MainNavigation from './components/nav-menu/MainNavigation';
 
 const Header = () => {
   return (
-    <header className='fixed top-0 z-[10000] w-full bg-transparent'>
+    <header className='group/header fixed top-0 z-[10000] w-full bg-transparent hover:bg-white'>
       <Container>
         <div className='h-header'>
           <nav className='h-full'>
@@ -18,6 +18,7 @@ const Header = () => {
                 width={155}
                 height={45}
                 priority={true}
+                className='z-2'
               />
 
               <MainNavigation />
@@ -25,7 +26,12 @@ const Header = () => {
               <MobileNavigation />
 
               <div className='hidden lg:block'>
-                <InterexyLink href='/' text='Contact us' variant={'primary'} />
+                <InterexyLink
+                  href='/'
+                  text='Contact us'
+                  variant={'primary'}
+                  size={'sm'}
+                />
               </div>
             </div>
           </nav>

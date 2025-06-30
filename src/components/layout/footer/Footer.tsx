@@ -1,4 +1,4 @@
-import { Container } from '../../container/Container';
+import { Container } from '../container/Container';
 import { CompanyLocations } from './components/CompanyLocations';
 import { Copyright } from './components/Copyright';
 import { FooterNavMenu } from './components/footer-nav/FooterNavMenu';
@@ -10,7 +10,7 @@ import { SocialNetworks } from './components/SocialNetworks';
 
 export const Footer = () => {
   return (
-    <footer className='bg-primary mt-auto py-[70px] text-white'>
+    <footer className='bg-primary mt-auto py-10 text-white md:py-[70px]'>
       <Container>
         <section>
           <div className='flex gap-[30px] pb-2.5 md:pb-[46px]'>
