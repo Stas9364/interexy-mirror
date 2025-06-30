@@ -1,12 +1,9 @@
-import { Container } from '@/components/container/Container';
-import { Section } from '@/components/section/Section';
+import { Hero } from '@/components/blocks/hero/Hero';
 
 export default function Home() {
   return (
     <main>
-      <Container>
-        <Section>Section</Section>
-      </Container>
+      <Hero />
     </main>
   );
 }
