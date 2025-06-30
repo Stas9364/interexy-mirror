@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import './styles/globals.css';
-import Header from '@/components/layout/header/Header';
-import { Footer } from '@/components/layout/footer/Footer';
+import { Footer, Header } from '@/components/layout';
 
 const manrope = Manrope({
   variable: '--font-manrope-sans',

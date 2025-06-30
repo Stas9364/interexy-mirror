@@ -41,6 +41,16 @@
     }
   }
 
+  &.scrolled {
+    span {
+      &,
+      &:before,
+      &:after {
+        background: var(--color-primary);
+      }
+    }
+  }
+
   &.burger-open {
     span {
       background: transparent;

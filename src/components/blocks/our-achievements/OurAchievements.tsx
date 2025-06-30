@@ -1,6 +1,5 @@
 import { BlockTitle } from '@/components/block-title/BlockTitle';
-import { Container } from '@/components/layout/container/Container';
-import { Section } from '@/components/layout/section/Section';
+import { Container, Section } from '@/components/layout';
 import Image from 'next/image';
 import Link from 'next/link';
 

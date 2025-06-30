@@ -1,7 +1,5 @@
-import { Hero } from '@/components/blocks/hero/Hero';
+import { Hero, InfiniteImageScroll, OurAchievements, OurSuccess } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
-import { InfiniteImageScroll } from '@/components/blocks/infinite-image-scroll/InfiniteImageScroll';
-import { OurAchievements } from '@/components/blocks/our-achievements/OurAchievements';
 
 export default function Home() {
   return (
@@ -20,6 +18,8 @@ export default function Home() {
       />
 
       <OurAchievements />
+
+      <OurSuccess />
     </main>
   );
 }

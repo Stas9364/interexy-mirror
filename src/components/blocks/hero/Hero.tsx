@@ -1,4 +1,4 @@
-import { Container } from '@/components/layout/container/Container';
+import { Container } from '@/components/layout';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { Overlay } from '@/components/overlay/Overlay';
 import Image from 'next/image';
