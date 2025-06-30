@@ -13,12 +13,12 @@ const MainNavigation = () => {
           {link ? (
             <Link
               href={link}
-              className='text-primary border-b-accent hover:text-accent flex h-full items-center gap-4 space-x-1 px-3 py-2 text-lg font-medium transition-colors duration-200'
+              className='border-b-accent hover:text-accent flex h-full items-center gap-4 space-x-1 px-3 py-2 text-lg font-medium text-white transition-colors duration-200 group-hover/header:text-black'
             >
               {title}
             </Link>
           ) : (
-            <button className='text-primary border-b-accent hover:text-accent text-md flex h-full items-center gap-1 space-x-1 px-3 py-2 font-medium transition-colors duration-200 group-hover:border-b-2'>
+            <button className='border-b-accent hover:text-accent text-md flex h-full items-center gap-1 space-x-1 px-3 py-2 font-medium text-white transition-colors duration-200 group-hover:border-b-2 group-hover/header:text-black'>
               <span>{title}</span>
               <ChevronDown className='h-4 w-4 transition-transform group-hover:rotate-180' />
             </button>
