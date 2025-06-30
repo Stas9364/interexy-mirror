@@ -15,7 +15,7 @@ const linkVariants = cva(
       },
       size: {
         sm: 'py-3 px-6 text-sm',
-        lg: 'py-4 px-8',
+        lg: 'py-4 px-8 text-lg',
       },
     },
     defaultVariants: {
