@@ -1,12 +1,32 @@
+'use client';
+
 import { Container } from '../container/Container';
 import { InterexyLink } from '../../link/InterexyLink';
 import { Logo } from '../../logo/Logo';
 import MobileNavigation from './components/mobile-nav-menu/MobileNavigation';
 import MainNavigation from './components/nav-menu/MainNavigation';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [scrolled]);
+
   return (
-    <header className='group/header fixed top-0 z-[10000] w-full bg-transparent hover:bg-white'>
+    <header
+      className={`group/header fixed top-0 z-[10000] w-full transition-colors duration-200 hover:bg-white ${
+        scrolled ? 'bg-white' : 'bg-transparent'
+      }`}
+    >
       <Container>
         <div className='h-header'>
           <nav className='h-full'>
@@ -21,9 +41,9 @@ const Header = () => {
                 className='z-2'
               />
 
-              <MainNavigation />
+              <MainNavigation scrolled={scrolled} />
 
-              <MobileNavigation />
+              <MobileNavigation scrolled={scrolled} />
 
               <div className='hidden lg:block'>
                 <InterexyLink

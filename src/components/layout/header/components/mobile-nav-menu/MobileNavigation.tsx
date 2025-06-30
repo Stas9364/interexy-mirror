@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { menuData } from '../../data/nav-menu-list';
 
-export function MobileNavigation() {
+export function MobileNavigation({ scrolled }: { scrolled: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleButton = () => {
@@ -22,7 +22,7 @@ export function MobileNavigation() {
   return (
     <>
       <div
-        className={`burger flex ${isOpen ? 'burger-open' : ''} flex lg:hidden`}
+        className={`burger flex ${isOpen ? 'burger-open' : ''} ${scrolled ? 'scrolled' : ''} flex lg:hidden`}
         onClick={toggleButton}
       >
         <span></span>
