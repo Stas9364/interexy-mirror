@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className='absolute top-0 left-0 z-0 h-full w-full'>
         <Image
           className='block h-full w-full object-cover object-[35%_center] md:object-center'
-          src={'/blocks/hero.webp'}
+          src={'/blocks/hero/hero.webp'}
           alt={'Hero'}
           width={2560}
           height={1118}
