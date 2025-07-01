@@ -3,5 +3,6 @@ import { InfiniteImageScroll } from './infinite-image-scroll/InfiniteImageScroll
 import { OurAchievements } from './our-achievements/OurAchievements';
 import { OurSuccess } from './our-success/OurSuccess';
 import { OurServices } from './our-services/OurServices';
+import { TechStack } from './tech-stack/TechStack';
 
-export { Hero, InfiniteImageScroll, OurAchievements, OurSuccess, OurServices };
+export { Hero, InfiniteImageScroll, OurAchievements, OurSuccess, OurServices, TechStack };

@@ -4,6 +4,7 @@ import {
   OurAchievements,
   OurServices,
   OurSuccess,
+  TechStack,
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 
@@ -28,6 +29,8 @@ export default function Home() {
       <OurSuccess />
 
       <OurServices />
+
+      <TechStack />
     </main>
   );
 }
