@@ -25,9 +25,6 @@ h6 {
   font-family: var(--font);
 }
 
-
-
-
 img {
   display: block;
   max-width: 100%;
@@ -43,6 +40,8 @@ img {
   --color-btn-hover: #2254cd;
 
   --height-header: 100px;
+
+  --breakpoint-3xl: 1650px;
 }
 
 :root {
