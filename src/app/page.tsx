@@ -1,4 +1,5 @@
 import {
+  Expertise,
   Hero,
   InfiniteImageScroll,
   OurAchievements,
@@ -20,8 +21,6 @@ export default function Home() {
         imageHeight={0}
         spacing={0}
         direction='left'
-        className=' '
-        imageClassName=''
       />
 
       <OurAchievements />
@@ -31,6 +30,8 @@ export default function Home() {
       <OurServices />
 
       <TechStack />
+
+      <Expertise />
     </main>
   );
 }
