@@ -1,12 +1,16 @@
+import { cn } from '@/lib/utils';
+
 export const Container = ({
   children,
-  className,
+  className = '',
 }: {
   children: React.ReactNode;
   className?: string;
 }) => {
   return (
-    <div className={`mx-auto w-full max-w-[1690px] px-[15px] xl:px-[80px] ${className}`}>
+    <div
+      className={cn('mx-auto w-full max-w-[1690px] px-[15px] xl:px-[80px]', className)}
+    >
       {children}
     </div>
   );

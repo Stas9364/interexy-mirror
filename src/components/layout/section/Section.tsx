@@ -1,12 +1,14 @@
+import { cn } from '@/lib/utils';
+
 export const Section = ({
-  className,
+  className = '',
   children,
 }: {
   className?: string;
   children?: React.ReactNode;
 }) => {
   return (
-    <section className={`pb-[40px] md:pb-[60px] xl:pb-[80px] ${className}`}>
+    <section className={cn('pb-[40px] md:pb-[60px] xl:pb-[80px]', className)}>
       {children}
     </section>
   );
