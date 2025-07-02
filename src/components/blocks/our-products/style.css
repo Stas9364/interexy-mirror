@@ -1,0 +1,82 @@
+.swiper-wrapper {
+  padding-bottom: 80px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: auto;
+  bottom: 0;
+  width: auto;
+  z-index: 11;
+}
+
+.swiper-button-next {
+  left: auto;
+  right: 43%;
+  transform: translateY(-50%);
+  top: 100%;
+  transition: all 0.1s ease;
+
+  &:active {
+    transform: translateY(-50%) scale(0.97);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.0508 9.88281L32.7532 18.5853C33.5343 19.3663 33.5343 20.6326 32.7532 21.4137L24.0508 30.1161' stroke='%23101018' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.83398 20H32.884' stroke='%23101018' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.swiper-button-prev {
+  right: auto;
+  left: 43%;
+  transform: translateY(-50%);
+  top: 100%;
+  transition: all 0.1s ease;
+
+  &:active {
+    transform: translateY(-50%) scale(0.97);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg %3E%3Cpath d='M15.9492 9.88281L7.24677 18.5853C6.46572 19.3663 6.46572 20.6326 7.24677 21.4137L15.9492 30.1161' stroke='%23101018' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M35.166 20H7.11601' stroke='%23101018' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.swiper-pagination {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  user-select: none;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-next {
+    right: 40%;
+  }
+
+  .swiper-button-prev {
+    left: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .swiper-button-next {
+    right: 30%;
+  }
+
+  .swiper-button-prev {
+    left: 30%;
+  }
+}

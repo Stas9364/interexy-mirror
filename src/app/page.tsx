@@ -3,6 +3,7 @@ import {
   Hero,
   InfiniteImageScroll,
   OurAchievements,
+  OurProducts,
   OurServices,
   OurSuccess,
   TechStack,
@@ -32,6 +33,8 @@ export default function Home() {
       <TechStack />
 
       <Expertise />
+
+      <OurProducts />
     </main>
   );
 }

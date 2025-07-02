@@ -14,8 +14,8 @@ const linkVariants = cva(
           'bg-transparent text-primary border border-color-primary hover:text-white hover:bg-btn-hover hover:border-btn-hover',
       },
       size: {
-        sm: 'py-3 px-6 text-sm',
-        lg: 'py-4 px-8 text-lg',
+        sm: 'py-3 px-6 text-sm h-[42px]',
+        lg: 'py-[15px] px-[30px] text-lg h-[52px]',
       },
     },
     defaultVariants: {

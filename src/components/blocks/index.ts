@@ -5,6 +5,7 @@ import { OurSuccess } from './our-success/OurSuccess';
 import { OurServices } from './our-services/OurServices';
 import { TechStack } from './tech-stack/TechStack';
 import { Expertise } from './expertise/Expertise';
+import { OurProducts } from './our-products/OurProducts';
 
 export {
   Hero,
@@ -14,4 +15,5 @@ export {
   OurServices,
   TechStack,
   Expertise,
+  OurProducts,
 };
