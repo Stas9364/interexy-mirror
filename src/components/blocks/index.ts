@@ -7,6 +7,7 @@ import { TechStack } from './tech-stack/TechStack';
 import { Expertise } from './expertise/Expertise';
 import { OurProducts } from './our-products/OurProducts';
 import { OurClients } from './our-clients/OurClients';
+import { Reviews } from './reviews/Reviews';
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   Expertise,
   OurProducts,
   OurClients,
+  Reviews,
 };

@@ -40,7 +40,7 @@
   transition: all 0.1s ease;
 
   &:active {
-    transform: translateY(-50%) scale(0.97);
+    transform: translateY(-50%) scale(0.95);
   }
 
   &::after {
