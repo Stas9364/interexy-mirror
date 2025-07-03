@@ -5,6 +5,7 @@ import {
   InfiniteImageScroll,
   OurAchievements,
   OurClients,
+  OurPortfolio,
   OurProducts,
   OurServices,
   OurSuccess,
@@ -46,9 +47,9 @@ export default function Home() {
 
       <OurTeam />
 
+      <OurPortfolio />
 
-
-      <Blog/>
+      <Blog />
     </main>
   );
 }

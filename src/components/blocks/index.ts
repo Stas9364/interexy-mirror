@@ -9,6 +9,7 @@ import { OurProducts } from './our-products/OurProducts';
 import { OurClients } from './our-clients/OurClients';
 import { Reviews } from './reviews/Reviews';
 import { OurTeam } from './our-team/OurTeam';
+import { OurPortfolio } from './our-portfolio/OurPortfolio';
 import { Blog } from './blog/Blog';
 
 export {
@@ -23,5 +24,6 @@ export {
   OurClients,
   Reviews,
   OurTeam,
+  OurPortfolio,
   Blog,
 };
