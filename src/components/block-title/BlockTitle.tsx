@@ -6,12 +6,14 @@ export const BlockTitle = ({
   className = '',
   titleClassName = '',
   subtitleClassName = '',
+  children,
 }: {
   title: string;
   subtitle: string;
   className?: string;
   titleClassName?: string;
   subtitleClassName?: string;
+  children?: React.ReactNode;
 }) => {
   return (
     <div className={cn('mb-6 flex flex-col gap-y-1 md:mb-10 xl:mb-[60px]', className)}>
@@ -31,6 +33,7 @@ export const BlockTitle = ({
       >
         {title}
       </div>
+      {children}
     </div>
   );
 };
