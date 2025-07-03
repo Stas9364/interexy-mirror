@@ -9,6 +9,7 @@ import { OurProducts } from './our-products/OurProducts';
 import { OurClients } from './our-clients/OurClients';
 import { Reviews } from './reviews/Reviews';
 import { OurTeam } from './our-team/OurTeam';
+import { Blog } from './blog/Blog';
 
 export {
   Hero,
@@ -22,4 +23,5 @@ export {
   OurClients,
   Reviews,
   OurTeam,
+  Blog,
 };

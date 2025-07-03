@@ -1,4 +1,5 @@
 import {
+  Blog,
   Expertise,
   Hero,
   InfiniteImageScroll,
@@ -44,6 +45,10 @@ export default function Home() {
       <Reviews />
 
       <OurTeam />
+
+
+
+      <Blog/>
     </main>
   );
 }
