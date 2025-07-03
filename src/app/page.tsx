@@ -7,6 +7,7 @@ import {
   OurProducts,
   OurServices,
   OurSuccess,
+  OurTeam,
   Reviews,
   TechStack,
 } from '@/components/blocks';
@@ -41,6 +42,8 @@ export default function Home() {
       <OurClients />
 
       <Reviews />
+
+      <OurTeam />
     </main>
   );
 }

@@ -8,6 +8,7 @@ import { Expertise } from './expertise/Expertise';
 import { OurProducts } from './our-products/OurProducts';
 import { OurClients } from './our-clients/OurClients';
 import { Reviews } from './reviews/Reviews';
+import { OurTeam } from './our-team/OurTeam';
 
 export {
   Hero,
@@ -20,4 +21,5 @@ export {
   OurProducts,
   OurClients,
   Reviews,
+  OurTeam,
 };
