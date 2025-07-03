@@ -21,7 +21,7 @@ export const ProductsSlider = () => {
       navigation={true}
       modules={[Pagination, Navigation]}
       spaceBetween={10}
-      className='mySwiper h-full w-full'
+      className='products-swiper h-full w-full'
     >
       {products.map(({ image, title, description, logo, link }) => (
         <SwiperSlide key={title}>

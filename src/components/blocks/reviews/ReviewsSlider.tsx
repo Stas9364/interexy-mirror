@@ -20,7 +20,7 @@ export const ReviewsSlider = () => {
       navigation={true}
       modules={[Pagination, Navigation]}
       spaceBetween={10}
-      className='mySwiper h-full w-full'
+      className='products-swiper h-full w-full'
     >
       {reviews.map(({ review, project }) => (
         <SwiperSlide key={review.company}>
