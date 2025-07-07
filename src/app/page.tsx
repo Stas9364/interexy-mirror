@@ -1,12 +1,55 @@
-import { Container } from "@/components/container/Container";
-import { Section } from '@/components/section/Section';
+import {
+  Blog,
+  Expertise,
+  Hero,
+  InfiniteImageScroll,
+  OurAchievements,
+  OurClients,
+  OurPortfolio,
+  OurProducts,
+  OurServices,
+  OurSuccess,
+  OurTeam,
+  Reviews,
+  TechStack,
+} from '@/components/blocks';
+import { images } from '@/components/blocks/infinite-image-scroll/images';
 
 export default function Home() {
   return (
-    <main >
-      <Container>
-        <Section>Section</Section>
-      </Container>
+    <main>
+      <Hero />
+
+      <InfiniteImageScroll
+        images={images}
+        second={35}
+        imageWidth={100}
+        imageHeight={0}
+        spacing={0}
+        direction='left'
+      />
+
+      <OurAchievements />
+
+      <OurSuccess />
+
+      <OurServices />
+
+      <TechStack />
+
+      <Expertise />
+
+      <OurProducts />
+
+      <OurClients />
+
+      <Reviews />
+
+      <OurTeam />
+
+      <OurPortfolio />
+
+      <Blog />
     </main>
   );
 }
