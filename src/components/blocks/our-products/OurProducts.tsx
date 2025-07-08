@@ -1,6 +1,6 @@
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
-import { ProductsSlider } from './ProductsSlider';
+import { LazyProductsSlider } from './LazyProductsSlider';
 
 export const OurProducts = () => {
   return (
@@ -11,7 +11,7 @@ export const OurProducts = () => {
           subtitle='Our product'
         />
 
-        <ProductsSlider />
+        <LazyProductsSlider />
       </Container>
     </Section>
   );
