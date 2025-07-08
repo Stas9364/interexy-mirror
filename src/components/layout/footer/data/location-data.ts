@@ -1,3 +1,5 @@
+import { CONTACTS } from '@/lib/constants/contacts_constants';
+
 type LocationData = {
   flag_src: string;
   location: string;
@@ -11,29 +13,29 @@ type LocationData = {
 export const locationData: LocationData[] = [
   {
     flag_src: '/flags/US.svg',
-    location: 'US',
+    location: 'USA',
     address: {
-      city: 'Florida, 33025, USA',
-      street: '11820, Miramar Prkw, 125, Miramar,',
+      city: CONTACTS.usa.city,
+      street: CONTACTS.usa.street,
     },
-    phone: '+1 931 246 9959',
+    phone: CONTACTS.usa.phone,
   },
   {
     flag_src: '/flags/PL.svg',
     location: 'Poland',
     address: {
-      city: 'Warszawa, Poland',
-      street: 'Ul. Ostrobramska 101, 04-041',
+      city: CONTACTS.poland.city,
+      street: CONTACTS.poland.street,
     },
-    phone: '+48 57 179 3561',
+    phone: CONTACTS.poland.phone,
   },
   {
     flag_src: '/flags/AE.svg',
     location: 'UAE',
     address: {
-      city: 'Dubai, UAE',
-      street: 'Al Nahda First, Sama Residence, office №M05-41,',
+      city: CONTACTS.uae.city,
+      street: CONTACTS.uae.street,
     },
-    phone: '+971 55 895 9032',
+    phone: CONTACTS.uae.phone,
   },
 ];

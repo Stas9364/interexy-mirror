@@ -12,7 +12,7 @@ import './style.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
-export const ProductsSlider = () => {
+const ProductsSlider = () => {
   return (
     <Swiper
       pagination={{
@@ -57,3 +57,5 @@ export const ProductsSlider = () => {
     </Swiper>
   );
 };
+
+export default ProductsSlider;

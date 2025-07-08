@@ -1,6 +1,6 @@
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
-import { PortfolioSlider } from './PortfolioSlider';
+import { LazyPortfolioSlider } from './LazyPortfolioSlider';
 
 export const OurPortfolio = () => {
   return (
@@ -13,7 +13,7 @@ export const OurPortfolio = () => {
         </BlockTitle>
       </Container>
 
-      <PortfolioSlider />
+      <LazyPortfolioSlider />
     </Section>
   );
 };

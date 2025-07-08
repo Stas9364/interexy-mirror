@@ -8,40 +8,44 @@ import { Platforms } from './components/Platforms';
 import { PolicyLinks } from './components/PolicyLinks';
 import { SocialNetworks } from './components/SocialNetworks';
 
-export const Footer = () => {
+export const Footer = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <footer className='bg-primary mt-auto py-10 text-white md:py-[70px]'>
-      <Container>
-        <section>
-          <div className='flex gap-[30px] pb-2.5 md:pb-[46px]'>
-            <div className='hidden xl:block'>
+    <>
+      {children}
+
+      <footer className='bg-primary mt-auto py-10 text-white md:py-[70px]'>
+        <Container>
+          <section>
+            <div className='flex gap-[30px] pb-2.5 md:pb-[46px]'>
+              <div className='hidden xl:block'>
+                <LogoSection />
+              </div>
+
+              <FooterNavMenu />
+
+              <MobileFooterNavMenu />
+            </div>
+
+            <CompanyLocations />
+
+            <div className='block xl:hidden'>
               <LogoSection />
             </div>
 
-            <FooterNavMenu />
+            <div className='flex flex-col gap-y-[46px] pt-[46px]'>
+              <Platforms containerClassName='flex justify-around' />
 
-            <MobileFooterNavMenu />
-          </div>
+              <div className='flex flex-col justify-between gap-y-4 text-lg lg:flex-row lg:gap-y-0'>
+                <Copyright />
 
-          <CompanyLocations />
+                <PolicyLinks />
 
-          <div className='block xl:hidden'>
-            <LogoSection />
-          </div>
-
-          <div className='flex flex-col gap-y-[46px] pt-[46px]'>
-            <Platforms />
-
-            <div className='flex flex-col justify-between gap-y-4 text-lg lg:flex-row lg:gap-y-0'>
-              <Copyright />
-
-              <PolicyLinks />
-
-              <SocialNetworks />
+                <SocialNetworks />
+              </div>
             </div>
-          </div>
-        </section>
-      </Container>
-    </footer>
+          </section>
+        </Container>
+      </footer>
+    </>
   );
 };

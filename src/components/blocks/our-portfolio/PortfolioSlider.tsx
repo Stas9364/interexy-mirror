@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { cases } from './cases-list';
 
-export const PortfolioSlider = () => {
+const PortfolioSlider = () => {
   const [activeBg, setActiveBg] = useState(0);
   const [activeSlide, setActiveSlide] = useState<number | null>(null);
 
@@ -96,3 +96,5 @@ export const PortfolioSlider = () => {
     </div>
   );
 };
+
+export default PortfolioSlider;

@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +27,8 @@ const Header = () => {
       className={`group/header fixed top-0 z-[10000] w-full transition-colors duration-200 hover:bg-white ${
         scrolled ? 'bg-white' : 'bg-transparent'
       }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <Container>
         <div className='h-header'>
@@ -33,12 +36,15 @@ const Header = () => {
             <div className='flex h-full items-center justify-between'>
               <Logo
                 href={'/'}
-                src={'/logo/logo-purple.svg'}
+                src={
+                  scrolled || isHovered
+                    ? '/logo/logo-purple.svg'
+                    : '/logo/logo-purple-white.svg'
+                }
                 alt={'Header Interexy Logo'}
-                width={155}
-                height={45}
+                width={152}
+                height={43}
                 priority={true}
-                className='z-2'
               />
 
               <MainNavigation scrolled={scrolled} />
@@ -47,7 +53,7 @@ const Header = () => {
 
               <div className='hidden lg:block'>
                 <InterexyLink
-                  href='/'
+                  href='/contact-us'
                   text='Contact us'
                   variant={'primary'}
                   size={'sm'}

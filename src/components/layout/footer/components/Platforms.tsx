@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { platformsData } from '../data/platforms-data';
 
-export const Platforms = () => {
+export const Platforms = ({ containerClassName }: { containerClassName?: string }) => {
   return (
-    <div className='flex justify-around'>
+    <div className={containerClassName}>
       {platformsData.map(({ logo_src, link, star_src, reviews_number, alt }) => {
         return (
           <div
