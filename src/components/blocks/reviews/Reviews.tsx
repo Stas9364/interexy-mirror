@@ -2,7 +2,7 @@
 
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
-import { ReviewsSlider } from './ReviewsSlider';
+import { LazyReviewsSlider } from './LazyReviewsSlider';
 
 export const Reviews = () => {
   return (
@@ -10,7 +10,7 @@ export const Reviews = () => {
       <Container>
         <BlockTitle title='Highly satisfied clients' subtitle='Reviews' />
 
-        <ReviewsSlider />
+        <LazyReviewsSlider />
       </Container>
     </Section>
   );

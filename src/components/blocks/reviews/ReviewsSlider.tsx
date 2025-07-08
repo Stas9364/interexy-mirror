@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-export const ReviewsSlider = () => {
+const ReviewsSlider = () => {
   return (
     <Swiper
       pagination={{
@@ -87,3 +87,5 @@ export const ReviewsSlider = () => {
     </Swiper>
   );
 };
+
+export default ReviewsSlider;
