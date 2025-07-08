@@ -7,7 +7,7 @@ import { Steps } from './Steps';
 
 export const ContactForm = () => {
   return (
-    <Section>
+    <Section id='contact-form'>
       <Container>
         <BlockTitle
           title='Ready to discuss your project with us?'
