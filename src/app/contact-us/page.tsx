@@ -1,7 +1,9 @@
 import {
+  Banner,
   HeroImg,
   InfiniteImageScroll,
   OurClients,
+  OurLocation,
   OurSuccessWithSlider,
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
@@ -29,7 +31,12 @@ export default function ContactUs() {
               <p>Digitize your business through cutting-edge app development solutions</p>
 
               <div className='flex gap-x-4'>
-                <InterexyLink href='' text='Let’s discuss' variant='primary' size='md' />
+                <InterexyLink
+                  href='#contact-form'
+                  text='Let’s discuss'
+                  variant='primary'
+                  size='md'
+                />
                 <InterexyLink href='' text='Get a quote' variant='outline' size='md' />
               </div>
 
@@ -63,6 +70,14 @@ export default function ContactUs() {
       <OurSuccessWithSlider />
 
       <OurClients />
+
+      <OurLocation />
+
+      <Banner
+        title='Do you already have specific requirements for your solution?'
+        link='#'
+        link_title='Get a quote'
+      />
     </>
   );
 }

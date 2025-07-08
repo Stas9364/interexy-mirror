@@ -1,4 +1,4 @@
-import { Hero } from './hero/Hero';
+import { HeroImg } from './hero-img/HeroImg';
 import { InfiniteImageScroll } from './infinite-image-scroll/InfiniteImageScroll';
 import { OurAchievements } from './our-achievements/OurAchievements';
 import { OurSuccess } from './our-success/OurSuccess';
@@ -11,9 +11,12 @@ import { Reviews } from './reviews/Reviews';
 import { OurTeam } from './our-team/OurTeam';
 import { OurPortfolio } from './our-portfolio/OurPortfolio';
 import { Blog } from './blog/Blog';
+import { OurSuccessWithSlider } from './our-success-with-slider/OurSuccessWithSlider';
+import { OurLocation } from './our-location/OurLocation';
+import { Banner } from './banner/Banner';
 
 export {
-  Hero,
+  HeroImg,
   InfiniteImageScroll,
   OurAchievements,
   OurSuccess,
@@ -26,4 +29,7 @@ export {
   OurTeam,
   OurPortfolio,
   Blog,
+  OurSuccessWithSlider,
+  OurLocation,
+  Banner,
 };

@@ -9,6 +9,11 @@ body {
   height: 100%;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   color: #101018;
@@ -25,19 +30,14 @@ h6 {
   font-family: var(--font);
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 @theme {
   --color-primary: #101018;
   --color-secondary: #555;
   --color-accent: #5067f4;
   --color-white: #fff;
 
-  --color-btn: #6579f4;
-  --color-btn-hover: #2254cd;
+  --color-btn: #5067f4;
+  --color-btn-hover: #6579f4;
 
   --height-header: 100px;
 
@@ -80,4 +80,3 @@ img {
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
-
