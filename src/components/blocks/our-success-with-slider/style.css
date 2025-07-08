@@ -53,18 +53,37 @@
     }
   }
 
+  .swiper-pagination {
+    position: absolute;
+    left: 8%;
+    text-align: start;
+    user-select: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
   @media (max-width: 768px) {
     .swiper-wrapper {
       padding-bottom: 40px;
+    }
+
+    .swiper-pagination {
+      left: 16%;
+    }
+
+    .swiper-button-next {
+      right: 60%;
     }
   }
 
   @media (max-width: 550px) {
     .swiper-wrapper {
-        padding-bottom: 0px;
-      }
-    .swiper-button-next {
-      right: 60%;
+      padding-bottom: 0px;
+    }
+
+    .swiper-pagination {
+      font-size: 22px;
     }
   }
 }

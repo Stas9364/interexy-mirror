@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import './styles/globals.css';
 import { Footer, Header } from '@/components/layout';
+import { ContactForm } from '@/components/contact-form/ContactForm';
 
 const manrope = Manrope({
   variable: '--font-manrope-sans',
@@ -25,7 +26,10 @@ export default function RootLayout({
         <div className='flex min-h-screen flex-col'>
           <Header />
           <main>{children}</main>
-          <Footer />
+          
+          <Footer>
+            <ContactForm />
+          </Footer>
         </div>
       </body>
     </html>

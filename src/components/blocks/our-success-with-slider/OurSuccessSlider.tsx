@@ -1,7 +1,7 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -34,7 +34,14 @@ const reviews: Review[] = [
 
 const OurSuccessSlider = () => {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className='success-swiper'>
+    <Swiper
+      pagination={{
+        type: 'fraction',
+      }}
+      navigation={true}
+      modules={[Navigation, Pagination]}
+      className='success-swiper'
+    >
       {reviews.map(({ quote, subtitle, name, company }) => (
         <SwiperSlide key={quote}>
           <div className='flex flex-col gap-y-5'>

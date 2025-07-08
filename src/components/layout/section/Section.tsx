@@ -7,7 +7,7 @@ export const Section = ({
 }: {
   className?: string;
   children?: React.ReactNode;
-  id: string;
+  id?: string;
 }) => {
   return (
     <section id={id} className={cn('pb-[40px] md:pb-[60px] xl:pb-[80px]', className)}>
