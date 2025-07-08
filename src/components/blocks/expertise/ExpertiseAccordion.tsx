@@ -89,6 +89,7 @@ const ExpertiseImg = ({
       src={img_src}
       fill
       alt={title}
+      sizes='(max-width: 768px) 100vw, (min-width: 769px) 50vw'
       className={cn('object-contain', className)}
     />
   );
