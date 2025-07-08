@@ -12,6 +12,8 @@ import Link from 'next/link';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { menuData } from '../../data/nav-menu-list';
 
+import './style.css';
+
 export function MobileNavigation({ scrolled }: { scrolled: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
 
