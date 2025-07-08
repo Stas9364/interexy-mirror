@@ -1,6 +1,3 @@
-import { Container } from '@/components/layout';
-import { InterexyLink } from '@/components/link/InterexyLink';
-import { Overlay } from '@/components/overlay/Overlay';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
