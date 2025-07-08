@@ -1,4 +1,3 @@
-import { ContactForm } from '@/components/contact-form/ContactForm';
 import { Container } from '../container/Container';
 import { CompanyLocations } from './components/CompanyLocations';
 import { Copyright } from './components/Copyright';
@@ -9,10 +8,10 @@ import { Platforms } from './components/Platforms';
 import { PolicyLinks } from './components/PolicyLinks';
 import { SocialNetworks } from './components/SocialNetworks';
 
-export const Footer = () => {
+export const Footer = ({ children }: { children?: React.ReactNode }) => {
   return (
     <>
-      <ContactForm />
+      {children}
 
       <footer className='bg-primary mt-auto py-10 text-white md:py-[70px]'>
         <Container>
