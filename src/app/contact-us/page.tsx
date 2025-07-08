@@ -13,6 +13,12 @@ import { InterexyLink } from '@/components/link/InterexyLink';
 import { Overlay } from '@/components/overlay/Overlay';
 import Script from 'next/script';
 
+export const metadata = {
+  title: 'Contact us | Interexy',
+  description:
+    'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
+};
+
 export default function ContactUs() {
   return (
     <>
