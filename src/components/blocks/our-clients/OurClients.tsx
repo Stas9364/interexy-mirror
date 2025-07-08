@@ -19,8 +19,8 @@ export const OurClients = () => {
                 src={src}
                 alt={alt}
                 width={200}
-                height={0}
-                className='max-h-[100px] object-contain lg:max-h-[200px]'
+                height={100}
+                className='max-h-[100px] h-auto object-contain lg:max-h-[200px]'
               />
             </li>
           ))}
