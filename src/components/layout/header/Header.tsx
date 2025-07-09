@@ -8,7 +8,12 @@ import MainNavigation from './components/nav-menu/MainNavigation';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
-const pathForDarkBg = ['privacy-policy', 'terms-of-service', 'cookie-policy'];
+const pathForDarkBg = [
+  'privacy-policy',
+  'terms-and-conditions',
+  'cookie-policy',
+  'complaints-procedure',
+];
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
