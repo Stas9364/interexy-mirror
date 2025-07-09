@@ -16,7 +16,6 @@ const Header = () => {
   const pathname = usePathname();
 
   const match = pathForDarkBg.some(path => path === pathname.split('/')[1]);
-  console.log(match);
 
   useEffect(() => {
     const handleScroll = () => {
