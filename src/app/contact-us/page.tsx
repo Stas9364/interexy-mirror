@@ -11,9 +11,10 @@ import { Container } from '@/components/layout';
 import { Platforms } from '@/components/layout/footer/components/Platforms';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { Overlay } from '@/components/overlay/Overlay';
+import type { Metadata } from 'next';
 import Script from 'next/script';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Contact us | Interexy',
   description:
     'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
