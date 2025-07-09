@@ -13,13 +13,13 @@ const MainNavigation = ({ scrolled }: { scrolled: boolean }) => {
           {link ? (
             <Link
               href={link}
-              className={`${scrolled ? 'text-primary' : 'text-white'} border-b-accent hover:text-accent flex h-full items-center gap-4 space-x-1 px-3 py-2 text-lg font-medium transition-colors duration-200 group-hover/header:text-black`}
+              className={`${scrolled ? 'text-primary' : 'text-white'} border-b-accent hover:text-accent flex h-full items-center gap-2 space-x-1 px-3 py-2 text-base font-medium transition-colors duration-200 group-hover/header:text-black`}
             >
               {title}
             </Link>
           ) : (
             <button
-              className={`${scrolled ? 'text-primary' : 'text-white'} border-b-accent hover:text-accent flex h-full items-center gap-4 space-x-1 px-3 py-2 text-lg font-medium transition-colors duration-200 group-hover/header:text-black`}
+              className={`${scrolled ? 'text-primary' : 'text-white'} border-b-accent hover:text-accent flex h-full items-center gap-2 space-x-1 px-3 py-2 text-base font-medium transition-colors duration-200 group-hover/header:text-black`}
             >
               <span>{title}</span>
               <ChevronDown className='h-4 w-4 transition-transform group-hover:rotate-180' />
