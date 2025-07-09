@@ -6,10 +6,17 @@ import { Logo } from '../../logo/Logo';
 import MobileNavigation from './components/mobile-nav-menu/MobileNavigation';
 import MainNavigation from './components/nav-menu/MainNavigation';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+
+const pathForDarkBg = ['privacy-policy', 'terms-of-service', 'cookie-policy'];
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const pathname = usePathname();
+
+  const match = pathForDarkBg.some(path => path === pathname.split('/')[1]);
+  console.log(match);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +32,7 @@ const Header = () => {
   return (
     <header
       className={`group/header fixed top-0 z-[10000] w-full transition-colors duration-200 hover:bg-white ${
-        scrolled ? 'bg-white' : 'bg-transparent'
+        scrolled ? 'bg-white' : match ? 'bg-[#0006]' : 'bg-transparent'
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
