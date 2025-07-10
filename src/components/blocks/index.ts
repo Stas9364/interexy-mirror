@@ -14,6 +14,9 @@ import { Blog } from './blog/Blog';
 import { OurSuccessWithSlider } from './our-success-with-slider/OurSuccessWithSlider';
 import { OurLocation } from './our-location/OurLocation';
 import { Banner } from './banner/Banner';
+import { OurMission } from './our-mission/OurMission';
+import { OurPrinciples } from './our-principles/OurPrinciples';
+import { OurExpertise } from './our-expertise/OurExpertise';
 
 export {
   HeroImg,
@@ -32,4 +35,7 @@ export {
   OurSuccessWithSlider,
   OurLocation,
   Banner,
+  OurMission,
+  OurPrinciples,
+  OurExpertise,
 };
