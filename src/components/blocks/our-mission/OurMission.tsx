@@ -2,7 +2,7 @@ import { Container } from '@/components/layout';
 
 export const OurMission = () => {
   return (
-    <section className='relative bg-[url(/blocks/our-mission/our-mission.webp)] bg-cover bg-no-repeat mb-[40px] md:mb-[60px] xl:mb-[80px]'>
+    <section className='relative bg-[url(/blocks/our-mission/our-mission.webp)] bg-cover bg-no-repeat'>
       <div className='flex justify-start'>
         <div className='w-full bg-[#221c68a6] pt-10 pb-[15px] backdrop-blur-[8px] md:w-1/2 md:py-[60px]'>
           <Container>
