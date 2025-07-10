@@ -145,7 +145,7 @@ export const menuData: MenuData[] = [
         title: '',
         link: '',
         items: [
-          { title: 'About us', link: '/' },
+          { title: 'About us', link: '/about-us' },
           { title: 'Process', link: '/' },
           { title: 'Company Values', link: '/' },
           { title: 'Interexy Careers', link: '/' },
