@@ -3,8 +3,6 @@ import { Container, Section } from '@/components/layout';
 import { CEO } from './CEO';
 import { Team } from './Team';
 
-
-
 export const OurTeam = () => {
   return (
     <Section>

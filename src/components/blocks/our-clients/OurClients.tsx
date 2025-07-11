@@ -20,7 +20,7 @@ export const OurClients = () => {
                 alt={alt}
                 width={200}
                 height={100}
-                className='max-h-[100px] h-auto object-contain lg:max-h-[200px]'
+                className='h-auto max-h-[100px] object-contain lg:max-h-[200px]'
               />
             </li>
           ))}

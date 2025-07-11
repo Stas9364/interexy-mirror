@@ -27,7 +27,7 @@ const MainNavigation = ({ scrolled }: { scrolled: boolean }) => {
           )}
 
           {!link && (
-            <div className='invisible fixed top-[100px] right-0 left-0 z-50 opacity-0  transition-all duration-200 ease-in-out group-hover:visible group-hover:opacity-100'>
+            <div className='invisible fixed top-[100px] right-0 left-0 z-50 opacity-0 transition-all duration-200 ease-in-out group-hover:visible group-hover:opacity-100'>
               <div className='mx-auto flex justify-center'>
                 <div className='flex bg-[#F9F9F9] px-[75px] py-10'>
                   {/* Left Side - Menu Title and Description */}

@@ -5,9 +5,7 @@ import { Container, Section } from '@/components/layout';
 import { ServicesTabs } from './ServicesTabs';
 import { MobileServicesTabs } from './MobileServicesTabs';
 
-
 export const OurServices = () => {
-
   return (
     <Section>
       <Container>
@@ -15,7 +13,7 @@ export const OurServices = () => {
 
         <ServicesTabs />
 
-        <MobileServicesTabs/>
+        <MobileServicesTabs />
       </Container>
     </Section>
   );
