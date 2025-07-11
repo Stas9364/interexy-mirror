@@ -10,7 +10,7 @@ export const expertise: Expertise[] = [
     title: 'Artificial Intelligence',
     text: 'Unlock efficiency and innovation with AI solutions that automate tasks, predict outcomes, and transform decisions at scale.',
     link: '/',
-    img_src: '/blocks/expertise/artificial-intelligence.png',
+    img_src: '/blocks/expertise/artificial-Intelligence.png',
   },
   {
     title: 'Healthcare',
