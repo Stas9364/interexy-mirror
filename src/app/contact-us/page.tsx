@@ -24,7 +24,7 @@ export default function ContactUs() {
   return (
     <>
       <HeroImg
-        img_src='/blocks/contact-us/contact-us-bg.webp'
+        img_src='/contact-us/contact-us-bg.webp'
         sectionClassName='pt-0 lg:pt-[70px] pb-[30px] lg:pb-[118px]'
       >
         <Overlay />
