@@ -17,6 +17,7 @@ import { Banner } from './banner/Banner';
 import { OurMission } from './our-mission/OurMission';
 import { OurPrinciples } from './our-principles/OurPrinciples';
 import { OurExpertise } from './our-expertise/OurExpertise';
+import { HowItWorks } from './how-it-works/HowItWorks';
 
 export {
   HeroImg,
@@ -38,4 +39,5 @@ export {
   OurMission,
   OurPrinciples,
   OurExpertise,
+  HowItWorks,
 };

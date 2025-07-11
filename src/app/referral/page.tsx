@@ -1,0 +1,72 @@
+import {
+  HeroImg,
+  HowItWorks,
+  InfiniteImageScroll,
+  OurExpertise,
+} from '@/components/blocks';
+import { images } from '@/components/blocks/infinite-image-scroll/images';
+import { Container } from '@/components/layout';
+import { Platforms } from '@/components/layout/footer/components/Platforms';
+import { InterexyLink } from '@/components/link/InterexyLink';
+import { Overlay } from '@/components/overlay/Overlay';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Our Referral Program | Interexy',
+  description:
+    'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
+};
+
+export default function Referral() {
+  return (
+    <>
+      <HeroImg
+        img_src='/referral/referral-bg.webp'
+        sectionClassName='pt-0 lg:pt-[70px] pb-[30px] lg:pb-[118px]'
+      >
+        <Overlay />
+
+        <Container className='relative z-2'>
+          <div className='flex flex-col text-white lg:flex-row lg:justify-between'>
+            <div className='flex max-w-[780px] flex-col gap-y-[25px] md:gap-y-10'>
+              <h1 className='pt-[121px] text-[34px] leading-[1.1] font-extrabold md:text-[64px]'>
+                Earn $10,000 from project sales
+              </h1>
+              <p>
+                Receive an additional 10% of project revenue starting from the second
+                month
+              </p>
+
+              <div className='flex gap-x-4'>
+                <InterexyLink
+                  href='/contact-us'
+                  text='Become a partner '
+                  variant='primary'
+                  size='md'
+                />
+              </div>
+
+              <hr className='opacity-20' />
+
+              <Platforms containerClassName='flex flex-row  justify-around lg:justify-between gap-y-[30px]' />
+            </div>
+          </div>
+        </Container>
+      </HeroImg>
+
+      <InfiniteImageScroll
+        images={images}
+        second={50}
+        imageWidth={100}
+        imageHeight={0}
+        spacing={0}
+        direction='left'
+        className='mb-[40px] md:mb-[60px] xl:mb-[80px]'
+      />
+
+      <OurExpertise title='Why Interexy?' />
+
+      <HowItWorks />
+    </>
+  );
+}
