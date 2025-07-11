@@ -8,7 +8,7 @@ export const Logo = ({
   width,
   height,
   priority = false,
-  className
+  className,
 }: {
   href: string;
   src: string;
@@ -19,7 +19,7 @@ export const Logo = ({
   className?: string;
 }) => {
   return (
-    <div className={`flex items-center relative ${className}`}>
+    <div className={`relative flex items-center ${className}`}>
       <div className='flex items-center space-x-2'>
         <Link href={href}>
           <Image alt={alt} src={src} width={width} height={height} priority={priority} />

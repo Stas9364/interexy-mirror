@@ -20,7 +20,7 @@ export const Banner = ({
           </p>
 
           <Link
-            className='bg-btn hover:bg-btn-hover h-[70px] flex w-[264px] items-center justify-center gap-x-5 rounded-[5px] text-lg leading-[1.4] font-bold text-white duration-200 lg:h-[90px] lg:text-2xl'
+            className='bg-btn hover:bg-btn-hover flex h-[70px] w-[264px] items-center justify-center gap-x-5 rounded-[5px] text-lg leading-[1.4] font-bold text-white duration-200 lg:h-[90px] lg:text-2xl'
             href={link}
           >
             {link_title}
