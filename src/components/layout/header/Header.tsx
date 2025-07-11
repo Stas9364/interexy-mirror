@@ -18,9 +18,8 @@ const pathForDarkBg = [
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [match, setMatch] = useState(false);
   const pathname = usePathname();
-
-  const match = pathForDarkBg.some(path => path === pathname.split('/')[1]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,9 +28,15 @@ const Header = () => {
 
     handleScroll();
 
+    const matchPath = pathForDarkBg.some(path => path === pathname.split('/')[1]);
+    if (matchPath) setMatch(matchPath);
+
+    const isNotFound = !!document.querySelector('[data-page="not-found"]');
+    if (isNotFound) setMatch(isNotFound);
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [scrolled]);
+  }, [scrolled, pathname]);
 
   return (
     <header
