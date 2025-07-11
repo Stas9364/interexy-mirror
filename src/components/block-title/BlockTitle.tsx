@@ -28,14 +28,14 @@ export const BlockTitle = ({
         </p>
       )}
 
-      <div
+      <h2
         className={cn(
           'text-2xl leading-[140%] font-semibold md:text-4xl xl:text-5xl',
           titleClassName,
         )}
       >
         {title}
-      </div>
+      </h2>
       {children}
     </div>
   );
