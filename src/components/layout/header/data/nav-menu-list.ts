@@ -173,7 +173,7 @@ export const menuData: MenuData[] = [
   {
     title: 'Refer Now',
     subtitle: '',
-    link: '/',
+    link: '/referral',
     submenu: [],
   },
 ];

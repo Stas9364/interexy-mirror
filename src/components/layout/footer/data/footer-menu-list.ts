@@ -124,7 +124,7 @@ export const footerMenuList: MenuData[] = [
         title: '',
         link: '',
         items: [
-          { title: 'About Us', link: '/' },
+          { title: 'About Us', link: '/about-us' },
           { title: 'Partnership', link: '/' },
           { title: 'Portfolio', link: '/' },
           { title: 'Blog', link: '/' },

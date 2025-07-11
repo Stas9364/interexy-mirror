@@ -13,7 +13,7 @@ export const LogoSection = () => {
       />
 
       <InterexyLink
-        href='/'
+        href='/contact-us'
         text='Book a call'
         variant={'primary'}
         className='md:w-[220px] xl:mt-[40px]'
