@@ -32,7 +32,7 @@ export const PolicyLinks = () => {
           <Link
             key={link}
             href={link}
-            className='hover:text-accent transition duration-200'
+            className='hover:text-accent underline transition duration-200'
           >
             {title}
           </Link>

@@ -82,7 +82,7 @@ export default function ContactUs() {
 
       <Banner
         title='Do you already have specific requirements for your solution?'
-        link='#'
+        link=''
         link_title='Get a quote'
       />
     </>
