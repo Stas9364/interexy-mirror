@@ -29,15 +29,17 @@ const principles: Principle[] = [
   },
 ];
 
-export const OurExpertise = () => {
+export const OurExpertise = ({
+  title,
+  subtitle,
+}: {
+  title: string;
+  subtitle?: string;
+}) => {
   return (
     <Section>
       <Container>
-        <BlockTitle
-          title='Why Interexy?'
-          subtitle='Our expertise
-'
-        />
+        <BlockTitle title={title} subtitle={subtitle} />
 
         <div className='flex grid-cols-3 flex-col gap-x-[25px] gap-y-[25px] lg:grid lg:gap-y-[35px] xl:gap-x-[30px] xl:gap-y-[40px]'>
           {principles.map(({ img, title, description }) => (
