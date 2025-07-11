@@ -1,9 +1,9 @@
 import { useExtractH2FromJSX } from '@/lib/hooks/extractH2FromTSX';
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 } from '../ui/accordion';
 
 export const PolicySidebar = ({ content }: { content: React.ReactNode }) => {
@@ -18,7 +18,7 @@ export const PolicySidebar = ({ content }: { content: React.ReactNode }) => {
               Table of contents
             </AccordionTrigger>
             <AccordionContent className='flex flex-col px-[15px]'>
-              {headings.map((h, index) => (
+              {headings.map(h => (
                 <a
                   key={h.id}
                   href={`#${h.id}`}
