@@ -69,7 +69,7 @@ export default function AboutUs() {
 
       <OurPrinciples />
 
-      <OurExpertise />
+      <OurExpertise title='Why Interexy?' subtitle='Our expertise' />
 
       <OurTeam />
 
