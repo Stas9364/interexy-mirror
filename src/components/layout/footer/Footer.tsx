@@ -1,3 +1,4 @@
+import { ScrollToTop } from '@/components/scroll-to-top/ScrollToTop';
 import { Container } from '../container/Container';
 import { CompanyLocations } from './components/CompanyLocations';
 import { Copyright } from './components/Copyright';
@@ -45,6 +46,8 @@ export const Footer = ({ children }: { children?: React.ReactNode }) => {
             </div>
           </section>
         </Container>
+
+        <ScrollToTop />
       </footer>
     </>
   );
