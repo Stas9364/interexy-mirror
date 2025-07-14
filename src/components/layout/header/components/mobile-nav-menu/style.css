@@ -6,6 +6,16 @@
   cursor: pointer;
   z-index: 2;
 
+  &.burger-dark {
+    span {
+      &,
+      &:before,
+      &:after {
+        background: var(--color-primary);
+      }
+    }
+  }
+
   span {
     top: 50%;
     margin-top: -1px;

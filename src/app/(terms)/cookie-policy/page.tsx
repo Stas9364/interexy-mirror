@@ -4,7 +4,7 @@ import { PolicySidebar } from '@/components/policy-sidebar/PolicySidebar';
 import type { Metadata } from 'next';
 import { cookieContent } from './cookie-content';
 
-import '../styles/privacy-style.css';
+import '../../styles/privacy-style.css';
 
 export const metadata: Metadata = {
   title: 'Interexy Cookie Policy: How We Manage Cookies | Interexy',

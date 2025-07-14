@@ -5,7 +5,15 @@ import { CategoryItems } from './CategoryItems';
 import { MenuDescription } from './MenuDescription';
 import { menuData } from '../../data/nav-menu-list';
 
-const MainNavigation = ({ scrolled }: { scrolled: boolean }) => {
+const MainNavigation = ({
+  scrolled,
+  darkHeader,
+}: {
+  scrolled?: boolean;
+  darkHeader?: boolean;
+}) => {
+  const classes = `${darkHeader ? 'text-primary' : scrolled ? 'text-primary' : 'text-white'}`;
+
   return (
     <div className='hidden h-full items-center lg:flex'>
       {menuData.map(({ title, subtitle, submenu, link }) => (
@@ -13,13 +21,13 @@ const MainNavigation = ({ scrolled }: { scrolled: boolean }) => {
           {link ? (
             <Link
               href={link}
-              className={`${scrolled ? 'text-primary' : 'text-white'} border-b-accent hover:text-accent flex h-full items-center gap-2 space-x-1 px-3 py-2 text-base font-medium transition-colors duration-200 group-hover/header:text-black`}
+              className={`${classes} border-b-accent hover:text-accent flex h-full items-center gap-2 space-x-1 px-3 py-2 text-base font-medium transition-colors duration-200 group-hover/header:text-black`}
             >
               {title}
             </Link>
           ) : (
             <button
-              className={`${scrolled ? 'text-primary' : 'text-white'} border-b-accent hover:text-accent flex h-full items-center gap-2 space-x-1 px-3 py-2 text-base font-medium transition-colors duration-200 group-hover/header:text-black`}
+              className={`${classes} border-b-accent hover:text-accent flex h-full items-center gap-2 space-x-1 px-3 py-2 text-base font-medium transition-colors duration-200 group-hover/header:text-black`}
             >
               <span>{title}</span>
               <ChevronDown className='h-4 w-4 transition-transform group-hover:rotate-180' />

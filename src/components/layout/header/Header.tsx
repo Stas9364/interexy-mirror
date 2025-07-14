@@ -1,26 +1,16 @@
 'use client';
 
-import { Container } from '../container/Container';
+import { useEffect, useState } from 'react';
 import { InterexyLink } from '../../link/InterexyLink';
 import { Logo } from '../../logo/Logo';
+import { Container } from '../container/Container';
 import MobileNavigation from './components/mobile-nav-menu/MobileNavigation';
 import MainNavigation from './components/nav-menu/MainNavigation';
-import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
-
-const pathForDarkBg = [
-  'privacy-policy',
-  'terms-and-conditions',
-  'cookie-policy',
-  'complaints-procedure',
-];
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const pathname = usePathname();
-
-  const match = pathForDarkBg.some(path => path === pathname.split('/')[1]);
+  const [match, setMatch] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +19,9 @@ const Header = () => {
 
     handleScroll();
 
+    const isNotFound = !!document.querySelector('[data-page="not-found"]');
+    if (isNotFound) setMatch(isNotFound);
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
@@ -36,7 +29,7 @@ const Header = () => {
   return (
     <header
       className={`group/header fixed top-0 z-[10000] w-full transition-colors duration-200 hover:bg-white ${
-        scrolled ? 'bg-white' : match ? 'bg-[#0006]' : 'bg-transparent'
+        scrolled ? 'bg-white' : 'bg-transparent'
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -48,7 +41,7 @@ const Header = () => {
               <Logo
                 href={'/'}
                 src={
-                  scrolled || isHovered
+                  scrolled || isHovered || match
                     ? '/logo/logo-purple.svg'
                     : '/logo/logo-purple-white.svg'
                 }
@@ -58,9 +51,13 @@ const Header = () => {
                 priority={true}
               />
 
-              <MainNavigation scrolled={scrolled} />
+              <MainNavigation scrolled={scrolled} darkHeader={match} />
 
-              <MobileNavigation scrolled={scrolled} />
+              <MobileNavigation
+                scrolled={scrolled}
+                darkHeader={match}
+                burgerStatus={setIsHovered}
+              />
 
               <div className='hidden lg:block'>
                 <InterexyLink

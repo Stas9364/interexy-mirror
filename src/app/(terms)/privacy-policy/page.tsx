@@ -1,9 +1,10 @@
 import { HeroPolicy } from '@/components/blocks/hero-policy/HeroPolicy';
 import { Container, Section } from '@/components/layout';
+import { PolicySidebar } from '@/components/policy-sidebar/PolicySidebar';
 import type { Metadata } from 'next';
 import { privacyContent } from './privacy-content';
-import { PolicySidebar } from '@/components/policy-sidebar/PolicySidebar';
-import '../styles/privacy-style.css';
+
+import '../../styles/privacy-style.css';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy: How We Collect, Use &Protect Data | Interexy',

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 export const Logo = ({
   href,
@@ -19,9 +20,9 @@ export const Logo = ({
   className?: string;
 }) => {
   return (
-    <div className={`relative flex items-center ${className}`}>
+    <div className={cn('items-center, flex, relative z-2', className)}>
       <div className='flex items-center space-x-2'>
-        <Link href={href}>
+        <Link href={href} className='py-4'>
           <Image alt={alt} src={src} width={width} height={height} priority={priority} />
         </Link>
       </div>

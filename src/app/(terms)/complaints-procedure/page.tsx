@@ -4,6 +4,8 @@ import { PolicySidebar } from '@/components/policy-sidebar/PolicySidebar';
 import type { Metadata } from 'next';
 import { complaintsContent } from './complaints-content';
 
+import '../../styles/privacy-style.css';
+
 export const metadata: Metadata = {
   title: "Interexy's Complaints Procedure | Interexy",
   description:

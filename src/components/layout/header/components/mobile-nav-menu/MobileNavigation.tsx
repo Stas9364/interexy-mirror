@@ -14,17 +14,27 @@ import { menuData } from '../../data/nav-menu-list';
 
 import './style.css';
 
-export function MobileNavigation({ scrolled }: { scrolled: boolean }) {
+export function MobileNavigation({
+  scrolled,
+  darkHeader,
+  burgerStatus,
+}: {
+  scrolled?: boolean;
+  darkHeader?: boolean;
+  burgerStatus: (val: boolean) => void;
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleButton = () => {
     setIsOpen(!isOpen);
+
+    burgerStatus(!isOpen);
   };
 
   return (
     <>
       <div
-        className={`burger flex ${isOpen ? 'burger-open' : ''} ${scrolled ? 'scrolled' : ''} flex lg:hidden`}
+        className={`burger ${darkHeader && 'burger-dark'} flex ${isOpen ? 'burger-open' : ''} ${scrolled ? 'scrolled' : ''} flex lg:hidden`}
         onClick={toggleButton}
       >
         <span></span>
