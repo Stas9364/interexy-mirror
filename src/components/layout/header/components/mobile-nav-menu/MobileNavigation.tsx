@@ -21,14 +21,16 @@ export function MobileNavigation({
 }: {
   scrolled?: boolean;
   darkHeader?: boolean;
-  burgerStatus: (val: boolean) => void;
+  burgerStatus?: (val: boolean) => void;
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleButton = () => {
     setIsOpen(!isOpen);
 
-    burgerStatus(!isOpen);
+    if (burgerStatus) {
+      burgerStatus(!isOpen);
+    }
   };
 
   return (
