@@ -22,7 +22,7 @@ export const Logo = ({
   return (
     <div className={cn('items-center, flex, relative z-2', className)}>
       <div className='flex items-center space-x-2'>
-        <Link href={href}>
+        <Link href={href} className='py-4'>
           <Image alt={alt} src={src} width={width} height={height} priority={priority} />
         </Link>
       </div>

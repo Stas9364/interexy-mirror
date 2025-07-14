@@ -8,12 +8,12 @@ import {
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 import { ContactForm } from '@/components/contact-form/ContactForm';
+import { HubspotMeeting } from '@/components/hubspot-meeteng/HubspotMeeting';
 import { Container, Footer, Header } from '@/components/layout';
 import { Platforms } from '@/components/layout/footer/components/Platforms';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { Overlay } from '@/components/overlay/Overlay';
 import type { Metadata } from 'next';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Contact us | Interexy',
@@ -57,14 +57,7 @@ export default function ContactUs() {
                 <Platforms containerClassName='flex flex-row lg:flex-col justify-around lg:justify-between gap-y-[30px]' />
               </div>
               <div className='min-h-[760px] max-w-[780px] self-center pt-10'>
-                <div
-                  className='meetings-iframe-container w-[380px]'
-                  data-src='https://meetings-eu1.hubspot.com/lizaveta/consultation-call-from-website?embed=true'
-                ></div>
-                <Script
-                  src='https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js'
-                  strategy='afterInteractive'
-                />
+                <HubspotMeeting />
               </div>
             </div>
           </Container>

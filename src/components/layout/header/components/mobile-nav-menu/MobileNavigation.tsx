@@ -17,14 +17,18 @@ import './style.css';
 export function MobileNavigation({
   scrolled,
   darkHeader,
+  burgerStatus,
 }: {
   scrolled?: boolean;
   darkHeader?: boolean;
+  burgerStatus: (val: boolean) => void;
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleButton = () => {
     setIsOpen(!isOpen);
+
+    burgerStatus(!isOpen);
   };
 
   return (

@@ -1,18 +1,16 @@
 'use client';
 
-import { Container } from '../container/Container';
+import { useEffect, useState } from 'react';
 import { InterexyLink } from '../../link/InterexyLink';
 import { Logo } from '../../logo/Logo';
+import { Container } from '../container/Container';
 import MobileNavigation from './components/mobile-nav-menu/MobileNavigation';
 import MainNavigation from './components/nav-menu/MainNavigation';
-import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [match, setMatch] = useState(false);
-  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +24,7 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [scrolled, pathname]);
+  }, [scrolled]);
 
   return (
     <header
@@ -55,7 +53,11 @@ const Header = () => {
 
               <MainNavigation scrolled={scrolled} darkHeader={match} />
 
-              <MobileNavigation scrolled={scrolled} darkHeader={match} />
+              <MobileNavigation
+                scrolled={scrolled}
+                darkHeader={match}
+                burgerStatus={setIsHovered}
+              />
 
               <div className='hidden lg:block'>
                 <InterexyLink
