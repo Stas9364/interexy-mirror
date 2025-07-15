@@ -10,6 +10,7 @@ import {
   OurTeam,
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
+import { principles } from '@/components/blocks/our-expertise/principles';
 import { cases } from '@/components/blocks/our-portfolio/cases-list';
 import { expertiseByYears } from '@/components/blocks/our-success/expertiseByYears';
 import { TeamComposition } from '@/components/blocks/team-composition/TeamComposition';
@@ -76,7 +77,7 @@ export default function AboutUs() {
 
       <OurPrinciples />
 
-      <OurExpertise title='Why Interexy?' subtitle='Our expertise' />
+      <OurExpertise title='Why Interexy?' subtitle='Our expertise' items={principles} />
 
       <OurTeam />
 
