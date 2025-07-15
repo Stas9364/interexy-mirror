@@ -3,8 +3,6 @@ import { Container, Section } from '@/components/layout';
 import Image from 'next/image';
 import type { Principle } from './principles';
 
-
-
 export const OurExpertise = ({
   title,
   subtitle,

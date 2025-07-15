@@ -74,7 +74,7 @@ export default function ContactUs() {
 
         <OurSuccessWithSlider />
 
-        <OurClients />
+        <OurClients title='We are trusted' subtitle='Our clients' />
 
         <OurLocation />
 
