@@ -1,4 +1,4 @@
-import type { Principle } from '@/components/blocks/our-expertise/OurExpertise';
+import type { Principle } from '@/components/blocks/our-expertise/principles';
 
 export const industries: Principle[] = [
   {
