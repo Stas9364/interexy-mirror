@@ -5,6 +5,7 @@ import {
   OurExpertise,
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
+import { principles } from '@/components/blocks/our-expertise/principles';
 import { Container } from '@/components/layout';
 import { Platforms } from '@/components/layout/footer/components/Platforms';
 import { InterexyLink } from '@/components/link/InterexyLink';
@@ -64,7 +65,7 @@ export default function Referral() {
         className='mb-[40px] md:mb-[60px] xl:mb-[80px]'
       />
 
-      <OurExpertise title='Why Interexy?' />
+      <OurExpertise title='Why Interexy?' items={principles} />
 
       <HowItWorks />
     </>
