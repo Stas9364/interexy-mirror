@@ -10,6 +10,8 @@ import {
   OurTeam,
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
+import { cases } from '@/components/blocks/our-portfolio/cases-list';
+import { expertiseByYears } from '@/components/blocks/our-success/expertiseByYears';
 import { TeamComposition } from '@/components/blocks/team-composition/TeamComposition';
 import { Container } from '@/components/layout';
 import { InterexyLink } from '@/components/link/InterexyLink';
@@ -63,7 +65,12 @@ export default function AboutUs() {
         className='mb-[80px]'
       />
 
-      <OurSuccess />
+      <OurSuccess
+        title='Expertise backed by years'
+        subtitle='Our success'
+        text='Interexy is a custom software development and IT consulting company founded in 2017 and headquartered in Miami. We boast extensive expertise in Healthcare,Blockchain, FinTech, AI, ML, EdTech, E-Commerce, etc. We deliver innovativesolutions for giants like SAP, PwC, Pampers, General Electric, Next Street &fastest-growing companies across industries.'
+        expertise={expertiseByYears}
+      />
 
       <OurMission />
 
@@ -75,9 +82,9 @@ export default function AboutUs() {
 
       <TeamComposition />
 
-      <OurClients />
+      <OurClients title='We are trusted' subtitle='Our clients' />
 
-      <OurPortfolio title='Our work' subtitle='Our portfolio' />
+      <OurPortfolio title='Our work' subtitle='Our portfolio' cases={cases} />
     </>
   );
 }

@@ -1,15 +1,25 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { platformsData } from '../data/platforms-data';
+import { cn } from '@/lib/utils';
 
-export const Platforms = ({ containerClassName }: { containerClassName?: string }) => {
+export const Platforms = ({
+  containerClassName,
+  platformClassName,
+}: {
+  containerClassName?: string;
+  platformClassName?: string;
+}) => {
   return (
     <div className={containerClassName}>
       {platformsData.map(({ logo_src, link, star_src, reviews_number, alt }) => {
         return (
           <div
             key={logo_src}
-            className='flex flex-col items-center gap-x-1 sm:flex-row md:gap-x-4'
+            className={cn(
+              'flex flex-col items-center gap-x-1 sm:flex-row md:gap-x-4',
+              platformClassName,
+            )}
           >
             {link ? (
               <Link href={link}>
