@@ -13,7 +13,10 @@ import {
   Reviews,
   TechStack,
 } from '@/components/blocks';
+import { blogPosts } from '@/components/blocks/blog/blog-posts';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
+import { cases } from '@/components/blocks/our-portfolio/cases-list';
+import { expertiseByYears } from '@/components/blocks/our-success/expertiseByYears';
 import { ContactForm } from '@/components/contact-form/ContactForm';
 import { Container, Footer, Header } from '@/components/layout';
 import { InterexyLink } from '@/components/link/InterexyLink';
@@ -79,7 +82,12 @@ export default function Home() {
 
         <OurAchievements />
 
-        <OurSuccess />
+        <OurSuccess
+          title='Expertise backed by years'
+          subtitle='Our success'
+          text='Interexy is a custom software development and IT consulting company founded in 2017 and headquartered in Miami. We boast extensive expertise in Healthcare,Blockchain, FinTech, AI, ML, EdTech, E-Commerce, etc. We deliver innovativesolutions for giants like SAP, PwC, Pampers, General Electric, Next Street &fastest-growing companies across industries.'
+          expertise={expertiseByYears}
+        />
 
         <OurServices />
 
@@ -89,19 +97,23 @@ export default function Home() {
 
         <OurProducts />
 
-        <OurClients />
+        <OurClients title='We are trusted' subtitle='Our clients' />
 
         <Reviews />
 
         <OurTeam />
 
-        <OurPortfolio title='Software that helps you succeed' subtitle='Our portfolio'>
+        <OurPortfolio
+          title='Software that helps you succeed'
+          subtitle='Our portfolio'
+          cases={cases}
+        >
           <p className='text-secondary text-base leading-[1.4] font-medium md:text-lg'>
             Our user-centered design encourages productivity and boosts revenue.
           </p>
         </OurPortfolio>
 
-        <Blog />
+        <Blog title='Our latest insights' subtitle='Blog' blogPosts={blogPosts} />
       </main>
 
       <Footer>
