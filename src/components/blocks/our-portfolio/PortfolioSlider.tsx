@@ -11,9 +11,9 @@ import './style.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { cases } from './cases-list';
+import { type CaseT } from './cases-list';
 
-const PortfolioSlider = () => {
+const PortfolioSlider = ({ cases }: { cases: CaseT[] }) => {
   const [activeBg, setActiveBg] = useState(0);
   const [activeSlide, setActiveSlide] = useState<number | null>(null);
 

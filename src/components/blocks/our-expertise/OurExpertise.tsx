@@ -2,7 +2,7 @@ import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
 import Image from 'next/image';
 
-type Principle = {
+export type Principle = {
   img: string;
   title: string;
   description: string;
@@ -32,9 +32,11 @@ const principles: Principle[] = [
 export const OurExpertise = ({
   title,
   subtitle,
+  items = principles,
 }: {
   title: string;
   subtitle?: string;
+  items: Principle[];
 }) => {
   return (
     <Section>
@@ -42,7 +44,7 @@ export const OurExpertise = ({
         <BlockTitle title={title} subtitle={subtitle} />
 
         <div className='flex grid-cols-3 flex-col gap-x-[25px] gap-y-[25px] lg:grid lg:gap-y-[35px] xl:gap-x-[30px] xl:gap-y-[40px]'>
-          {principles.map(({ img, title, description }) => (
+          {items.map(({ img, title, description }) => (
             <div
               key={title}
               className='flex flex-col gap-y-[10px] border-b border-[#D6D6D6] pb-[15px] lg:gap-y-5'

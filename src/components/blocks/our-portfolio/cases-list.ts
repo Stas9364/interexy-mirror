@@ -1,3 +1,10 @@
+export type CaseT = {
+  heading: string;
+  case_description: string;
+  case_link: string;
+  bg_image: string; // url
+};
+
 export const cases: CaseT[] = [
   {
     heading: 'Compassly',
@@ -63,10 +70,3 @@ export const cases: CaseT[] = [
     bg_image: '/blocks/our-portfolio/medkit.webp',
   },
 ];
-
-type CaseT = {
-  heading: string;
-  case_description: string;
-  case_link: string;
-  bg_image: string; // url
-};

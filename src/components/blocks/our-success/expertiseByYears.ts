@@ -1,4 +1,4 @@
-type Expertise = {
+export type Expertise = {
   number: string;
   title: string;
 };
