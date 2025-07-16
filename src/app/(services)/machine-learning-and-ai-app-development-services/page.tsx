@@ -39,6 +39,7 @@ export default function MachineLearningAndAi() {
         btn_link={'/contact-us'}
         btn_text={'Get Stared'}
         src='/services/machine-learning-and-ai/ai-hero-img.png'
+        sectionClassName='md:!pb-0'
       />
 
       <InfiniteImageScroll

@@ -1,5 +1,6 @@
 import { Container, Section } from '@/components/layout';
 import { InterexyLink } from '@/components/link/InterexyLink';
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 export const HeroService = ({
   title,
@@ -7,15 +8,17 @@ export const HeroService = ({
   btn_link,
   btn_text,
   src,
+  sectionClassName,
 }: {
   title: string;
   subtitle: string;
   btn_link: string;
   btn_text: string;
   src: string;
+  sectionClassName?: string;
 }) => {
   return (
-    <Section className='pt-[100px] md:!pb-0'>
+    <Section className={cn(`pt-[100px]`, sectionClassName)}>
       <Container>
         <div className='flex flex-col-reverse lg:flex-row'>
           <div>
