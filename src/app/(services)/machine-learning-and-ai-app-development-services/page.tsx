@@ -100,7 +100,10 @@ export default function MachineLearningAndAi() {
 
       <Blog title='AI Business Ideas for Entrepreneurs' blogPosts={blogPosts} />
 
-      <CoreTechnologies technologies={coreTechnologies} />
+      <CoreTechnologies
+        title='Core technologies used to build functional AI & ML mobile solutions'
+        technologies={coreTechnologies}
+      />
 
       <Reviews reviews={reviews} />
     </>
