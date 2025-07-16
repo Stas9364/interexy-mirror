@@ -6,14 +6,16 @@ export const HeroService = ({
   subtitle,
   btn_link,
   btn_text,
+  src,
 }: {
   title: string;
   subtitle: string;
   btn_link: string;
   btn_text: string;
+  src: string;
 }) => {
   return (
-    <Section className='pt-[100px] !pb-0'>
+    <Section className='pt-[100px] md:!pb-0'>
       <Container>
         <div className='flex flex-col-reverse lg:flex-row'>
           <div>
@@ -32,12 +34,14 @@ export const HeroService = ({
             />
           </div>
 
-          <div className='relative h-[550px] md:w-[700px]'>
+          <div className='relative mx-auto aspect-[700/550] h-auto w-full max-w-[700px] lg:mx-0'>
             <Image
-              src={'/services/machine-learning-and-ai/ai-hero-img.png'}
-              alt='AI and ML'
+              src={src}
+              alt={title}
               fill
               className='object-cover'
+              sizes='(max-width: 1024px) 100vw, 700px'
+              priority
             />
           </div>
         </div>

@@ -1,4 +1,3 @@
-import { BlockTitle } from '@/components/block-title/BlockTitle';
 import {
   Blog,
   InfiniteImageScroll,
@@ -8,24 +7,26 @@ import {
   OurSuccess,
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
-import { Container, Section } from '@/components/layout';
-import { InterexyLink } from '@/components/link/InterexyLink';
 import {
   Banner,
   CoreTechnologies,
   HeroService,
+  Info,
+  Reasons,
   Reviews,
 } from '@/components/service-blocks';
 
-import {
-  blogPosts,
-  cases,
-  coreTechnologies,
-  goodSolution,
-  industries,
-  ml_ai,
-  reviews,
-} from './data';
+import { ml_ai } from '@/components/service-blocks/info/ml_ai';
+import { goodSolution } from '@/components/service-blocks/reasons/goodSolution';
+import type { Metadata } from 'next';
+import { blogPosts, cases, coreTechnologies, industries } from './data';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+
+export const metadata: Metadata = {
+  title: 'Machine Learning and AI App Development Company | Interexy',
+  description:
+    'We provide ML and AI app development service and can help in different industry sectors. ✅ Let’s build competitive businesses in partnership',
+};
 
 export default function MachineLearningAndAi() {
   return (
@@ -37,6 +38,7 @@ export default function MachineLearningAndAi() {
         }
         btn_link={'/contact-us'}
         btn_text={'Get Stared'}
+        src='/services/machine-learning-and-ai/ai-hero-img.png'
       />
 
       <InfiniteImageScroll
@@ -62,64 +64,17 @@ export default function MachineLearningAndAi() {
 
       <OurClients title='Trusted by' />
 
-      <Section>
-        <Container>
-          <BlockTitle
-            title={'Machine Learning & Artificial Intelligence Mobile App Development'}
-          />
+      <Info
+        title='Machine Learning & Artificial Intelligence Mobile App Development'
+        items={ml_ai}
+        href='/contact-us'
+        btn_text='Discuss your Project'
+      />
 
-          <div className='flex grid-cols-3 flex-col gap-x-4 gap-y-5 md:grid xl:gap-x-6'>
-            {ml_ai.map(({ subtitle, title, bg_color }) => (
-              <div
-                key={title}
-                className='flex flex-col gap-y-5 rounded-[20px] bg-[#f6f6fd] p-[15px] lg:p-[30px]'
-                style={{ backgroundColor: bg_color }}
-              >
-                <p className='text-xl leading-[1.2] font-bold xl:text-[22px]'>{title}</p>
-                <p className='text-base leading-[1.4] font-light xl:mt-auto xl:text-lg'>
-                  {subtitle}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className='flex justify-center'>
-            <InterexyLink
-              href='/contact-us'
-              text='Discuss your Project'
-              variant='primary'
-              className='mt-10 w-[275px]'
-            />
-          </div>
-        </Container>
-      </Section>
-
-      <Section>
-        <Container>
-          <BlockTitle title='Why Artificial intelligence and Machine learning app development services is a good solutions' />
-
-          <div className='flex grid-cols-2 flex-col gap-x-6 gap-y-[10px] md:grid md:gap-y-10 xl:gap-y-[80px]'>
-            {goodSolution.map(({ color, title }, idx) => (
-              <div
-                key={idx}
-                className='flex items-center gap-x-5 border-b border-[#fce2fe] pb-5 xl:gap-x-8'
-              >
-                <div
-                  className={`flex min-h-[95px] min-w-[95px] items-center justify-center rounded-[20px]`}
-                  style={{ backgroundColor: color }}
-                >
-                  <span className='flex h-[56px] w-[56px] items-center justify-center rounded-full bg-[#ffffffe6] text-xl shadow-[-3px_0_11px_-4px_#292f75]'>
-                    0{++idx}
-                  </span>
-                </div>
-                <p className='text-xl leading-[1.4] font-bold lg:text-2xl xl:text-[28px]'>
-                  {title}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
+      <Reasons
+        title='Why Artificial intelligence and Machine learning app development services is a good solutions'
+        items={goodSolution}
+      />
 
       <Banner
         img_src='/services/machine-learning-and-ai/banner-1.webp'
