@@ -3,16 +3,18 @@ import { Container, Section } from '@/components/layout';
 import Image from 'next/image';
 
 export const CoreTechnologies = ({
+  title,
   technologies,
   sectionClassName,
 }: {
+  title: string;
   technologies: Array<{ src: string; alt: string; width: number; height: number }>;
   sectionClassName?: string;
 }) => {
   return (
     <Section className={sectionClassName}>
       <Container>
-        <BlockTitle title='Core technologies used to build functional AI & ML mobile solutions' />
+        <BlockTitle title={title} />
 
         <div className='flex w-full flex-wrap justify-center gap-y-5 xl:justify-between'>
           {technologies.map(({ src, alt, width, height }) => (

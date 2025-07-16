@@ -15,7 +15,7 @@ import {
   HireDevelopers,
   Info,
   Reasons,
-  Reviews
+  Reviews,
 } from '@/components/service-blocks';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import type { Metadata } from 'next';
@@ -38,6 +38,7 @@ export default function BlockchainAppDevelopmentServices() {
         btn_link={'/contact-us'}
         btn_text={'Get Stared'}
         src='/services/blockchain-app-development-services/blockchain-hero.webp'
+        sectionClassName='md:!pb-0'
       />
       <InfiniteImageScroll
         images={images}
@@ -90,7 +91,7 @@ export default function BlockchainAppDevelopmentServices() {
         ]}
       />
       <Reasons
-        title='Blockchain technology is international trend #1'
+        title='6 Reasons Why You Need to Leverage Our Technical Expertise for Blockchain Development'
         items={[
           {
             title: 'To save money through control',
@@ -143,6 +144,7 @@ export default function BlockchainAppDevelopmentServices() {
         btn_title='Book a call'
         btn_link='/contact-us'
       />
+
       <HireDevelopers
         title='Hire a Blockchain App Developer'
         items={[
@@ -177,6 +179,7 @@ export default function BlockchainAppDevelopmentServices() {
         ]}
       />
       <CoreTechnologies
+        title='Core technologies used to build functional AI & ML mobile solutions'
         sectionClassName='bg-[#f7f8fc]'
         technologies={[
           {
