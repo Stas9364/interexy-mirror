@@ -2,6 +2,7 @@ export type Principle = {
   img: string;
   title: string;
   description: string;
+  href?: string;
 };
 
 export const principles: Principle[] = [

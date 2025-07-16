@@ -1,5 +1,5 @@
-export type Review = { title: string; position: string };
-export const reviews: Review[] = [
+export type ReviewT = { title: string; position: string };
+export const reviews: ReviewT[] = [
   {
     title:
       '“Their consistency and the care they put into clients’ relations are outstanding.”',

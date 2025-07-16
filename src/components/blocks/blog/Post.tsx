@@ -42,7 +42,7 @@ export const Post: FC<PostT> = ({ title, author, date, excerpt, image, link, tag
           {excerpt}
         </p>
 
-        <div className='flex justify-between'>
+        <div className='flex items-center justify-between'>
           <span className='text-lg leading-[1.4] font-bold md:font-normal 2xl:text-2xl'>
             {author}
           </span>

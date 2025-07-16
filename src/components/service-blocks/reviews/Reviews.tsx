@@ -1,11 +1,11 @@
-import { BlockTitle } from '@/components/block-title/BlockTitle';
+import Image from 'next/image';
+import type { ReviewT } from './reviews-data';
 import { Container, Section } from '@/components/layout';
+import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Platforms } from '@/components/layout/footer/components/Platforms';
 import { InterexyLink } from '@/components/link/InterexyLink';
-import Image from 'next/image';
-import type { Review } from './reviews';
 
-export const Reviews = ({ reviews }: { reviews: Review[] }) => {
+export const Reviews = ({ reviews }: { reviews: ReviewT[] }) => {
   return (
     <Section>
       <Container>
