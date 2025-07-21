@@ -8,6 +8,7 @@ import { HireDevelopers } from './hire-developers/HireDevelopers';
 import { FAQ } from './faq/FAQ';
 import { FullCycleDevelopment } from './full-cycle-development/FullCycleDevelopment';
 import { SupportPackages } from './support-packages/SupportPackages';
+import { ServicesExpertise } from './services-expertise/ServicesExpertise';
 
 export {
   HeroService,
@@ -20,4 +21,5 @@ export {
   FAQ,
   FullCycleDevelopment,
   SupportPackages,
+  ServicesExpertise,
 };
