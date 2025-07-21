@@ -19,7 +19,7 @@ export const Reasons = ({ title, items }: { title: string; items: GoodSolution[]
                 style={{ backgroundColor: color }}
               >
                 <span className='flex h-[56px] w-[56px] items-center justify-center rounded-full bg-[#ffffffe6] text-xl shadow-[-3px_0_11px_-4px_#292f75]'>
-                  0{++idx}
+                  {idx > 8 ? ++idx : '0' + ++idx}
                 </span>
               </div>
               <div>

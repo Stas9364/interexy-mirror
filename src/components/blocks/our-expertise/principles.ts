@@ -1,7 +1,7 @@
 export type Principle = {
-  img: string;
+  img?: string;
   title: string;
-  description: string;
+  description?: string;
   href?: string;
 };
 

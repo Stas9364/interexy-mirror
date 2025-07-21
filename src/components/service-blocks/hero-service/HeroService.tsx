@@ -9,6 +9,8 @@ export const HeroService = ({
   btn_text,
   src,
   sectionClassName,
+  contentWrapperClasses,
+  imgClasses,
 }: {
   title: string;
   subtitle: string;
@@ -16,11 +18,13 @@ export const HeroService = ({
   btn_text: string;
   src: string;
   sectionClassName?: string;
+  contentWrapperClasses?: string;
+  imgClasses?: string;
 }) => {
   return (
     <Section className={cn(`pt-[100px]`, sectionClassName)}>
       <Container>
-        <div className='flex flex-col-reverse lg:flex-row'>
+        <div className={cn('flex flex-col-reverse lg:flex-row', contentWrapperClasses)}>
           <div>
             <h1 className='mb-5 max-w-[780px] text-4xl leading-[1.2] font-extrabold md:mb-10 md:text-5xl xl:text-[64px]'>
               {title}
@@ -42,7 +46,7 @@ export const HeroService = ({
               src={src}
               alt={title}
               fill
-              className='object-cover'
+              className={cn('object-cover', imgClasses)}
               sizes='(max-width: 1024px) 100vw, 700px'
               priority
             />

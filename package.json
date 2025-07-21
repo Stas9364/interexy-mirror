@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:src:fix": "eslint src/ --ext .ts,.tsx,.js,.jsx --fix"
+
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",

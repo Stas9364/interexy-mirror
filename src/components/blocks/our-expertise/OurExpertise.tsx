@@ -8,10 +8,12 @@ export const OurExpertise = ({
   title,
   subtitle,
   items,
+  btn_title = 'Learn more',
 }: {
   title: string;
   subtitle?: string;
   items: Principle[];
+  btn_title?: string;
 }) => {
   return (
     <Section>
@@ -25,7 +27,15 @@ export const OurExpertise = ({
               className='flex flex-col gap-y-[10px] border-b border-[#D6D6D6] pb-[15px] lg:gap-y-5'
             >
               <div className='flex gap-x-[15px]'>
-                <Image src={img} alt={title} width={35} height={35} />
+                {img && (
+                  <Image
+                    src={img}
+                    alt={title}
+                    width={35}
+                    height={35}
+                    className='max-h-[35px] max-w-[35px] object-contain'
+                  />
+                )}
                 <p className='text-xl leading-[1.4] font-medium md:text-[26px] xl:text-[32px]'>
                   {title}
                 </p>
@@ -40,7 +50,7 @@ export const OurExpertise = ({
                   href={href}
                   className='text-accent mt-auto text-lg leading-[1.4] font-extrabold'
                 >
-                  Learn more
+                  {btn_title}
                 </Link>
               )}
             </div>
