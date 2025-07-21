@@ -6,6 +6,8 @@ import { Info } from './info/Info';
 import { Reasons } from './reasons/Reasons';
 import { HireDevelopers } from './hire-developers/HireDevelopers';
 import { FAQ } from './faq/FAQ';
+import { FullCycleDevelopment } from './full-cycle-development/FullCycleDevelopment';
+import { SupportPackages } from './support-packages/SupportPackages';
 
 export {
   HeroService,
@@ -16,4 +18,6 @@ export {
   Reasons,
   HireDevelopers,
   FAQ,
+  FullCycleDevelopment,
+  SupportPackages,
 };
