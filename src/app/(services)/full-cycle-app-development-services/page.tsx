@@ -11,6 +11,7 @@ import {
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import type { Metadata } from 'next';
 import { cases } from '../blockchain-app-development-services/data';
+import { fullCycleItems } from './data';
 
 export const metadata: Metadata = {
   title: 'Full-cycle App Development Company | Interexy',
@@ -104,7 +105,10 @@ export default function FullCycleAppDevelopmentServices() {
         ]}
       />
 
-      <FullCycleDevelopment title='Interexy’s ExperienceIn Full-Cycle Development' />
+      <FullCycleDevelopment
+        title='Interexy’s ExperienceIn Full-Cycle Development'
+        items={fullCycleItems}
+      />
 
       <Banner
         img_src='/services/full-cycle-app-development-services/banner-3.png'
