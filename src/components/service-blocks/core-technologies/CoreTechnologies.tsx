@@ -16,7 +16,7 @@ export const CoreTechnologies = ({
       <Container>
         <BlockTitle title={title} />
 
-        <div className='flex w-full flex-wrap justify-center gap-y-5 xl:justify-between'>
+        <div className='flex w-full flex-wrap justify-center gap-x-5 gap-y-5 xl:justify-between'>
           {technologies.map(({ src, alt, width, height }) => (
             <Image
               src={src}
@@ -24,7 +24,7 @@ export const CoreTechnologies = ({
               key={alt}
               width={width}
               height={height}
-              // className='max-w-[235px]'
+              className='min-w-[150px] object-contain'
             />
           ))}
         </div>
