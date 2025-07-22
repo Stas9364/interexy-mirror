@@ -111,7 +111,7 @@ export default function EducationalMobileAppDevelopmentServices() {
         ]}
       />
 
-      <Reviews reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
 
       <OurPortfolio title='See our experience' cases={cases} />
     </>

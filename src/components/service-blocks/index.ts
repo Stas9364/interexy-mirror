@@ -9,6 +9,8 @@ import { FAQ } from './faq/FAQ';
 import { FullCycleDevelopment } from './full-cycle-development/FullCycleDevelopment';
 import { SupportPackages } from './support-packages/SupportPackages';
 import { ServicesExpertise } from './services-expertise/ServicesExpertise';
+import { Statistics } from './statistics/Statistics';
+import { SecondBanner } from './second-banner/SecondBanner';
 
 export {
   HeroService,
@@ -22,4 +24,6 @@ export {
   FullCycleDevelopment,
   SupportPackages,
   ServicesExpertise,
+  Statistics,
+  SecondBanner,
 };

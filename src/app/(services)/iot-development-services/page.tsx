@@ -147,7 +147,7 @@ export default function IotDevelopmentServices() {
 
       <OurPortfolio title='See our experience' cases={cases} />
 
-      <Reviews reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
     </>
   );
 }

@@ -167,7 +167,7 @@ export default function FintechAppDevelopmentServices() {
 
       <OurPortfolio title='Find the perfect Project' cases={cases} />
 
-      <Reviews reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
 
       <FAQ title='FAQ' items={faq} />
     </>

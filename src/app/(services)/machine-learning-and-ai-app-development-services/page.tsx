@@ -105,7 +105,7 @@ export default function MachineLearningAndAi() {
         technologies={coreTechnologies}
       />
 
-      <Reviews reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
     </>
   );
 }

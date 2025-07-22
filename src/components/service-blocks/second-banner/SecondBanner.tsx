@@ -1,0 +1,42 @@
+import { Container, Section } from '@/components/layout';
+import { InterexyLink } from '@/components/link/InterexyLink';
+import Image from 'next/image';
+
+export const SecondBanner = ({
+  imgSrc,
+  title,
+  description,
+  buttonLink,
+  buttonText,
+}: {
+  imgSrc: string;
+  title: string;
+  description: string;
+  buttonLink: string;
+  buttonText: string;
+}) => {
+  return (
+    <Section className='bg-accent relative mb-[40px] pt-[75px] md:mb-[60px] xl:mb-[80px]'>
+      <div className='absolute top-0 right-0 hidden aspect-[510/510] h-auto w-full max-w-[510px] xl:block'>
+        <Image src={imgSrc} alt={title} fill />
+      </div>
+
+      <Container>
+        <div className='relative text-white'>
+          <h2 className='mb-[44px] text-4xl leading-[1.4] font-bold md:text-[46px]'>
+            {title}
+          </h2>
+          <p className='mb-[44px] w-full max-w-[841px] text-2xl leading-[2] md:text-[32px]'>
+            {description}
+          </p>
+          <InterexyLink
+            href={buttonLink}
+            text={buttonText}
+            variant={'outline'}
+            className='h-[72px] text-xl'
+          />
+        </div>
+      </Container>
+    </Section>
+  );
+};
