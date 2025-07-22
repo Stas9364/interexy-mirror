@@ -5,11 +5,11 @@ import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Platforms } from '@/components/layout/footer/components/Platforms';
 import { InterexyLink } from '@/components/link/InterexyLink';
 
-export const Reviews = ({ reviews }: { reviews: ReviewT[] }) => {
+export const Reviews = ({ title, reviews }: { title: string; reviews: ReviewT[] }) => {
   return (
     <Section>
       <Container>
-        <BlockTitle title='Highly Satisfied Clients'>
+        <BlockTitle title={title}>
           <Platforms
             containerClassName='flex justify-center gap-x-5 mt-5'
             platformClassName='bg-[#434343] rounded-[10px] p-[10px] md:p-5'
