@@ -33,7 +33,7 @@ export const OurExpertise = ({
                     alt={title}
                     width={35}
                     height={35}
-                    className='max-h-[35px] max-w-[35px] object-contain'
+                    className='max-h-[35px] min-h-[35px] max-w-[35px] min-w-[35px] object-contain'
                   />
                 )}
                 <p className='text-xl leading-[1.4] font-medium md:text-[26px] xl:text-[32px]'>
