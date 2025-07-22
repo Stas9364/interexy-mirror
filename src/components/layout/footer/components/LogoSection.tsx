@@ -3,7 +3,7 @@ import { Logo } from '@/components/logo/Logo';
 
 export const LogoSection = () => {
   return (
-    <div className='flex w-full flex-col items-center justify-center gap-x-[48px] gap-y-6 border-b border-[#433F4E] py-6 md:flex-row md:items-start xl:w-[240px] xl:flex-col xl:gap-x-0 xl:border-b-0 xl:py-0 2xl:w-[300px]'>
+    <div className='flex w-full flex-col items-center justify-center gap-x-[48px] gap-y-6 border-b border-[#433F4E] py-6 md:flex-row xl:w-[240px] xl:flex-col xl:items-start xl:gap-x-0 xl:border-b-0 xl:py-0 2xl:w-[300px]'>
       <Logo
         href={'/'}
         src={'/logo/footer-logo.webp'}
