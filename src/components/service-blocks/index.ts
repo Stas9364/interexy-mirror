@@ -11,6 +11,9 @@ import { SupportPackages } from './support-packages/SupportPackages';
 import { ServicesExpertise } from './services-expertise/ServicesExpertise';
 import { Statistics } from './statistics/Statistics';
 import { SecondBanner } from './second-banner/SecondBanner';
+import { AppLooksLike } from './app-looks-like/AppLooksLike';
+import { Steps } from './steps/Steps';
+import { Testimonials } from './testimonials/Testimonials';
 
 export {
   HeroService,
@@ -26,4 +29,7 @@ export {
   ServicesExpertise,
   Statistics,
   SecondBanner,
+  AppLooksLike,
+  Steps,
+  Testimonials,
 };
