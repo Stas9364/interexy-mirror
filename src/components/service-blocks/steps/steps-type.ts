@@ -1,5 +1,5 @@
 export type Step = {
-  title: string;
+  title?: string;
   description: string;
   href: string;
   linkTitle: string;

@@ -57,7 +57,6 @@ export default function RealEstateAppDevelopmentServices() {
       <Steps
         title='Why choose Interexy as your real estate partner for app development?'
         steps={steps}
-        sectionClasses='bg-accent pt-[80px] mb-[40px] md:mb-[60px] xl:mb-[80px]'
       />
 
       <FullCycleDevelopment title='See our customers’ evolution' items={roomSnap} />
