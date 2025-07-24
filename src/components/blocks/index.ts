@@ -18,6 +18,8 @@ import { OurMission } from './our-mission/OurMission';
 import { OurPrinciples } from './our-principles/OurPrinciples';
 import { OurExpertise } from './our-expertise/OurExpertise';
 import { HowItWorks } from './how-it-works/HowItWorks';
+import { HowWeWork } from './how-we-work/HowWeWork';
+import { DevelopmentTimeline } from './development-timeline/DevelopmentTimeline';
 
 export {
   HeroImg,
@@ -40,4 +42,6 @@ export {
   OurPrinciples,
   OurExpertise,
   HowItWorks,
+  HowWeWork,
+  DevelopmentTimeline,
 };
