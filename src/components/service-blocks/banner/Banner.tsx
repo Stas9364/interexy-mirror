@@ -37,14 +37,16 @@ export const Banner = ({
             >
               {title}
             </h2>
-            <p
-              className={cn(
-                'mb-3 max-w-[505px] text-lg leading-[1.4] font-normal text-white md:text-xl',
-                subtitleClasses,
-              )}
-            >
-              {subtitle}
-            </p>
+            {subtitle && (
+              <p
+                className={cn(
+                  'mb-3 max-w-[505px] text-lg leading-[1.4] font-normal text-white md:text-xl',
+                  subtitleClasses,
+                )}
+              >
+                {subtitle}
+              </p>
+            )}
             <InterexyLink
               href={btn_link}
               text={btn_title}

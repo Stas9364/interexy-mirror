@@ -14,6 +14,8 @@ import { SecondBanner } from './second-banner/SecondBanner';
 import { AppLooksLike } from './app-looks-like/AppLooksLike';
 import { Steps } from './steps/Steps';
 import { Testimonials } from './testimonials/Testimonials';
+import { CoreFeatures } from './core-features/CoreFeatures';
+import { Process } from './process/Process';
 
 export {
   HeroService,
@@ -32,4 +34,6 @@ export {
   AppLooksLike,
   Steps,
   Testimonials,
+  CoreFeatures,
+  Process,
 };
