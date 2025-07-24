@@ -29,7 +29,9 @@ const Header = () => {
   return (
     <header
       className={`group/header fixed top-0 z-[10000] w-full transition-colors duration-200 hover:bg-white ${
-        scrolled ? 'bg-white' : 'bg-transparent'
+        scrolled
+          ? 'bg-white shadow-[0px_0px_7px_2px_rgba(34,60,80,0.2)]'
+          : 'bg-transparent'
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
