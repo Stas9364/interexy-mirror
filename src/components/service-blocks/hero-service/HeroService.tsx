@@ -11,6 +11,7 @@ export const HeroService = ({
   sectionClassName,
   contentWrapperClasses,
   imgClasses,
+  imgWrapperClasses,
 }: {
   title: string;
   subtitle: string;
@@ -20,6 +21,7 @@ export const HeroService = ({
   sectionClassName?: string;
   contentWrapperClasses?: string;
   imgClasses?: string;
+  imgWrapperClasses?: string;
 }) => {
   return (
     <Section className={cn(`pt-[100px]`, sectionClassName)}>
@@ -37,11 +39,16 @@ export const HeroService = ({
               href={btn_link}
               text={btn_text}
               variant='primary'
-              className='w-[205px]'
+              className='max-w-[250px]'
             />
           </div>
 
-          <div className='relative mx-auto aspect-[700/550] h-auto w-full max-w-[700px] lg:mx-0'>
+          <div
+            className={cn(
+              'relative mx-auto aspect-[700/550] h-auto w-full max-w-[700px] lg:mx-0',
+              imgWrapperClasses,
+            )}
+          >
             <Image
               src={src}
               alt={title}
