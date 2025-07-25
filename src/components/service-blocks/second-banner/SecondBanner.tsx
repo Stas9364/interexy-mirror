@@ -1,5 +1,6 @@
 import { Container, Section } from '@/components/layout';
 import { InterexyLink } from '@/components/link/InterexyLink';
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
 export const SecondBanner = ({
@@ -8,16 +9,23 @@ export const SecondBanner = ({
   description,
   buttonLink,
   buttonText,
+  imgWrapperClasses,
 }: {
   imgSrc: string;
   title: string;
   description: string;
   buttonLink: string;
   buttonText: string;
+  imgWrapperClasses?: string;
 }) => {
   return (
     <Section className='bg-accent relative mb-[40px] pt-[75px] md:mb-[60px] xl:mb-[80px]'>
-      <div className='absolute top-0 right-0 hidden aspect-[510/510] h-auto w-full max-w-[510px] xl:block'>
+      <div
+        className={cn(
+          'absolute top-0 right-0 hidden aspect-[510/510] h-auto w-full max-w-[510px] xl:block',
+          imgWrapperClasses
+        )}
+      >
         <Image src={imgSrc} alt={title} fill />
       </div>
 

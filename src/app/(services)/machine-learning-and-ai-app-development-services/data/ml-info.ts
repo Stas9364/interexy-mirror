@@ -1,5 +1,6 @@
-export type MLAI = { title: string; subtitle: string; bg_color: string };
-export const ml_ai: MLAI[] = [
+import type { Info } from '@/components/service-blocks/info/info-types';
+
+export const mlInfo: Info[] = [
   {
     subtitle:
       'Users can track what food to buy and such an app suggests what things the user should add or remove.',
