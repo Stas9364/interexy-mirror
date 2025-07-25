@@ -6,15 +6,17 @@ export const CoreTechnologies = ({
   title,
   technologies,
   sectionClassName,
+  titleChild,
 }: {
   title: string;
   technologies: Array<{ src: string; alt: string; width: number; height: number }>;
   sectionClassName?: string;
+  titleChild?: React.ReactNode;
 }) => {
   return (
     <Section className={sectionClassName}>
       <Container>
-        <BlockTitle title={title} />
+        <BlockTitle title={title}>{titleChild}</BlockTitle>
 
         <div className='flex w-full flex-wrap justify-center gap-x-5 gap-y-5 xl:justify-between'>
           {technologies.map(({ src, alt, width, height }) => (
