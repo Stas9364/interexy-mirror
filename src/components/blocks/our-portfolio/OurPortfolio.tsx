@@ -6,19 +6,19 @@ import type { CaseT } from './cases-list';
 export const OurPortfolio = ({
   title,
   subtitle,
-  children,
+  titleChildren,
   cases,
 }: {
   title: string;
   subtitle?: string;
-  children?: React.ReactNode;
+  titleChildren?: React.ReactNode;
   cases: CaseT[];
 }) => {
   return (
     <Section>
       <Container>
         <BlockTitle title={title} subtitle={subtitle}>
-          {children}
+          {titleChildren}
         </BlockTitle>
       </Container>
 
