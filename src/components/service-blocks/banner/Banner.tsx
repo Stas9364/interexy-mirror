@@ -14,7 +14,7 @@ export const Banner = ({
 }: {
   img_src: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   btn_title: string;
   btn_link: string;
   contentClasses?: string;

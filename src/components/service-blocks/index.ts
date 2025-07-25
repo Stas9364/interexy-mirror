@@ -16,6 +16,7 @@ import { Steps } from './steps/Steps';
 import { Testimonials } from './testimonials/Testimonials';
 import { CoreFeatures } from './core-features/CoreFeatures';
 import { Process } from './process/Process';
+import { DevelopmentServices } from './development-services/DevelopmentServices';
 
 export {
   HeroService,
@@ -36,4 +37,5 @@ export {
   Testimonials,
   CoreFeatures,
   Process,
+  DevelopmentServices,
 };
