@@ -11,8 +11,6 @@ import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import type { Metadata } from 'next';
 import { cases } from '../blockchain-app-development-services/data';
 import { benefitsTokenization, typesTokenization } from './data';
-import { Container, Section } from '@/components/layout';
-import { BlockTitle } from '@/components/block-title/BlockTitle';
 
 export const metadata: Metadata = {
   title: 'Real Estate Tokenization Development Company - Interexy',
