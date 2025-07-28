@@ -75,7 +75,7 @@ export const OurProcess = ({ title }: { title: string }) => {
               {ourProcesses.slice(1).map(({ color, subtitle, title }, idx) => (
                 <div key={title}>
                   <div
-                    className='relative flex h-[77px] flex-row items-center justify-center rounded-[100px] px-8 text-center '
+                    className='relative flex h-[77px] flex-row items-center justify-center rounded-[100px] px-8 text-center'
                     style={{ backgroundColor: color }}
                   >
                     <div

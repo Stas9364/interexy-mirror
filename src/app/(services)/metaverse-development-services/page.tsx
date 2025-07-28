@@ -4,7 +4,6 @@ import {
   OurExpertise,
   OurPortfolio,
   OurSuccess,
-  
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 import { Banner, HeroService, Reasons, Reviews } from '@/components/service-blocks';

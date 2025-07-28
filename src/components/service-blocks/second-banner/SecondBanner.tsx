@@ -23,7 +23,7 @@ export const SecondBanner = ({
       <div
         className={cn(
           'absolute top-0 right-0 hidden aspect-[510/510] h-auto w-full max-w-[510px] xl:block',
-          imgWrapperClasses
+          imgWrapperClasses,
         )}
       >
         <Image src={imgSrc} alt={title} fill />
