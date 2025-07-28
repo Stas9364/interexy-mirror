@@ -10,7 +10,7 @@ import { Banner, HeroService, OurProcess, Reviews } from '@/components/service-b
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import type { Metadata } from 'next';
 import { cases } from '../blockchain-app-development-services/data';
-import { benefitsTokenization, typesTokenization } from './data';
+import { benefitsTokenization, processTokenization, typesTokenization } from './data';
 
 export const metadata: Metadata = {
   title: 'Real Estate Tokenization Development Company - Interexy',
@@ -88,7 +88,10 @@ export default function RealEstateTokenizationServices() {
         btn_link='/contact-us'
       />
 
-      <OurProcess title='The Real Estate Tokenization Process' />
+      <OurProcess
+        title='The Real Estate Tokenization Process'
+        process={processTokenization}
+      />
 
       <Banner
         img_src='/services/real-estate-tokenization-services/banner-3.png'
