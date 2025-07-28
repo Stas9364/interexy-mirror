@@ -1,6 +1,6 @@
-import type { Info } from '@/components/service-blocks/info/info-types';
+import type { InfoT } from '@/components/service-blocks/info/info-types';
 
-export const mlInfo: Info[] = [
+export const mlInfo: InfoT[] = [
   {
     subtitle:
       'Users can track what food to buy and such an app suggests what things the user should add or remove.',
