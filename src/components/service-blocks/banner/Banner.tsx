@@ -51,7 +51,7 @@ export const Banner = ({
               href={btn_link}
               text={btn_title}
               variant='primary'
-              className='w-full max-w-[374px]'
+              className='max-w-[374px]'
             />
           </div>
         </div>
