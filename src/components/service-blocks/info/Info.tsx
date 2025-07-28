@@ -27,9 +27,11 @@ export const Info = ({
               style={{ backgroundColor: bg_color }}
             >
               <p className='text-xl leading-[1.2] font-bold xl:text-[22px]'>{title}</p>
-              <p className='text-base leading-[1.4] font-light xl:mt-auto xl:text-lg'>
-                {subtitle}
-              </p>
+              {subtitle && (
+                <p className='text-base leading-[1.4] font-light xl:mt-auto xl:text-lg'>
+                  {subtitle}
+                </p>
+              )}
             </div>
           ))}
         </div>

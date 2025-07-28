@@ -1,1 +1,1 @@
-export type InfoT = { title: string; subtitle: string; bg_color: string };
+export type InfoT = { title: string; subtitle?: string; bg_color: string };
