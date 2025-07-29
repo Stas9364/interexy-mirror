@@ -26,7 +26,7 @@ export const CoreTechnologies = ({
               key={alt}
               width={width}
               height={height}
-              className='min-w-[150px] object-contain'
+              className='min-w-[100px] object-contain'
             />
           ))}
         </div>

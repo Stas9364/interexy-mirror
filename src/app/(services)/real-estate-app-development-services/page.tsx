@@ -40,6 +40,7 @@ export default function RealEstateAppDevelopmentServices() {
 
       <AppLooksLike
         title='What the application looks like'
+        imgWrapperClasses='h-[433px] w-[200px] min-w-[200px]'
         forCustomers={[
           '/services/real-estate-app-development-services/for-customer-1.png',
           '/services/real-estate-app-development-services/for-customer-2.png',

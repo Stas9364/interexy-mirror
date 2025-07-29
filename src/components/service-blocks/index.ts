@@ -18,6 +18,8 @@ import { CoreFeatures } from './core-features/CoreFeatures';
 import { Process } from './process/Process';
 import { DevelopmentServices } from './development-services/DevelopmentServices';
 import { OurProcess } from './our-process/OurProcess';
+import { CompaniesLogo } from './companies-logo/CompaniesLogo';
+import { ReviewsSwiper } from './reviews-swiper/ReviewsSwiper';
 
 export {
   HeroService,
@@ -40,4 +42,6 @@ export {
   Process,
   DevelopmentServices,
   OurProcess,
+  CompaniesLogo,
+  ReviewsSwiper,
 };

@@ -5,6 +5,7 @@ import { BlockTitle } from '@/components/block-title/BlockTitle';
 import Image from 'next/image';
 import { useState } from 'react';
 import { MoveRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const tabs = [
   { key: 'forCustomers', label: 'For customer' },
@@ -13,12 +14,16 @@ const tabs = [
 
 export const AppLooksLike = ({
   title,
+  blockTitleChild,
   forCustomers,
   forPartners,
+  imgWrapperClasses,
 }: {
   title: string;
+  blockTitleChild?: React.ReactNode;
   forCustomers: string[];
   forPartners: string[];
+  imgWrapperClasses?: string;
 }) => {
   const [type, setType] = useState<(typeof tabs)[number]['key']>('forCustomers');
 
@@ -27,7 +32,7 @@ export const AppLooksLike = ({
   return (
     <Section>
       <Container>
-        <BlockTitle title={title} />
+        <BlockTitle title={title}>{blockTitleChild}</BlockTitle>
 
         <div>
           <div className='flex justify-center'>
@@ -64,7 +69,10 @@ export const AppLooksLike = ({
             {images.map((item, idx) => (
               <div
                 key={idx}
-                className='relative mx-4 h-[433px] w-[200px] min-w-[200px] shadow-[0_0_15px_rgba(62,52,101,0.08)] xl:mx-[35px]'
+                className={cn(
+                  'relative mx-4 shadow-[0_0_15px_rgba(62,52,101,0.08)] xl:mx-[35px]',
+                  imgWrapperClasses,
+                )}
               >
                 <Image
                   fill
