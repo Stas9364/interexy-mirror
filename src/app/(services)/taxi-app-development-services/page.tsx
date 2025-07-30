@@ -43,7 +43,18 @@ export default function TaxiAppDevelopmentServices() {
         data={coreFeatures}
       />
 
-      <Process />
+      <Process
+        title='How we work: our process'
+        steps={{
+          first: 'Creating an app strategy',
+          second: 'UX/UI design development',
+          third: 'Preparing the app’s architecture',
+          fourth: 'Creating the data and API structure',
+          fifth: 'Making up a UI',
+          sixth: 'Creating a connection of API and UI',
+          seventh: 'Conducting in-depth testing and deployment',
+        }}
+      />
 
       <FullCycleDevelopment
         title='Interexy’s experience in Full-cycle Development One Rover'
