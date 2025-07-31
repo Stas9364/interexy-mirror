@@ -33,7 +33,6 @@ export default function FintechAppDevelopmentServices() {
         btn_link={'/contact-us'}
         btn_text={'Get consultation'}
         src='/services/fintech-app-development-services/hero.png'
-        sectionClassName=''
       />
 
       <Info

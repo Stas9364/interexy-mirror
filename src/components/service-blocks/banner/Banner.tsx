@@ -25,7 +25,7 @@ export const Banner = ({
     <Section>
       <Container className='relative'>
         <div
-          className='flex min-h-[480px] items-center rounded-[80px] bg-cover bg-no-repeat px-10 py-[50px] md:min-h-[588px] md:px-[80px]'
+          className='flex min-h-[480px] items-center rounded-[80px] bg-[#14181e] bg-cover bg-no-repeat px-10 py-[50px] md:min-h-[588px] md:px-[80px]'
           style={{ backgroundImage: `url(${img_src})` }}
         >
           <div className={cn('w-full max-w-[630px]', contentClasses)}>

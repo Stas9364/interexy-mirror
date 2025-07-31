@@ -1,5 +1,3 @@
-'use client';
-
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
 import React from 'react';
