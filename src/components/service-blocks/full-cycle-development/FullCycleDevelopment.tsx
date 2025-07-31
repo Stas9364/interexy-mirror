@@ -28,16 +28,18 @@ export const FullCycleDevelopment = ({
                   {title}
                 </h3>
 
-                <div className='mb-6 flex flex-wrap gap-3'>
-                  {tags.map(tag => (
-                    <span
-                      key={tag}
-                      className='rounded-[10px] border-1 px-6 py-3 text-base leading-[1.4] font-medium lg:text-lg'
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                {tags.length > 0 && (
+                  <div className='mb-6 flex flex-wrap gap-3'>
+                    {tags.map(tag => (
+                      <span
+                        key={tag}
+                        className='rounded-[10px] border-1 px-6 py-3 text-base leading-[1.4] font-medium lg:text-lg'
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 <p className='text-lg leading-[1.4] font-medium'>{description}</p>
 

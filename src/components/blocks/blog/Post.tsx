@@ -43,12 +43,16 @@ export const Post: FC<PostT> = ({ title, author, date, excerpt, image, link, tag
         </p>
 
         <div className='flex items-center justify-between'>
-          <span className='text-lg leading-[1.4] font-bold md:font-normal 2xl:text-2xl'>
-            {author}
-          </span>
-          <span className='text-secondary text-base leading-[1.4] font-normal 2xl:text-lg'>
-            {date}
-          </span>
+          {author && (
+            <span className='text-lg leading-[1.4] font-bold md:font-normal 2xl:text-2xl'>
+              {author}
+            </span>
+          )}
+          {date && (
+            <span className='text-secondary text-base leading-[1.4] font-normal 2xl:text-lg'>
+              {date}
+            </span>
+          )}
         </div>
       </div>
     </article>

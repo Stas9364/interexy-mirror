@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
+  <path d="M19.25 44.0526V37.4026" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M15.9258 40.7275H22.5758" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9941 28.2275C15.7941 28.2275 12.5966 29.4475 10.1541 31.89C5.27156 36.7725 5.27156 44.685 10.1541 49.5675C15.0366 54.45 22.9491 54.45 27.8316 49.5675H33.1666C38.0491 54.45 45.9616 54.45 50.8441 49.5675C55.7266 44.685 55.7266 36.7725 50.8441 31.89C48.4041 29.4475 45.2041 28.2275 42.0041 28.2275H18.9941V28.2275Z" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M43.8384 42.77C44.1834 42.77 44.4634 43.05 44.4609 43.395C44.4609 43.74 44.1809 44.02 43.8359 44.02C43.4909 44.02 43.2109 43.74 43.2109 43.395C43.2134 43.05 43.4934 42.77 43.8384 42.77" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M38.5025 37.4351C38.8475 37.4351 39.1275 37.7151 39.125 38.0601C39.125 38.4051 38.845 38.6851 38.5 38.6851C38.155 38.6851 37.875 38.4051 37.875 38.0601C37.8775 37.7151 38.1575 37.4351 38.5025 37.4351" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M30.5 28.2275V24.4775C30.5 21.0275 33.2975 18.2275 36.75 18.2275V18.2275C40.2025 18.2275 43 15.43 43 11.9775V8.22754" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

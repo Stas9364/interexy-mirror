@@ -2,11 +2,19 @@ import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
 import type { GoodSolution } from './goodSolution';
 
-export const Reasons = ({ title, items }: { title: string; items: GoodSolution[] }) => {
+export const Reasons = ({
+  title,
+  items,
+  blockTitleChild,
+}: {
+  title: string;
+  items: GoodSolution[];
+  blockTitleChild?: React.ReactNode;
+}) => {
   return (
     <Section>
       <Container>
-        <BlockTitle title={title} />
+        <BlockTitle title={title}>{blockTitleChild}</BlockTitle>
 
         <div className='flex grid-cols-2 flex-col gap-x-6 gap-y-[10px] md:grid md:gap-y-10 xl:gap-y-[80px]'>
           {items.map(({ color, subtitle, title }, idx) => (

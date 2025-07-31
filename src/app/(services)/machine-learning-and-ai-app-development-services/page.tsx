@@ -16,10 +16,9 @@ import {
   Reviews,
 } from '@/components/service-blocks';
 
-import { ml_ai } from '@/components/service-blocks/info/ml_ai';
 import { goodSolution } from '@/components/service-blocks/reasons/goodSolution';
 import type { Metadata } from 'next';
-import { blogPosts, cases, coreTechnologies, industries } from './data';
+import { blogPosts, cases, coreTechnologies, industries, mlInfo } from './data';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
 export const metadata: Metadata = {
@@ -67,7 +66,7 @@ export default function MachineLearningAndAi() {
 
       <Info
         title='Machine Learning & Artificial Intelligence Mobile App Development'
-        items={ml_ai}
+        items={mlInfo}
         href='/contact-us'
         btn_text='Discuss your Project'
       />
@@ -105,7 +104,7 @@ export default function MachineLearningAndAi() {
         technologies={coreTechnologies}
       />
 
-      <Reviews reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
     </>
   );
 }

@@ -9,16 +9,20 @@ export const OurExpertise = ({
   subtitle,
   items,
   btn_title = 'Learn more',
+  titleChild,
 }: {
   title: string;
   subtitle?: string;
   items: Principle[];
   btn_title?: string;
+  titleChild?: React.ReactNode;
 }) => {
   return (
     <Section>
       <Container>
-        <BlockTitle title={title} subtitle={subtitle} />
+        <BlockTitle title={title} subtitle={subtitle}>
+          {titleChild}
+        </BlockTitle>
 
         <div className='flex grid-cols-3 flex-col gap-x-[25px] gap-y-[25px] lg:grid lg:gap-y-[35px] xl:gap-x-[30px] xl:gap-y-[40px]'>
           {items.map(({ img, title, description, href }) => (
@@ -33,7 +37,7 @@ export const OurExpertise = ({
                     alt={title}
                     width={35}
                     height={35}
-                    className='max-h-[35px] max-w-[35px] object-contain'
+                    className='max-h-[35px] min-h-[35px] max-w-[35px] min-w-[35px] object-contain'
                   />
                 )}
                 <p className='text-xl leading-[1.4] font-medium md:text-[26px] xl:text-[32px]'>

@@ -7,7 +7,7 @@ import MainNavigation from './components/nav-menu/MainNavigation';
 const DarkHeader = () => {
   return (
     <header
-      className={`group/header fixed top-0 z-[10000] w-full bg-white transition-colors duration-200`}
+      className={`group/header fixed top-0 z-[10000] w-full bg-white shadow-[0px_0px_7px_2px_rgba(34,60,80,0.2)] transition-colors duration-200`}
     >
       <Container>
         <div className='h-header'>

@@ -9,6 +9,17 @@ import { FAQ } from './faq/FAQ';
 import { FullCycleDevelopment } from './full-cycle-development/FullCycleDevelopment';
 import { SupportPackages } from './support-packages/SupportPackages';
 import { ServicesExpertise } from './services-expertise/ServicesExpertise';
+import { Statistics } from './statistics/Statistics';
+import { SecondBanner } from './second-banner/SecondBanner';
+import { AppLooksLike } from './app-looks-like/AppLooksLike';
+import { Steps } from './steps/Steps';
+import { Testimonials } from './testimonials/Testimonials';
+import { CoreFeatures } from './core-features/CoreFeatures';
+import { Process } from './process/Process';
+import { DevelopmentServices } from './development-services/DevelopmentServices';
+import { OurProcess } from './our-process/OurProcess';
+import { CompaniesLogo } from './companies-logo/CompaniesLogo';
+import { ReviewsSwiper } from './reviews-swiper/ReviewsSwiper';
 
 export {
   HeroService,
@@ -22,4 +33,15 @@ export {
   FullCycleDevelopment,
   SupportPackages,
   ServicesExpertise,
+  Statistics,
+  SecondBanner,
+  AppLooksLike,
+  Steps,
+  Testimonials,
+  CoreFeatures,
+  Process,
+  DevelopmentServices,
+  OurProcess,
+  CompaniesLogo,
+  ReviewsSwiper,
 };

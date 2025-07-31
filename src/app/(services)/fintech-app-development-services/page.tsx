@@ -14,7 +14,7 @@ import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { cases } from '../blockchain-app-development-services/data';
-import { chooseInterexy, faq, mustHaveFeatures } from './data';
+import { chooseInterexy, faq, fintechExpertise, mustHaveFeatures } from './data';
 
 export const metadata: Metadata = {
   title: 'FinTech App Development Company | Interexy',
@@ -33,7 +33,6 @@ export default function FintechAppDevelopmentServices() {
         btn_link={'/contact-us'}
         btn_text={'Get consultation'}
         src='/services/fintech-app-development-services/hero.png'
-        sectionClassName=''
       />
 
       <Info
@@ -102,7 +101,10 @@ export default function FintechAppDevelopmentServices() {
         </Container>
       </Section>
 
-      <ServicesExpertise />
+      <ServicesExpertise
+        title='Our FinTech software development expertise'
+        services={fintechExpertise}
+      />
 
       <Banner
         img_src='/services/fintech-app-development-services/banner-1.png'
@@ -167,7 +169,7 @@ export default function FintechAppDevelopmentServices() {
 
       <OurPortfolio title='Find the perfect Project' cases={cases} />
 
-      <Reviews reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
 
       <FAQ title='FAQ' items={faq} />
     </>

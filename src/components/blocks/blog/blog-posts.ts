@@ -4,8 +4,8 @@ export type PostT = {
   excerpt: string;
   link: string;
   tags: { title: string; link: string }[];
-  author: string;
-  date: string;
+  author?: string;
+  date?: string;
 };
 
 export const blogPosts: PostT[] = [

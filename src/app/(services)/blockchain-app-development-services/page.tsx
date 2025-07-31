@@ -223,7 +223,7 @@ export default function BlockchainAppDevelopmentServices() {
 
       <Blog title='AI Business Ideas for Entrepreneurs' blogPosts={blogPosts} />
 
-      <Reviews reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
 
       <FAQ title='Blockchain App Development FAQ' items={faq} />
     </>

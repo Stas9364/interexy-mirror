@@ -4,7 +4,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const linkVariants = cva(
-  'flex items-center justify-center select-none text-center font-medium text-base rounded-md transition-all duration-300 ease-in-out',
+  'inline-flex items-center justify-center select-none text-center font-medium text-base rounded-md transition-all duration-300 ease-in-out',
   {
     variants: {
       variant: {
@@ -14,7 +14,7 @@ const linkVariants = cva(
           'bg-transparent text-primary border border-color-primary hover:text-white hover:bg-btn-hover hover:border-btn-hover',
 
         outline:
-          'bg-transparent text-white border border-color-white hover:bg-btn-hover hover:border-btn-hover ',
+          'bg-white text-accent border border-color-white hover:bg-btn-hover hover:text-white hover:border-btn-hover ',
       },
       size: {
         sm: 'py-3 px-6 text-sm h-[42px]',

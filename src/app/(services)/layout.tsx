@@ -5,7 +5,7 @@ export default function TermsLayout({ children }: { children: React.ReactNode })
   return (
     <>
       <DarkHeader />
-      <main>{children}</main>
+      <main className='services-page'>{children}</main>
       <Footer>
         <ContactForm />
       </Footer>

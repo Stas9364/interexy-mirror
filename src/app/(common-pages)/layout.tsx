@@ -5,7 +5,7 @@ export default function CommonPagesLayout({ children }: { children: React.ReactN
   return (
     <>
       <Header />
-      <main className='werwerwer'>{children}</main>
+      <main className='common-page'>{children}</main>
       <Footer>
         <ContactForm />
       </Footer>

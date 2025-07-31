@@ -107,11 +107,12 @@ export default function Home() {
           title='Software that helps you succeed'
           subtitle='Our portfolio'
           cases={cases}
-        >
-          <p className='text-secondary text-base leading-[1.4] font-medium md:text-lg'>
-            Our user-centered design encourages productivity and boosts revenue.
-          </p>
-        </OurPortfolio>
+          titleChildren={
+            <p className='text-secondary text-base leading-[1.4] font-medium md:text-lg'>
+              Our user-centered design encourages productivity and boosts revenue.
+            </p>
+          }
+        />
 
         <Blog title='Our latest insights' subtitle='Blog' blogPosts={blogPosts} />
       </main>
