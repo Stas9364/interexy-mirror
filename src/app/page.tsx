@@ -14,9 +14,13 @@ import {
   TechStack,
 } from '@/components/blocks';
 import { blogPosts } from '@/components/blocks/blog/blog-posts';
+import { expertise } from '@/components/blocks/expertise/expertise-list';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 import { cases } from '@/components/blocks/our-portfolio/cases-list';
+import { products } from '@/components/blocks/our-products/slide-data';
 import { expertiseByYears } from '@/components/blocks/our-success/expertiseByYears';
+import { reviews } from '@/components/blocks/reviews/reviews-list';
+import { techStack } from '@/components/blocks/tech-stack/tech-stack-list';
 import { ContactForm } from '@/components/contact-form/ContactForm';
 import { Container, Footer, Header } from '@/components/layout';
 import { InterexyLink } from '@/components/link/InterexyLink';
@@ -78,6 +82,7 @@ export default function Home() {
           imageHeight={0}
           spacing={0}
           direction='left'
+          className='mb-[40px] md:mb-[60px] xl:mb-[80px]'
         />
 
         <OurAchievements />
@@ -91,15 +96,27 @@ export default function Home() {
 
         <OurServices />
 
-        <TechStack />
+        <TechStack
+          title='Technologies we use'
+          subtitle='Tech stack'
+          techStack={techStack}
+        />
 
-        <Expertise />
+        <Expertise
+          title='Areas of expertise'
+          subtitle='Expertise'
+          expertise={expertise}
+        />
 
-        <OurProducts />
+        <OurProducts
+          title='Explore our recent mobile app designs'
+          subtitle='Our products'
+          products={products}
+        />
 
         <OurClients title='We are trusted' subtitle='Our clients' />
 
-        <Reviews />
+        <Reviews title='Highly satisfied clients' subtitle='Reviews' reviews={reviews} />
 
         <OurTeam />
 

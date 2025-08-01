@@ -1,14 +1,23 @@
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
 import { ExpertiseAccordion } from './ExpertiseAccordion';
+import type { ExpertiseT } from './expertise-types';
 
-export const Expertise = () => {
+export const Expertise = ({
+  title,
+  subtitle,
+  expertise,
+}: {
+  title: string;
+  subtitle?: string;
+  expertise: ExpertiseT[];
+}) => {
   return (
     <Section>
       <Container>
-        <BlockTitle subtitle='Expertise' title='Areas of expertise' />
+        <BlockTitle subtitle={subtitle} title={title} />
 
-        <ExpertiseAccordion />
+        <ExpertiseAccordion expertise={expertise} />
       </Container>
     </Section>
   );

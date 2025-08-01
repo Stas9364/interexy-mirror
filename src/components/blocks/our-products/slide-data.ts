@@ -1,11 +1,4 @@
-type Slide = {
-  image: string;
-  title: string;
-  description: string;
-  logo: string;
-  logo_alt: string;
-  link: string;
-};
+import type { Slide } from './slide-types';
 
 export const products: Slide[] = [
   {

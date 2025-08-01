@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { techStack } from './tech-stack-list';
+import type { TechStackT } from './tech-stack-types';
 
-export const TechStackTabs = () => {
-  const [activeTab, setActiveTab] = useState('AI');
+export const TechStackTabs = ({ techStack }: { techStack: TechStackT }) => {
+  const [activeTab, setActiveTab] = useState(Object.keys(techStack)[0]);
 
   return (
     <>

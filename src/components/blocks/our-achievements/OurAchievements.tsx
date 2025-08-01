@@ -28,7 +28,7 @@ const images: Image[] = [
 
 export const OurAchievements = () => {
   return (
-    <Section className='pt-[80px]'>
+    <Section>
       <Container>
         <div>
           <BlockTitle title={'Our Achievements'} subtitle={'Awards'} />

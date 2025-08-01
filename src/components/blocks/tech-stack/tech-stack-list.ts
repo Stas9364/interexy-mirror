@@ -1,8 +1,6 @@
-type TechStack = {
-  [key: string]: string[];
-};
+import type { TechStackT } from './tech-stack-types';
 
-export const techStack: TechStack = {
+export const techStack: TechStackT = {
   AI: [
     'Python',
     'R',

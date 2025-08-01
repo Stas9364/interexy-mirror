@@ -4,14 +4,13 @@ import { InterexyLink } from '@/components/link/InterexyLink';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import Link from 'next/link';
-
-import { reviews } from './reviews-list';
+import type { Review } from './review-types';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-const ReviewsSlider = () => {
+const ReviewsSlider = ({ reviews }: { reviews: Review[] }) => {
   return (
     <Swiper
       pagination={{
@@ -73,13 +72,15 @@ const ReviewsSlider = () => {
                 <span className='text-2xl leading-[1.4] font-bold'>Project</span>
                 <p className='text-lg leading-[1.4] font-normal'>{project.description}</p>
               </div>
-              <InterexyLink
-                href={project.link}
-                text='Full case'
-                size='lg'
-                variant='primary'
-                className='max-w-[150px]'
-              />
+              {project.link && (
+                <InterexyLink
+                  href={project.link}
+                  text='Full case'
+                  size='lg'
+                  variant='primary'
+                  className='max-w-[150px]'
+                />
+              )}
             </div>
           </div>
         </SwiperSlide>

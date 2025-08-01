@@ -1,17 +1,23 @@
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
 import { LazyProductsSlider } from './LazyProductsSlider';
+import type { Slide } from './slide-types';
 
-export const OurProducts = () => {
+export const OurProducts = ({
+  title,
+  subtitle,
+  products,
+}: {
+  title: string;
+  subtitle?: string;
+  products: Slide[];
+}) => {
   return (
     <Section>
       <Container>
-        <BlockTitle
-          title='Explore our recent mobile app designs'
-          subtitle='Our product'
-        />
+        <BlockTitle title={title} subtitle={subtitle} />
 
-        <LazyProductsSlider />
+        <LazyProductsSlider products={products} />
       </Container>
     </Section>
   );

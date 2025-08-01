@@ -1,19 +1,19 @@
 'use client';
 
-import { useState } from 'react';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import Link from 'next/link';
-import { MoveUpRight, Plus } from 'lucide-react';
-import { expertise } from './expertise-list';
 import { cn } from '@/lib/utils';
+import { MoveUpRight, Plus } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import type { ExpertiseT } from './expertise-types';
 
-export const ExpertiseAccordion = () => {
+export const ExpertiseAccordion = ({ expertise }: { expertise: ExpertiseT[] }) => {
   const [imgSrc, setImgSrc] = useState(expertise[0].img_src);
 
   return (
@@ -22,6 +22,7 @@ export const ExpertiseAccordion = () => {
         <div className='relative flex aspect-square w-full items-center justify-center lg:sticky lg:top-[100px]'>
           {expertise.map(
             ({ title, img_src }) =>
+              img_src &&
               imgSrc === img_src && (
                 <ExpertiseImg key={title} img_src={img_src} title={title} />
               ),
@@ -49,22 +50,26 @@ export const ExpertiseAccordion = () => {
                 <p className='text-lg leading-[1.4] font-medium text-[#555] xl:text-xl'>
                   {text}
                 </p>
-                <Link
-                  className='text-accent flex items-center gap-x-2 text-base leading-[1.3] font-bold xl:text-lg'
-                  href={link}
-                >
-                  Learn more
-                  <MoveUpRight
-                    size={18}
-                    color='#5067f4'
-                    strokeWidth={2}
-                    className='color-accent min-h-5 min-w-5'
-                  />
-                </Link>
+                {link && (
+                  <Link
+                    className='text-accent flex items-center gap-x-2 text-base leading-[1.3] font-bold xl:text-lg'
+                    href={link}
+                  >
+                    Learn more
+                    <MoveUpRight
+                      size={18}
+                      color='#5067f4'
+                      strokeWidth={2}
+                      className='color-accent min-h-5 min-w-5'
+                    />
+                  </Link>
+                )}
 
-                <div className='relative mt-4 block aspect-square h-[300px] w-full lg:hidden'>
-                  <ExpertiseImg img_src={img_src} title={title} />
-                </div>
+                {img_src && (
+                  <div className='relative mt-4 block aspect-square h-[300px] w-full lg:hidden'>
+                    <ExpertiseImg img_src={img_src} title={title} />
+                  </div>
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}

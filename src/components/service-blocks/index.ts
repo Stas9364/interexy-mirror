@@ -1,3 +1,4 @@
+import { DevelopmentProcess } from '@/components/service-blocks/development-process/DevelopmentProcess';
 import { HeroService } from './hero-service/HeroService';
 import { Banner } from './banner/Banner';
 import { CoreTechnologies } from './core-technologies/CoreTechnologies';
@@ -20,6 +21,8 @@ import { DevelopmentServices } from './development-services/DevelopmentServices'
 import { OurProcess } from './our-process/OurProcess';
 import { CompaniesLogo } from './companies-logo/CompaniesLogo';
 import { ReviewsSwiper } from './reviews-swiper/ReviewsSwiper';
+import { OurPartners } from './our-partners/OurPartners';
+import { Safeguarding } from './safeguarding/Safeguarding';
 
 export {
   HeroService,
@@ -44,4 +47,7 @@ export {
   OurProcess,
   CompaniesLogo,
   ReviewsSwiper,
+  OurPartners,
+  Safeguarding,
+  DevelopmentProcess,
 };

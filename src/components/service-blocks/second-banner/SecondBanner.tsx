@@ -19,7 +19,9 @@ export const SecondBanner = ({
   imgWrapperClasses?: string;
 }) => {
   return (
-    <Section className='bg-accent relative mb-[40px] pt-[75px] md:mb-[60px] xl:mb-[80px]'>
+    <Section
+      className={`bg-accent relative mb-[40px] pt-[75px] md:mb-[60px] xl:mb-[80px]`}
+    >
       <div
         className={cn(
           'absolute top-0 right-0 hidden aspect-[510/510] h-auto w-full max-w-[510px] xl:block',

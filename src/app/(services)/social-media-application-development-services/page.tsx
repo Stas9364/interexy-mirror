@@ -28,6 +28,7 @@ export default function SocialMediaApplicationDevelopmentServices() {
   return (
     <>
       <HeroService
+        sectionClassName='bg-[#6579f4] text-white'
         title={'Social Media Application Development Services'}
         subtitle={
           'Make a social media app that meets the needs of end users and your business.'
@@ -35,6 +36,7 @@ export default function SocialMediaApplicationDevelopmentServices() {
         btn_link={'/contact-us'}
         btn_text={'Get Stared'}
         src='/services/social-media-application-development-services/hero.png'
+        imgClasses='!object-contain'
       />
 
       <Statistics progress={progress} addFacts={addFacts} />

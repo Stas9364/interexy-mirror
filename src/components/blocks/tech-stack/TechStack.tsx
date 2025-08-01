@@ -1,18 +1,23 @@
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
 import { TechStackTabs } from './TechStackTabs';
+import type { TechStackT } from './tech-stack-types';
 
-export const TechStack = () => {
+export const TechStack = ({
+  title,
+  subtitle,
+  techStack,
+}: {
+  title: string;
+  subtitle?: string;
+  techStack: TechStackT;
+}) => {
   return (
     <Section>
       <Container>
-        <BlockTitle
-          subtitle='Tech stack'
-          title='Technologies we use
-'
-        />
+        <BlockTitle subtitle={subtitle} title={title} />
 
-        <TechStackTabs />
+        <TechStackTabs techStack={techStack} />
       </Container>
     </Section>
   );

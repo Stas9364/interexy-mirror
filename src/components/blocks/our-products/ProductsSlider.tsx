@@ -1,6 +1,5 @@
 'use client';
 
-import { products } from './slide-data';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import Image from 'next/image';
 
@@ -11,8 +10,9 @@ import 'swiper/css/navigation';
 import './style.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import type { Slide } from './slide-types';
 
-const ProductsSlider = () => {
+const ProductsSlider = ({ products }: { products: Slide[] }) => {
   return (
     <Swiper
       pagination={{
