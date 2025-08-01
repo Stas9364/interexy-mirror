@@ -1,4 +1,4 @@
-import type { Service } from '@/components/service-blocks/services-expertise/services-expertice-types';
+import type { Service } from '@/components/service-blocks/services-expertise/services-expertise-types';
 
 export const fintechExpertise: Service[] = [
   {

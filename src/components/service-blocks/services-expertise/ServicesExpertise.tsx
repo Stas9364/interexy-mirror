@@ -1,7 +1,7 @@
 import { BlockTitle } from '@/components/block-title/BlockTitle';
 import { Container, Section } from '@/components/layout';
 import Image from 'next/image';
-import type { Service } from './services-expertice-types';
+import type { Service } from './services-expertise-types';
 
 export const ServicesExpertise = ({
   title,

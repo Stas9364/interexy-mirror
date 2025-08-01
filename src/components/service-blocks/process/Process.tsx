@@ -61,17 +61,23 @@ export const Process = ({
             <div className='text'>{steps.fifth}</div>
           </div>
           <div
-            className={`absolute bottom-[20%] left-[30px] flex items-start text-[18px] leading-[21px] font-medium before:absolute before:right-[10%] before:bottom-[100%] before:hidden before:h-[42px] before:w-[122px] before:bg-[url(/services/taxi-app-development-services/process-left.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[64%] lg:right-[-4%] lg:left-auto lg:w-[200px] lg:before:block xl:before:right-[95%]`}
+            className={`absolute bottom-[20%] left-[30px] ${steps.seventh ? 'text-[#6579f4]' : 'text-[#93278c]'} flex items-start text-[18px] leading-[21px] font-medium before:absolute before:right-[10%] before:bottom-[100%] before:hidden before:h-[42px] before:w-[122px] before:bg-[url(/services/taxi-app-development-services/process-left.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[64%] lg:right-[-4%] lg:left-auto lg:w-[200px] lg:before:block xl:before:right-[95%]`}
           >
-            <div className={`mr-[10px] font-bold text-[#6579f4]`}>06.</div>
+            <div
+              className={`mr-[10px] font-bold ${steps.seventh ? 'text-[#6579f4]' : 'text-[#93278c]'}`}
+            >
+              06.
+            </div>
             <div className='text'>{steps.sixth}</div>
           </div>
-          <div
-            className={`absolute bottom-[5%] left-[30px] flex items-start text-[18px] leading-[21px] font-medium text-[#93278c] max-md:w-full lg:right-[-1%] lg:left-auto lg:w-[200px]`}
-          >
-            <div className={`mr-[10px] font-bold`}>07.</div>
-            <div className='text'>{steps.seventh}</div>
-          </div>
+          {steps.seventh && (
+            <div
+              className={`absolute bottom-[5%] left-[30px] flex items-start text-[18px] leading-[21px] font-medium text-[#93278c] max-md:w-full lg:right-[-1%] lg:left-auto lg:w-[200px]`}
+            >
+              <div className={`mr-[10px] font-bold`}>07.</div>
+              <div className='text'>{steps.seventh}</div>
+            </div>
+          )}
         </div>
 
         {stepsDescription && (
@@ -84,7 +90,12 @@ export const Process = ({
                 <h3
                   className={`relative my-[10px] text-xl font-bold`}
                   style={{
-                    color: idx === 0 ? '#22e742' : idx === 6 ? '#93278c' : '#5067f4',
+                    color:
+                      idx === 0
+                        ? '#22e742'
+                        : idx === stepsDescription.length - 1
+                          ? '#93278c'
+                          : '#5067f4',
                   }}
                 >
                   {title}

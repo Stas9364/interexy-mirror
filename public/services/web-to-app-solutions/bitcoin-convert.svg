@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+  <g id="vuesax/linear/bitcoin-convert">
+    <g id="vuesax/linear/bitcoin-convert_2">
+      <g id="bitcoin-convert">
+        <path id="Vector" d="M84.3332 58.5571C84.3332 72.7471 72.8565 84.2238 58.6665 84.2238L62.5165 77.8071" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path id="Vector_2" d="M3.6665 29.2238C3.6665 15.0338 15.1432 3.55713 29.3332 3.55713L25.4832 9.9738" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <g id="Group">
+          <g id="Group_2">
+            <path id="Vector_3" d="M24.2734 47.9238H34.5768C36.8501 47.9238 38.7201 49.9772 38.7201 52.0672C38.7201 54.3405 36.8868 56.2105 34.5768 56.2105H24.2734V47.9238Z" stroke="#292D32" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path id="Vector_4" d="M24.2734 56.21H36.0801C38.6834 56.21 40.8101 58.0433 40.8101 60.3533C40.8101 62.6266 38.6834 64.4967 36.0801 64.4967H24.2734V56.21Z" stroke="#292D32" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path id="Vector_5" d="M30.8735 64.46V68.5666" stroke="#292D32" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path id="Vector_6" d="M30.8735 43.8169V47.9235" stroke="#292D32" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+          <path id="Vector_7" d="M54.4503 56.2104C54.4503 68.7137 44.3303 78.8337 31.827 78.8337C19.3236 78.8337 9.20361 68.7137 9.20361 56.2104C9.20361 43.7071 19.3236 33.5869 31.827 33.5869C32.4136 33.5869 32.9636 33.6237 33.587 33.6603C44.697 34.5037 53.5703 43.377 54.4136 54.487C54.4136 55.037 54.4503 55.5871 54.4503 56.2104Z" stroke="#292D32" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path id="Vector_8" d="M78.8336 31.7903C78.8336 44.2936 68.7136 54.4138 56.2103 54.4138H54.4136C53.5702 43.3038 44.6969 34.4302 33.5869 33.5869V31.7903C33.5869 19.2869 43.7069 9.16699 56.2103 9.16699C68.7136 9.16699 78.8336 19.2869 78.8336 31.7903Z" stroke="#292D32" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
