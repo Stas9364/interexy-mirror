@@ -25,33 +25,52 @@ export const menuData: MenuData[] = [
     submenu: [
       {
         title: 'Mobile App Development',
-        link: '/',
+        link: '',
         items: [
-          { title: 'Convert web app to mobile app', link: '/' },
-          { title: 'Kotlin Multiplatform App Development', link: '/' },
+          { title: 'Convert web app to mobile app', link: '/web-to-app-solutions/' },
+          { title: 'Kotlin Multiplatform App Development', link: '/kotlin/' },
         ],
       },
       {
         title: 'Web Development',
         link: '',
-        items: [{ title: 'ChatGPT Development', link: '/' }],
+        items: [
+          {
+            title: 'ChatGPT Development',
+            link: '/empower-your-product-with-chatgpt-development-solutions/',
+          },
+        ],
       },
       {
         title: 'Blockchain Developments',
-        link: '',
+        link: '/blockchain-app-development-services/',
         items: [
-          { title: 'Web3 Development Company', link: '/' },
-          { title: 'NFT Development', link: '/' },
-          { title: 'NFT Marketplace', link: '/' },
-          { title: 'Tokens & Crypto Wallets', link: '/' },
-          { title: 'Real Estate Tokenization', link: '/' },
-          { title: 'Metaverse Development', link: '/' },
+          {
+            title: 'Web3 Development Company',
+            link: '/custom-web3-development-app-solutions/',
+          },
+          {
+            title: 'NFT Development',
+            link: '/non-fungible-token-nft-development-services/',
+          },
+          { title: 'NFT Marketplace', link: '/nft-marketplace-app-development-service/' },
+          {
+            title: 'Tokens & Crypto Wallets',
+            link: '/cryptocurrency-app-development-services/',
+          },
+          {
+            title: 'Real Estate Tokenization',
+            link: '/smart-contract-development-services/',
+          },
+          { title: 'Metaverse Development', link: '/metaverse-development-services/' },
         ],
       },
       {
         title: 'Staff Augmentation',
-        link: '',
-        items: [{ title: 'Apps Launch', link: '/' }],
+        link: '/staff-augmentation-services-for-software-development/',
+        items: [
+          { title: 'Apps Launch', link: '/mobile-app-launch-and-publishing-services/' },
+        ],
       },
     ],
   },
@@ -63,24 +82,36 @@ export const menuData: MenuData[] = [
     submenu: [
       {
         title: 'Blockchain Development',
-        link: '',
+        link: '/blockchain-app-development-services/',
         items: [
-          { title: 'Web3 Development Company', link: '/' },
-          { title: 'NFT Development', link: '/' },
-          { title: 'NFT Marketplace', link: '/' },
-          { title: 'Tokens & Crypto Wallets', link: '/' },
-          { title: 'Smart Contract', link: '/' },
-          { title: 'Real Estate Tokenization', link: '/' },
-          { title: 'Metaverse Development', link: '/' },
+          {
+            title: 'Web3 Development Company',
+            link: '/custom-web3-development-app-solutions/',
+          },
+          {
+            title: 'NFT Development',
+            link: '/non-fungible-token-nft-development-services/',
+          },
+          { title: 'NFT Marketplace', link: '/nft-marketplace-app-development-service/' },
+          {
+            title: 'Tokens & Crypto Wallets',
+            link: '/cryptocurrency-app-development-services/',
+          },
+          { title: 'Smart Contract', link: '/smart-contract-development-services/' },
+          {
+            title: 'Real Estate Tokenization',
+            link: '/real-estate-tokenization-services/',
+          },
+          { title: 'Metaverse Development', link: '/metaverse-development-services/' },
         ],
       },
       {
         title: 'FullStack',
         link: '',
         items: [
-          { title: 'NFT Marketplace', link: '/' },
-          { title: 'Tokens & Crypto', link: '/' },
-          { title: 'Smart Contract', link: '/' },
+          { title: 'NFT Marketplace', link: '/nft-marketplace-app-development-service/' },
+          { title: 'Tokens & Crypto', link: '/cryptocurrency-app-development-services/' },
+          { title: 'Smart Contract', link: '/smart-contract-development-services/' },
         ],
       },
     ],
@@ -93,44 +124,86 @@ export const menuData: MenuData[] = [
     submenu: [
       {
         title: 'Healthcare App Development',
-        link: '',
+        link: '/healthcare-mobile-app-development-services/',
         items: [
-          { title: 'Cannabis Apps', link: '/' },
-          { title: 'Pharma App Development', link: '/' },
-          { title: 'Fitness App Development', link: '/' },
-          { title: 'Telemedicine App Development', link: '/' },
-          { title: 'Healthcare IT Consulting Services', link: '/' },
+          { title: 'Cannabis Apps', link: '/cannabis-apps/' },
+          {
+            title: 'Pharma App Development',
+            link: '/pharmacy-app-development-services/',
+          },
+          { title: 'Fitness App Development', link: '/fitness-app-development/' },
+          {
+            title: 'Telemedicine App Development',
+            link: '/telemedicine-app-development/',
+          },
+          {
+            title: 'Healthcare IT Consulting Services',
+            link: '/healthcare-it-consulting-services/',
+          },
         ],
       },
       {
         title: 'AI & Data Solutions',
         link: '',
         items: [
-          { title: 'Artificial Intelligence Development', link: '/' },
-          { title: 'AI Consulting Services', link: '/' },
-          { title: 'Machine Learning Solutions', link: '/' },
-          { title: 'Data Science & Analytics', link: '/' },
-          { title: 'Data Engineering', link: '/' },
+          {
+            title: 'Artificial Intelligence Development',
+            link: '/machine-learning-and-ai-app-development-services/',
+          },
+          {
+            title: 'AI Consulting Services',
+            link: '/machine-learning-and-ai-app-development-services/',
+          },
+          {
+            title: 'Machine Learning Solutions',
+            link: '/machine-learning-and-ai-app-development-services/',
+          },
+          {
+            title: 'Data Science & Analytics',
+            link: '/machine-learning-and-ai-app-development-services/',
+          },
+          {
+            title: 'Data Engineering',
+            link: '/machine-learning-and-ai-app-development-services/',
+          },
         ],
       },
       {
         title: 'Blockchain',
-        link: '',
+        link: '/blockchain-app-development-services/',
         items: [
-          { title: 'FinTech App Development', link: '/' },
-          { title: 'Real Estate Tokenization', link: '/' },
+          {
+            title: 'FinTech App Development',
+            link: '/fintech-app-development-services/',
+          },
+          {
+            title: 'Real Estate Tokenization',
+            link: '/real-estate-tokenization-services/',
+          },
         ],
       },
       {
         title: 'Other',
         link: '',
         items: [
-          { title: 'Delivery App Development', link: '/' },
-          { title: 'Social Network Apps', link: '/' },
-          { title: 'Online Education', link: '/' },
-          { title: 'AR/VR Development', link: '/' },
-          { title: 'E-Commerce', link: '/' },
-          { title: 'Internet of Things (IoT) App', link: '/' },
+          {
+            title: 'Delivery App Development',
+            link: '/delivery-app-development-services/',
+          },
+          {
+            title: 'Social Network Apps',
+            link: '/social-media-application-development-services/',
+          },
+          {
+            title: 'Online Education',
+            link: '/educational-mobile-app-development-services/',
+          },
+          {
+            title: 'AR/VR Development',
+            link: '/augmented-and-virtual-reality-ar-vr-app-development-services/',
+          },
+          { title: 'E-Commerce', link: '/marketplace-app-development-services/' },
+          { title: 'Internet of Things (IoT) App', link: '/iot-development-services/' },
         ],
       },
     ],
@@ -148,8 +221,6 @@ export const menuData: MenuData[] = [
           { title: 'About us', link: '/about-us' },
           { title: 'Process', link: '/process' },
           { title: 'Company Values', link: '/' },
-          { title: 'Interexy Careers', link: '/' },
-          { title: 'Reviews', link: '/' },
         ],
       },
     ],
@@ -163,9 +234,8 @@ export const menuData: MenuData[] = [
         title: '',
         link: '',
         items: [
-          { title: 'Case Studies', link: '/' },
-          { title: 'Blog', link: '/' },
-          { title: 'Guide', link: '/' },
+          { title: 'Case Studies', link: 'https://interexy.com/portfolio/' },
+          { title: 'Blog', link: 'https://interexy.com/blog/' },
         ],
       },
     ],

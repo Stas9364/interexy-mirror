@@ -16,7 +16,7 @@ const images: Image[] = [
   },
   {
     src: '/blocks/our-achievements/techviewer-award.webp',
-    link: '',
+    link: 'https://techreviewer.co/companies/interexy-llc',
     alt: 'Techreviewer',
   },
   {

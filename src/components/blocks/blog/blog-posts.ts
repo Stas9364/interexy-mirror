@@ -14,7 +14,7 @@ export const blogPosts: PostT[] = [
     title: 'How to Create Your Own Metaverse Virtual World?',
     excerpt:
       'The term Metaverse has gained popularity during the last few years thanks to the increased use of...',
-    link: '#',
+    link: 'https://interexy.com/how-to-create-your-own-metaverse-virtual-world/',
     tags: [
       { title: 'App development', link: '#' },
       { title: 'Blockchain & Web3', link: '#' },
@@ -27,7 +27,7 @@ export const blogPosts: PostT[] = [
       '/blocks/blog/How-To-Create-A-Pitch-Deck_-Tips-For-A-Good-Pitch-Deck-768x220.png',
     title: 'How To Create A Pitch Deck: Tips For A Good Pitch Deck',
     excerpt: 'How to prepare a proper pitch deck? Check out this post!',
-    link: '#',
+    link: 'https://interexy.com/how-to-prepare-pitch-deck/',
     tags: [
       { title: 'Developing', link: '#' },
       { title: 'Investments', link: '#' },
@@ -41,7 +41,7 @@ export const blogPosts: PostT[] = [
     title: 'What Does a Product Owner Do All Day? Typical Day For a Product Owner',
     excerpt:
       'Today, at every junction, digital products are making an appearance. From retailers, advertisers, and...',
-    link: '#',
+    link: 'https://interexy.com/a-day-in-the-life-of-a-product-owner/',
     tags: [
       { title: 'Life', link: '#' },
       { title: 'Planning', link: '#' },

@@ -22,24 +22,29 @@ export const footerMenuList: MenuData[] = [
         title: 'Blockchain Development',
         link: '/',
         items: [
-          { title: 'NFT', link: '/' },
-          { title: 'Smart Contracts', link: '/' },
-          { title: 'Cryptocurrency', link: '/' },
+          { title: 'NFT', link: '/non-fungible-token-nft-development-services/' },
+          { title: 'Smart Contracts', link: '/smart-contract-development-services/' },
+          { title: 'Cryptocurrency', link: '/cryptocurrency-app-development-services/' },
         ],
       },
       {
         title: 'Artificial Intelligence',
         link: '',
-        items: [{ title: 'Chat-GPT integration', link: '/' }],
+        items: [
+          {
+            title: 'Chat-GPT integration',
+            link: '/empower-your-product-with-chatgpt-development-solutions/',
+          },
+        ],
       },
       {
         title: 'Machine Learning',
-        link: '',
+        link: '/machine-learning-and-ai-app-development-services/',
         items: [],
       },
       {
-        title: 'Business Analysis',
-        link: '',
+        title: 'Staff Augmentation',
+        link: '/staff-augmentation-services-for-software-development/',
         items: [],
       },
     ],
@@ -50,7 +55,7 @@ export const footerMenuList: MenuData[] = [
       {
         title: 'Back-end',
         link: '',
-        items: [{ title: 'NestJS', link: '/' }],
+        items: [{ title: 'NestJS', link: 'https://interexy.com/portfolio/nestjs/' }],
       },
       {
         title: 'Front-end',
@@ -87,32 +92,42 @@ export const footerMenuList: MenuData[] = [
     submenu: [
       {
         title: 'Healthcare',
-        link: '/',
+        link: '/healthcare-mobile-app-development-services/',
         items: [],
       },
       {
         title: 'FinTech',
-        link: '/',
+        link: '/fintech-app-development-services/',
         items: [],
       },
       {
         title: 'Real Estate',
-        link: '/',
+        link: '/real-estate-app-development-services/',
         items: [],
       },
       {
         title: 'Blockchain',
-        link: '/',
+        link: '/blockchain-app-development-services/',
         items: [],
       },
       {
         title: 'Internet of Things',
-        link: '/',
+        link: '/iot-development-services/',
         items: [],
       },
       {
         title: 'EdTech',
-        link: '/',
+        link: '/educational-mobile-app-development-services/',
+        items: [],
+      },
+      {
+        title: 'Social Network Apps',
+        link: '/social-media-application-development-services/',
+        items: [],
+      },
+      {
+        title: 'AR/VR',
+        link: '/augmented-and-virtual-reality-ar-vr-app-development-services/',
         items: [],
       },
     ],
@@ -126,8 +141,8 @@ export const footerMenuList: MenuData[] = [
         items: [
           { title: 'About Us', link: '/about-us' },
           { title: 'Partnership', link: '/referral' },
-          { title: 'Portfolio', link: '/' },
-          { title: 'Blog', link: '/' },
+          { title: 'Portfolio', link: 'https://interexy.com/portfolio/' },
+          { title: 'Blog', link: 'https://interexy.com/blog/' },
         ],
       },
     ],
