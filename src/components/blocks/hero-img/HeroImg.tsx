@@ -29,6 +29,7 @@ export const HeroImg = ({
             alt={'Hero'}
             width={2560}
             height={1118}
+            priority
           />
         )}
 

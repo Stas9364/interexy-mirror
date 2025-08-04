@@ -25,7 +25,7 @@ export const MobileServicesTabs = () => {
       {Object.keys(services).map(title => (
         <AccordionItem key={title} value={title}>
           <AccordionTrigger
-            className={`px-[10px] ${activeTab === title ? 'text-primary' : 'text-[#838383]'} text-base leading-[1.4] font-bold`}
+            className={`px-[10px] ${activeTab === title ? 'text-primary' : 'text-secondary'} text-base leading-[1.4] font-bold`}
           >
             {title}
           </AccordionTrigger>

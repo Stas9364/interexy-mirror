@@ -21,9 +21,9 @@ import {
 import { Blog, OurExpertise } from '@/components/blocks';
 
 export const metadata: Metadata = {
-  title: 'Taxi Application Development Services | Interexy',
+  title: 'NFT Marketplace App Development Company | Interexy',
   description:
-    'Give your business a lift to success. Book our taxi app development services.',
+    'Let’s learn about our NFT marketplace app development services. ✅ Get your stable income with a custom NFT marketplace!',
 };
 
 export default function NftMarketplaceAppDevelopmentServices() {
