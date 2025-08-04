@@ -26,7 +26,12 @@ export const HeroService = ({
   return (
     <Section className={cn(`pt-[100px]`, sectionClassName)}>
       <Container>
-        <div className={cn('flex flex-col-reverse lg:flex-row', contentWrapperClasses)}>
+        <div
+          className={cn(
+            'flex flex-col-reverse items-center lg:flex-row',
+            contentWrapperClasses,
+          )}
+        >
           <div>
             <h1 className='mb-5 max-w-[780px] text-4xl leading-[1.2] font-extrabold md:mb-10 md:text-5xl xl:text-[64px]'>
               {title}
