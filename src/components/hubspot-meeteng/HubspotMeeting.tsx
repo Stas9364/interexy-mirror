@@ -24,16 +24,30 @@ export const HubspotMeeting = () => {
 
     document.body.appendChild(script);
 
+    const iframeContainer = document.querySelector('.meetings-iframe-container');
+    if (!iframeContainer) return;
+
+    const observer = new MutationObserver(() => {
+      const iframe = iframeContainer.querySelector('iframe');
+      if (iframe && !iframe.title) {
+        iframe.title = 'Online appointment for a consultation Interexy';
+      }
+    });
+
+    observer.observe(iframeContainer, { childList: true, subtree: true });
+
     return () => {
       document.body.removeChild(script);
       if (container) {
         container.innerHTML = '';
       }
+
+      observer.disconnect();
     };
   }, []);
 
   return (
-    <div id="hubspot" className='min-h-[760px] max-w-[780px] self-center pt-10'>
+    <div id='hubspot' className='min-h-[800px] max-w-[780px] self-center pt-10'>
       <div
         ref={containerRef}
         className='meetings-iframe-container w-[380px]'
