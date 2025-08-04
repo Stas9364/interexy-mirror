@@ -41,7 +41,6 @@ const PortfolioSlider = ({ cases }: { cases: CaseT[] }) => {
               alt={c.heading}
               fill
               className='object-cover'
-              priority={idx === 0}
               sizes='100vw'
             />
           </div>
