@@ -6,7 +6,7 @@ import { MoveUpRight } from 'lucide-react';
 import { useState } from 'react';
 
 const serviceTabClass = (active: boolean) =>
-  `${active ? 'text-primary border-accent border-b-2' : 'text-[#838383]'} cursor-pointer px-[10px] py-4 text-base leading-[1.4] font-bold lg:py-[30px] lg:text-[22px] 2xl:text-3xl`;
+  `${active ? 'text-primary border-accent border-b-2' : 'text-secondary'} cursor-pointer px-[10px] py-4 text-base leading-[1.4] font-bold lg:py-[30px] lg:text-[22px] 2xl:text-3xl`;
 
 const serviceItemClass =
   'px-[10px] py-4 text-base font-medium lg:py-[30px] lg:text-xl 2xl:text-[28px]';

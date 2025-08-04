@@ -3,7 +3,7 @@ import { nextSteps } from './form-steps';
 export const Steps = () => {
   return (
     <div className='w-full max-w-none pb-[30px] lg:max-w-[570px] lg:pb-0'>
-      <h4 className='mb-10 text-[32px] leading-[1.4] font-medium'>What&apos;s next?</h4>
+      <h3 className='mb-10 text-[32px] leading-[1.4] font-medium'>What&apos;s next?</h3>
 
       <ul className='flex max-w-none flex-col gap-y-10 lg:max-w-[490px]'>
         {nextSteps.map(({ title }, idx) => (

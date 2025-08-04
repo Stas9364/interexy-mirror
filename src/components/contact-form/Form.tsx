@@ -123,6 +123,7 @@ export const Form = () => {
             placeholder='E-mail'
             required={true}
             handleChange={handleChange}
+            autoComplete='email'
           />
 
           <FormInput
@@ -133,13 +134,22 @@ export const Form = () => {
             required={true}
             handleChange={handleChange}
             pattern='\+?[0-9\s\-\(\)]+'
+            autoComplete='tel'
           />
 
+          <label
+            htmlFor='industry'
+            className='text-secondary sr-only text-sm leading-[1.4] font-normal'
+          >
+            Industry
+          </label>
           <select
+            id='industry'
             name='industry'
             className='text-secondary h-[50px] cursor-pointer border-b-1 border-[#9C9C9C] text-lg leading-[1.4] font-normal focus:outline-none'
             onChange={handleChange}
             value={form.industry}
+            autoComplete='off'
           >
             <option value='' disabled>
               Industry
@@ -169,6 +179,7 @@ export const Form = () => {
             className='text-secondary h-[50px] w-full cursor-pointer border-b-1 border-[#9C9C9C] text-lg leading-[1.4] font-normal focus:outline-none'
             onChange={handleChange}
             value={form.budget}
+            autoComplete='off'
           >
             <option value='$50 - 100k'>$50 - 100k</option>
             <option value='$100 - 250k'>$100 - 250k</option>
@@ -177,13 +188,21 @@ export const Form = () => {
           </select>
         </div>
 
+        <label
+          htmlFor='country'
+          className='text-secondary sr-only text-sm leading-[1.4] font-normal'
+        >
+          Country
+        </label>
         <select
+          id='country'
           name='country'
           required
           className='text-secondary h-[50px] w-full cursor-pointer border-b-1 border-[#9C9C9C] text-lg leading-[1.4] font-normal focus:outline-none'
           onChange={handleChange}
           onClick={() => setShowCountry(true)}
           value={form.country}
+          autoComplete='off'
         >
           <option value='' disabled>
             Country

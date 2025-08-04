@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import type { ChangeEvent } from 'react';
+import type { ChangeEvent, HTMLInputAutoCompleteAttribute } from 'react';
 
 export const FormInput = ({
   value,
@@ -10,6 +10,7 @@ export const FormInput = ({
   required,
   name,
   handleChange,
+  autoComplete,
 }: {
   value: string;
   className?: string;
@@ -19,6 +20,7 @@ export const FormInput = ({
   required?: boolean;
   name: string;
   handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  autoComplete?: HTMLInputAutoCompleteAttribute | undefined;
 }) => {
   return (
     <input
@@ -26,6 +28,7 @@ export const FormInput = ({
       type={type}
       name={name}
       placeholder={placeholder}
+      autoComplete={autoComplete}
       required={required}
       pattern={pattern}
       onChange={handleChange}

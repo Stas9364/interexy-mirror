@@ -18,7 +18,7 @@ export const Team = () => {
                 className='h-full max-h-[280px] object-contain'
               />
             </div>
-            <div className='absolute bottom-0 left-0 flex w-full flex-col items-center bg-[#6579F499] px-0 py-3 backdrop-blur-[30px] lg:px-6'>
+            <div className='absolute bottom-0 left-0 flex w-full flex-col items-center bg-[#5067f4] px-0 py-3 backdrop-blur-[30px] lg:px-6'>
               <p className='text-xl font-normal text-white lg:text-2xl'>{name}</p>
               <p className='text-base font-normal text-white lg:text-lg'>{position}</p>
             </div>
