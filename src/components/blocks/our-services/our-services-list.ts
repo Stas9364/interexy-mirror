@@ -7,22 +7,28 @@ type Service = {
 
 export const services: Service = {
   'AI Solutions': [
-    { title: 'Artificial Intelligence Development', link: '/' },
+    {
+      title: 'Artificial Intelligence Development',
+      link: '/machine-learning-and-ai-app-development-services/',
+    },
     { title: 'AI Consulting Services', link: '' },
     { title: 'Generative AI Development', link: '' },
-    { title: 'Machine Learning Solutions', link: '/' },
+    {
+      title: 'Machine Learning Solutions',
+      link: '/machine-learning-and-ai-app-development-services/',
+    },
     { title: 'Natural Language Processing', link: '' },
     { title: 'Neural Network Development', link: '' },
     { title: 'AI-Powered Chatbots', link: '' },
     { title: 'Predictive Analytics', link: '' },
   ],
   'Custom Software Development': [
-    { title: 'Mobile App Development', link: '/' },
-    { title: 'Web App Development', link: '/' },
+    { title: 'Mobile App Development', link: '/full-cycle-app-development-services/' },
+    { title: 'Web App Development', link: '/web-to-app-solutions' },
     { title: 'Cloud App Development', link: '' },
     { title: 'Desktop App Development', link: '' },
-    { title: 'Blockchain Development', link: '/' },
-    { title: 'IoT Software Development', link: '/' },
+    { title: 'Blockchain Development', link: '/blockchain-app-development-services/' },
+    { title: 'IoT Software Development', link: '/iot-development-services/' },
     { title: 'Product Engineering', link: '' },
   ],
   'Cloud solutions': [
@@ -61,7 +67,10 @@ export const services: Service = {
     { title: 'Manual Testing', link: '' },
   ],
   'Staff Augmentation': [
-    { title: 'IT Staff Augmentation', link: '/' },
+    {
+      title: 'IT Staff Augmentation',
+      link: '/staff-augmentation-services-for-software-development/',
+    },
     { title: 'Dedicated Teams', link: '' },
   ],
 };
