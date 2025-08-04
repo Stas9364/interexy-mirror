@@ -30,6 +30,7 @@ export const HeroImg = ({
             width={2560}
             height={1118}
             priority
+            fetchPriority='high'
           />
         )}
 
