@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+  <rect x="19.7812" y="19.2805" width="21.4364" height="21.4364" rx="2" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></rect>
+  <rect x="26.2148" y="25.7134" width="8.57607" height="8.57607" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></rect>
+  <rect x="7.99219" y="7.49072" width="45.0187" height="45.0187" rx="5" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></rect>
+  <path d="M45.5055 24.9981H41.2188" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M45.5055 35.0022H41.2188" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M19.7829 24.9981H15.4961" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M19.7829 35.0022H15.4961" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M25.5005 14.9939V19.2807" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M35.5044 14.9939V19.2807" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M25.5005 40.7195V45.0063" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M35.5044 40.7195V45.0063" stroke="#6579F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

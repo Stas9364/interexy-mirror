@@ -1,0 +1,8 @@
+.git
+.next
+.prettierrc
+.env
+package.json
+dist
+.dist
+/node_modules
