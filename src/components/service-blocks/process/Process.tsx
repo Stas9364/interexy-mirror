@@ -39,32 +39,32 @@ export const Process = ({
           <div
             className={`absolute top-[20%] left-[30px] flex items-start text-[18px] leading-[21px] font-medium before:absolute before:bottom-[107%] before:left-[-15%] before:hidden before:h-[56px] before:w-[131px] before:bg-[url(/services/taxi-app-development-services/process-right.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-auto lg:right-auto lg:bottom-[25%] lg:left-[10%] lg:w-[200px] lg:before:block xl:before:left-[4%]`}
           >
-            <div className={`mr-[10px] font-bold text-[#6579f4]`}>02.</div>
+            <div className={`text-accent mr-[10px] font-bold`}>02.</div>
             <div className='text'>{steps.second}</div>
           </div>
           <div
             className={`absolute top-[35%] left-[30px] flex items-start text-[18px] leading-[21px] font-medium before:absolute before:top-[65%] before:left-[4%] before:hidden before:h-[50px] before:w-[2px] before:bg-[url(/services/taxi-app-development-services/process-line.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[30%] lg:right-auto lg:bottom-auto lg:left-[34%] lg:w-[200px] lg:before:block`}
           >
-            <div className={`mr-[10px] font-bold text-[#6579f4]`}>03.</div>
+            <div className={`text-accent mr-[10px] font-bold`}>03.</div>
             <div className='text'>{steps.third}</div>
           </div>
           <div
             className={`absolute top-[48%] left-[30px] flex items-start text-[18px] leading-[21px] font-medium before:absolute before:bottom-[107%] before:left-[4%] before:hidden before:h-[50px] before:w-[2px] before:bg-[url(/services/taxi-app-development-services/process-line.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-auto lg:right-auto lg:bottom-[21%] lg:left-[50%] lg:w-[200px] lg:before:block`}
           >
-            <div className={`mr-[10px] font-bold text-[#6579f4]`}>04.</div>
+            <div className={`text-accent mr-[10px] font-bold`}>04.</div>
             <div className='text'>{steps.fourth}</div>
           </div>
           <div
             className={`lg-right-auto absolute bottom-[35%] left-[30px] flex items-start text-[18px] leading-[21px] font-medium before:absolute before:top-[135%] before:left-[4%] before:hidden before:h-[50px] before:w-[2px] before:bg-[url(/services/taxi-app-development-services/process-line.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[30%] lg:bottom-auto lg:left-[63%] lg:w-[200px] lg:before:block`}
           >
-            <div className={`mr-[10px] font-bold text-[#6579f4]`}>05.</div>
+            <div className={`text-accent mr-[10px] font-bold`}>05.</div>
             <div className='text'>{steps.fifth}</div>
           </div>
           <div
-            className={`absolute bottom-[20%] left-[30px] ${steps.seventh ? 'text-[#6579f4]' : 'text-[#93278c]'} flex items-start text-[18px] leading-[21px] font-medium before:absolute before:right-[10%] before:bottom-[100%] before:hidden before:h-[42px] before:w-[122px] before:bg-[url(/services/taxi-app-development-services/process-left.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[64%] lg:right-[-4%] lg:left-auto lg:w-[200px] lg:before:block xl:before:right-[95%]`}
+            className={`absolute bottom-[20%] left-[30px] ${steps.seventh ? 'text-accent' : 'text-[#93278c]'} flex items-start text-[18px] leading-[21px] font-medium before:absolute before:right-[10%] before:bottom-[100%] before:hidden before:h-[42px] before:w-[122px] before:bg-[url(/services/taxi-app-development-services/process-left.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[64%] lg:right-[-4%] lg:left-auto lg:w-[200px] lg:before:block xl:before:right-[95%]`}
           >
             <div
-              className={`mr-[10px] font-bold ${steps.seventh ? 'text-[#6579f4]' : 'text-[#93278c]'}`}
+              className={`mr-[10px] font-bold ${steps.seventh ? 'text-accent' : 'text-[#93278c]'}`}
             >
               06.
             </div>
