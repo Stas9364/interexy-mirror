@@ -60,6 +60,7 @@ export const HeroService = ({
               fill
               className={cn('object-cover', imgClasses)}
               sizes='(max-width: 1024px) 100vw, 700px'
+              fetchPriority='high'
               priority
             />
           </div>
