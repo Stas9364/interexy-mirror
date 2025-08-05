@@ -4,8 +4,6 @@ import { PolicySidebar } from '@/components/policy-sidebar/PolicySidebar';
 import type { Metadata } from 'next';
 import { privacyContent } from './privacy-content';
 
-import '../../styles/privacy-style.css';
-
 export const metadata: Metadata = {
   title: 'Privacy Policy: How We Collect, Use &Protect Data | Interexy',
   description:

@@ -4,8 +4,6 @@ import { PolicySidebar } from '@/components/policy-sidebar/PolicySidebar';
 import type { Metadata } from 'next';
 import { termsContent } from './terms-content';
 
-import '../../styles/privacy-style.css';
-
 export const metadata: Metadata = {
   title: 'Terms & Conditions: Usage, Rights & Policies | Interexy',
   description:
