@@ -42,7 +42,7 @@ export const OurLocation = () => {
 
                 <a
                   href={`tel:${phone_number}`}
-                  className='text-accent text-sm leading-[140%] font-medium md:text-xl'
+                  className='text-sm leading-[140%] font-medium text-[#1B39F4] md:text-xl'
                 >
                   {phone_number}
                 </a>

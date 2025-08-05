@@ -3,7 +3,6 @@ import { Container, Section } from '@/components/layout';
 
 import { Form } from './Form';
 import { Steps } from './Steps';
-import './style.css';
 
 export const ContactForm = () => {
   return (

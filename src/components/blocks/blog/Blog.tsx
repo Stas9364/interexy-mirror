@@ -3,7 +3,6 @@ import { Container, Section } from '@/components/layout';
 import { type PostT } from './blog-posts';
 
 import { Post } from './Post';
-import './style.css';
 
 export const Blog = ({
   title,
