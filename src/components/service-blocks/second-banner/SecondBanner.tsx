@@ -24,15 +24,11 @@ export const SecondBanner = ({
     >
       <div
         className={cn(
-          'absolute top-0 right-0 hidden w-[600px] xl:block',
+          'absolute top-0 right-0 hidden aspect-[640/504] min-h-[508px] w-[640px] xl:block',
           imgWrapperClasses,
         )}
-        style={{
-          height: '510px',
-          maxHeight: '100vh',
-        }}
       >
-        <Image src={imgSrc} alt={title} fill sizes='510px' />
+        <Image src={imgSrc} alt={title} fill className='object-center' />
       </div>
 
       <Container>
