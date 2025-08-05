@@ -54,12 +54,14 @@ export const FullCycleDevelopment = ({
                   ))}
                 </div>
 
-                <InterexyLink
-                  className='mt-[30px] max-w-[180px]'
-                  variant={'primary'}
-                  text={btn.title}
-                  href={btn.link}
-                />
+                {btn.link && (
+                  <InterexyLink
+                    className='mt-[30px] max-w-[180px]'
+                    variant={'primary'}
+                    text={btn.title}
+                    href={btn.link}
+                  />
+                )}
               </div>
               <div className='flex lg:w-1/2'>
                 <div className='relative mt-4 block aspect-square h-[500px] w-full lg:h-[711px]'>
