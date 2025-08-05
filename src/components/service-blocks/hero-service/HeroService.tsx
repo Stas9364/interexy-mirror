@@ -12,6 +12,7 @@ export const HeroService = ({
   contentWrapperClasses,
   imgClasses,
   imgWrapperClasses,
+  linkVariant,
 }: {
   title: string;
   subtitle: string;
@@ -22,6 +23,7 @@ export const HeroService = ({
   contentWrapperClasses?: string;
   imgClasses?: string;
   imgWrapperClasses?: string;
+  linkVariant?: 'primary' | 'secondary' | 'outline' | null | undefined;
 }) => {
   return (
     <Section className={cn(`pt-[100px]`, sectionClassName)}>
@@ -43,7 +45,7 @@ export const HeroService = ({
             <InterexyLink
               href={btn_link}
               text={btn_text}
-              variant='primary'
+              variant={linkVariant || 'primary'}
               className='max-w-[250px]'
             />
           </div>

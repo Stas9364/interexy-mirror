@@ -20,7 +20,7 @@ export const SecondBanner = ({
 }) => {
   return (
     <Section
-      className={`bg-accent relative mb-[40px] pt-[75px] md:mb-[60px] xl:mb-[80px]`}
+      className={`relative mb-[40px] bg-[#5067f4] pt-[75px] md:mb-[60px] xl:mb-[80px]`}
     >
       <div
         className={cn(
