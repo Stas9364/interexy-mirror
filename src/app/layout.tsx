@@ -1,9 +1,15 @@
-import { Manrope } from 'next/font/google';
+import localFont from 'next/font/local';
 import './styles/globals.css';
 
-const manrope = Manrope({
+const manrope = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Manrope-VariableFont_wght.ttf',
+      weight: '100 900',
+      style: 'normal',
+    },
+  ],
   variable: '--font-manrope-sans',
-  subsets: ['latin'],
 });
 
 export default function RootLayout({
