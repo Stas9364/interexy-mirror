@@ -12,7 +12,7 @@ export const Reviews = ({ title, reviews }: { title: string; reviews: ReviewT[] 
         <BlockTitle title={title}>
           <Platforms
             containerClassName='flex justify-center gap-x-5 mt-5'
-            platformClassName='bg-[#434343] rounded-[10px] p-[10px] md:p-5'
+            platformClassName='bg-[#434343] rounded-[10px] p-[10px] md:p-5 text-white'
           />
 
           <div className='flex justify-center'>
