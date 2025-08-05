@@ -118,9 +118,9 @@ export const SupportPackages = () => {
                     </ul>
 
                     <div className='w-full'>
-                      <p className='text-center text-2xl leading-[1.4] font-bold'>
+                      <h3 className='text-center text-2xl leading-[1.4] font-bold'>
                         Whats included
-                      </p>
+                      </h3>
                       <ul className='mt-[30px]'>
                         {included.slice(0, 5).map((item, _idx) => (
                           <li
@@ -130,10 +130,12 @@ export const SupportPackages = () => {
                             {item}
                           </li>
                         ))}
+                      </ul>
 
-                        <Accordion type='single' collapsible>
-                          <AccordionItem value='not_included'>
-                            <AccordionContent>
+                      <Accordion type='single' collapsible>
+                        <AccordionItem value='not_included'>
+                          <AccordionContent>
+                            <ul>
                               {included.slice(5).map((item, _idx) => (
                                 <li
                                   key={_idx}
@@ -150,21 +152,21 @@ export const SupportPackages = () => {
                                   {item}
                                 </li>
                               ))}
-                            </AccordionContent>
-                            <AccordionTrigger
-                              className='group flex cursor-pointer items-center justify-center'
-                              style={{ color: idx % 2 === 0 ? '#5067f4' : '#fff' }}
-                            >
-                              <span className='text-lg font-bold group-data-[state=open]:hidden'>
-                                View all
-                              </span>
-                              <span className='hidden text-lg font-bold group-data-[state=open]:inline'>
-                                Hide
-                              </span>
-                            </AccordionTrigger>
-                          </AccordionItem>
-                        </Accordion>
-                      </ul>
+                            </ul>
+                          </AccordionContent>
+                          <AccordionTrigger
+                            className='group flex cursor-pointer items-center justify-center'
+                            style={{ color: idx % 2 === 0 ? '#5067f4' : '#fff' }}
+                          >
+                            <span className='text-lg font-bold group-data-[state=open]:hidden'>
+                              View all
+                            </span>
+                            <span className='hidden text-lg font-bold group-data-[state=open]:inline'>
+                              Hide
+                            </span>
+                          </AccordionTrigger>
+                        </AccordionItem>
+                      </Accordion>
                     </div>
 
                     <Link
@@ -191,9 +193,9 @@ export const SupportPackages = () => {
                         }}
                       >
                         <div className='mb-5 flex flex-col items-center'>
-                          <span className='mb-[14px] text-center text-xl leading-[200%] font-bold'>
+                          <h4 className='mb-[14px] text-center text-xl leading-[200%] font-bold'>
                             Optional:
-                          </span>
+                          </h4>
                           <ul>
                             {options?.optional.map(item => (
                               <li key={item} className='list-disc text-lg font-light'>
@@ -203,9 +205,9 @@ export const SupportPackages = () => {
                           </ul>
                         </div>
                         <div className='flex w-full flex-col'>
-                          <span className='mb-[14px] self-center text-center text-xl leading-[200%] font-bold'>
+                          <h4 className='mb-[14px] self-center text-center text-xl leading-[200%] font-bold'>
                             Whats included:
-                          </span>
+                          </h4>
                           <ul>
                             {options?.included.map(item => (
                               <li
