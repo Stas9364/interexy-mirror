@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { useState, type ChangeEvent, type FormEvent } from 'react';
 import { countryList } from './country-list';
 import { FormInput } from './FormInput';
-import './style.css';
 
 export const Form = () => {
   const [form, setForm] = useState({
