@@ -60,9 +60,9 @@ export default function SwiperComponent({ reviewsData }: { reviewsData: Review[]
               </div>
 
               <div className='mt-auto'>
-                <h4 className='mb-1 text-lg font-semibold text-gray-900'>
+                <h3 className='mb-1 text-lg font-semibold text-gray-900'>
                   {reviewer.name}
-                </h4>
+                </h3>
                 <p className='text-sm text-gray-500'>{reviewer.position}</p>
               </div>
             </div>
@@ -71,7 +71,10 @@ export default function SwiperComponent({ reviewsData }: { reviewsData: Review[]
       </Swiper>
 
       <div className='mt-8 flex items-center justify-center space-x-4'>
-        <button className='group swiper-button-prev-custom border-accent hover:bg-accent flex h-12 w-12 cursor-pointer items-center justify-center rounded-[10px] border bg-white transition-colors duration-300 disabled:cursor-not-allowed disabled:border-gray-200 disabled:opacity-50'>
+        <button
+          aria-label='prev-slide'
+          className='group swiper-button-prev-custom border-accent hover:bg-accent flex h-12 w-12 cursor-pointer items-center justify-center rounded-[10px] border bg-white transition-colors duration-300 disabled:cursor-not-allowed disabled:border-gray-200 disabled:opacity-50'
+        >
           <svg
             width='20'
             height='20'
@@ -88,7 +91,10 @@ export default function SwiperComponent({ reviewsData }: { reviewsData: Review[]
             />
           </svg>
         </button>
-        <button className='group swiper-button-next-custom border-accent hover:bg-accent flex h-12 w-12 cursor-pointer items-center justify-center rounded-[10px] border bg-white transition-colors duration-300 disabled:cursor-not-allowed disabled:border-gray-200 disabled:opacity-50'>
+        <button
+          aria-label='next-slide'
+          className='group swiper-button-next-custom border-accent hover:bg-accent flex h-12 w-12 cursor-pointer items-center justify-center rounded-[10px] border bg-white transition-colors duration-300 disabled:cursor-not-allowed disabled:border-gray-200 disabled:opacity-50'
+        >
           <svg
             width='20'
             height='20'
