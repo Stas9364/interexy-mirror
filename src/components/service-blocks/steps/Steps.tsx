@@ -19,7 +19,7 @@ export const Steps = ({
   return (
     <Section
       className={cn(
-        'bg-accent mb-[40px] pt-[80px] md:mb-[60px] xl:mb-[80px]',
+        'mb-[40px] bg-[#5067f4] pt-[80px] md:mb-[60px] xl:mb-[80px]',
         sectionClasses,
       )}
     >
