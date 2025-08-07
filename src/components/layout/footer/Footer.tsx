@@ -1,3 +1,4 @@
+import { CookiePopup } from '@/components/cookie-popup/CookiePopup';
 import { ScrollToTop } from '@/components/scroll-to-top/ScrollToTop';
 import { Container } from '../container/Container';
 import { CompanyLocations } from './components/CompanyLocations';
@@ -49,6 +50,8 @@ export const Footer = ({ children }: { children?: React.ReactNode }) => {
 
         <ScrollToTop />
       </footer>
+
+      <CookiePopup />
     </>
   );
 };
