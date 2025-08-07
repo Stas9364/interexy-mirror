@@ -1,5 +1,7 @@
 import localFont from 'next/font/local';
 import './styles/globals.css';
+import Script from 'next/script';
+import { Analytics } from '@/components/analytics/Analytics';
 
 const manrope = localFont({
   src: [
@@ -20,6 +22,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${manrope.variable} antialiased`}>
+        <Analytics />
+
         <div className='flex min-h-screen flex-col'>{children}</div>
       </body>
     </html>
