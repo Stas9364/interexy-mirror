@@ -61,7 +61,7 @@ export const Process = ({
             <div className='text'>{steps.fifth}</div>
           </div>
           <div
-            className={`absolute bottom-[20%] left-[30px] ${steps.seventh ? 'text-accent' : 'text-[#93278c]'} flex items-start text-[18px] leading-[21px] font-medium before:absolute before:right-[10%] before:bottom-[100%] before:hidden before:h-[42px] before:w-[122px] before:bg-[url(/services/taxi-app-development-services/process-left.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[64%] lg:right-[-4%] lg:left-auto lg:w-[200px] lg:before:block xl:before:right-[95%]`}
+            className={`absolute bottom-[20%] left-[30px] ${steps.seventh ? 'text-accent' : 'text-[#93278c]'} flex items-start text-[18px] leading-[21px] font-medium before:absolute before:right-[10%] before:bottom-[100%] before:hidden before:h-[42px] before:w-[122px] before:bg-[url(/services/taxi-app-development-services/process-left.png)] before:bg-no-repeat before:content-[""] max-md:w-full lg:top-[64%] lg:right-0 lg:left-auto lg:w-[200px] lg:before:block xl:before:right-[95%]`}
           >
             <div
               className={`mr-[10px] font-bold ${steps.seventh ? 'text-accent' : 'text-[#93278c]'}`}
