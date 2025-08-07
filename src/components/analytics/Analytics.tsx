@@ -8,7 +8,6 @@ export function Analytics() {
       {/* Google Tag Manager */}
       <Script
         id='google-tag-manager'
-        strategy='beforeInteractive'
         dangerouslySetInnerHTML={{
           __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -45,7 +44,7 @@ export function Analytics() {
               return vars;
             };
 
-            const crispKeys: [string, string][] = [];
+            const crispKeys: Array<[string, string]> = [];
             const utmParams = [
               'utm_source',
               'utm_medium',
@@ -60,8 +59,8 @@ export function Analytics() {
               }
             });
 
-            if (crispKeys.length > 0 && (window as any).$crisp) {
-              (window as any).$crisp.push(['set', 'session:data', [crispKeys]]);
+            if (crispKeys.length > 0 && window.$crisp) {
+              window.$crisp.push(['set', 'session:data', crispKeys]);
             }
           }
         }}
