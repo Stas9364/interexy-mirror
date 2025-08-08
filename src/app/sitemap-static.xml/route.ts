@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next';
+import { NextResponse } from 'next/server';
 
 const staticPages = [
   'about-us',
@@ -41,20 +41,51 @@ const staticPages = [
   'web-to-app-solutions',
 ];
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const homePage = {
-    url: 'https://interexy.com/',
-    lastModified: new Date(),
-    changeFrequency: 'yearly' as const,
-    priority: 1,
-  };
+export async function GET() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
-  const routes = staticPages.map(page => ({
-    url: `https://interexy.com/${page}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
+  try {
+    const currentDate = new Date().toISOString();
 
-  return [homePage, ...routes];
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${baseUrl}/</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+${staticPages
+  .map(
+    page => `  <url>
+    <loc>${baseUrl}/${page}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`,
+  )
+  .join('\n')}
+</urlset>`;
+
+    return new NextResponse(sitemap, {
+      headers: {
+        'Content-Type': 'application/xml; charset=utf-8',
+        'Cache-Control':
+          'public, max-age=86400, max-age=172800, stale-while-revalidate=86400',
+      },
+    });
+  } catch (error) {
+    console.error('Error generating static sitemap:', error);
+
+    const emptySitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+</urlset>`;
+
+    return new NextResponse(emptySitemap, {
+      headers: {
+        'Content-Type': 'application/xml; charset=utf-8',
+      },
+      status: 500,
+    });
+  }
 }
