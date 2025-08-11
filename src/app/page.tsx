@@ -31,6 +31,36 @@ export const metadata: Metadata = {
   title: 'Interexy: Software Development Company',
   description:
     'Transform your business with Interexy, a top custom software development company. Contact us today to leverage our expert app development services',
+  openGraph: {
+    type: 'website',
+    title: 'Interexy: Software Development Company',
+    description:
+      'Transform your business with Interexy, a top custom software development company. Contact us today to leverage our expert app development services',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Interexy Hero Image',
+      },
+    ],
+    siteName: 'Interexy | Mobile applications',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Interexy: Software Development Company',
+    description:
+      'Transform your business with Interexy, a top custom software development company. Contact us today to leverage our expert app development services',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Interexy Hero Image',
+      },
+    ],
+  },
 };
 
 export default function Home() {
