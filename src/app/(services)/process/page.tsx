@@ -8,6 +8,43 @@ export const metadata: Metadata = {
   title: 'Our Process | Interexy',
   description:
     'Read about Interexy’s workflow. ✅ Software Specifications & Estimation Presentation, Development, QA testing, Support & Launch (App Store & Google Play)',
+  authors: [
+    {
+      name: 'Stan Sakharchuk',
+      url: '',
+    },
+  ],
+  openGraph: {
+    type: 'article',
+    title: 'Our Process | Interexy',
+    description:
+      'Read about Interexy’s workflow. ✅ Software Specifications & Estimation Presentation, Development, QA testing, Support & Launch (App Store & Google Play)',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Our Process Image',
+      },
+    ],
+    siteName: 'Our Process | Interexy',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Contact Us | Interexy',
+    description:
+      'Read about Interexy’s workflow. ✅ Software Specifications & Estimation Presentation, Development, QA testing, Support & Launch (App Store & Google Play)',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Our Process Image',
+      },
+    ],
+  },
 };
 
 export default function Process() {

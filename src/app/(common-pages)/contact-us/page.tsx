@@ -18,6 +18,43 @@ export const metadata: Metadata = {
   title: 'Contact us | Interexy',
   description:
     'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
+  authors: [
+    {
+      name: 'Stan Sakharchuk',
+      url: '',
+    },
+  ],
+  openGraph: {
+    type: 'article',
+    title: 'Contact Us | Interexy',
+    description:
+      'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/contact-us/contact-us-bg.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Contact Us Image',
+      },
+    ],
+    siteName: 'Contact Us | Interexy',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Contact Us | Interexy',
+    description:
+      'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/contact-us/contact-us-bg.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Contact Us Image',
+      },
+    ],
+  },
 };
 
 export default function ContactUs() {

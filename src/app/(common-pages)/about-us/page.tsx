@@ -23,6 +23,43 @@ export const metadata: Metadata = {
   title: 'About us | Interexy',
   description:
     'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
+  authors: [
+    {
+      name: 'Stan Sakharchuk',
+      url: '',
+    },
+  ],
+  openGraph: {
+    type: 'article',
+    title: 'About us | Interexy',
+    description:
+      'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Interexy Hero Image',
+      },
+    ],
+    siteName: 'About us | Interexy',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About us | Interexy',
+    description:
+      'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Contact Us Image',
+      },
+    ],
+  },
 };
 
 export default function AboutUs() {

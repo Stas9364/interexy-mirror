@@ -16,6 +16,43 @@ export const metadata: Metadata = {
   title: 'Our Referral Program | Interexy',
   description:
     'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
+  authors: [
+    {
+      name: 'Stan Sakharchuk',
+      url: '',
+    },
+  ],
+  openGraph: {
+    type: 'article',
+    title: 'Our Referral Program | Interexy',
+    description:
+      'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/referral/referral-bg.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Our Referral Program Image',
+      },
+    ],
+    siteName: 'Our Referral Program | Interexy',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Our Referral Program | Interexy',
+    description:
+      'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/referral/referral-bg.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Our Referral Program Image',
+      },
+    ],
+  },
 };
 
 export default function Referral() {
