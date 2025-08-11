@@ -8,6 +8,43 @@ export const metadata: Metadata = {
   title: 'Interexy Cookie Policy: How We Manage Cookies | Interexy',
   description:
     "Discover Interexy's Privacy Notice: learn how we collect, use, store, and shares your personal information when you interact with our services",
+  authors: [
+    {
+      name: 'Stan Sakharchuk',
+      url: '',
+    },
+  ],
+  openGraph: {
+    type: 'article',
+    title: 'Interexy Cookie Policy: How We Manage Cookies | Interexy',
+    description:
+      "Discover Interexy's Privacy Notice: learn how we collect, use, store, and shares your personal information when you interact with our services",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/cookie-policy`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/logo/logo-purple.svg`,
+        width: 1200,
+        height: 630,
+        alt: 'Logo Image',
+      },
+    ],
+    siteName: 'Interexy Cookie Policy: How We Manage Cookies | Interexy',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Interexy Cookie Policy: How We Manage Cookies | Interexy',
+    description:
+      "Discover Interexy's Privacy Notice: learn how we collect, use, store, and shares your personal information when you interact with our services",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/logo/logo-purple.svg`,
+        width: 1200,
+        height: 630,
+        alt: 'Logo Image',
+      },
+    ],
+  },
 };
 export default function CookiePolicy() {
   return (
