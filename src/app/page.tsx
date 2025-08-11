@@ -46,6 +46,7 @@ export const metadata: Metadata = {
       },
     ],
     siteName: 'Interexy | Mobile applications',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary',
