@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   title: 'Interexy: Software Development Company',
   description:
     'Transform your business with Interexy, a top custom software development company. Contact us today to leverage our expert app development services',
+  creator: '@StanSakharchuk',
   openGraph: {
     type: 'website',
     title: 'Interexy: Software Development Company',
@@ -61,6 +62,7 @@ export const metadata: Metadata = {
         alt: 'Interexy Hero Image',
       },
     ],
+    creator: '@StanSakharchuk',
   },
 };
 
