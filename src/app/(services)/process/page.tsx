@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Our Process | Interexy',
     description:
       'Read about Interexy’s workflow. ✅ Software Specifications & Estimation Presentation, Development, QA testing, Support & Launch (App Store & Google Play)',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/process`,
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Contact Us | Interexy',
+    title: 'Our Process | Interexy',
     description:
       'Read about Interexy’s workflow. ✅ Software Specifications & Estimation Presentation, Development, QA testing, Support & Launch (App Store & Google Play)',
     images: [

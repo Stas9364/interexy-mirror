@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'About us | Interexy',
     description:
       'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/about-us`,
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
         width: 1200,
         height: 630,
-        alt: 'Contact Us Image',
+        alt: 'About us Image',
       },
     ],
   },
