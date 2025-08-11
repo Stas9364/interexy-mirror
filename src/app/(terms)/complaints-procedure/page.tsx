@@ -8,6 +8,43 @@ export const metadata: Metadata = {
   title: "Interexy's Complaints Procedure | Interexy",
   description:
     'Learn how to submit a complaint with Interexy, our escalation process, and how we ensure confidentiality and fair resolution of issues',
+  authors: [
+    {
+      name: 'Stan Sakharchuk',
+      url: '',
+    },
+  ],
+  openGraph: {
+    type: 'article',
+    title: "Interexy's Complaints Procedure | Interexy",
+    description:
+      'Learn how to submit a complaint with Interexy, our escalation process, and how we ensure confidentiality and fair resolution of issues',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/complaints-procedure`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/logo/logo-purple.svg`,
+        width: 1200,
+        height: 630,
+        alt: 'Logo Image',
+      },
+    ],
+    siteName: "Interexy's Complaints Procedure | Interexy",
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary',
+    title: "Interexy's Complaints Procedure | Interexy",
+    description:
+      'Learn how to submit a complaint with Interexy, our escalation process, and how we ensure confidentiality and fair resolution of issues',
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/logo/logo-purple.svg`,
+        width: 1200,
+        height: 630,
+        alt: 'Logo Image',
+      },
+    ],
+  },
 };
 
 export default function ComplaintsProcedure() {
