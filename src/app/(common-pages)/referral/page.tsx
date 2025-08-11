@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Our Referral Program | Interexy',
     description:
       'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/referral`,
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/referral/referral-bg.webp`,

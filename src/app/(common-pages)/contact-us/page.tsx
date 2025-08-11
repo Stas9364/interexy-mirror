@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: 'Contact Us | Interexy',
     description:
       'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/contact-us`,
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/contact-us/contact-us-bg.webp`,
