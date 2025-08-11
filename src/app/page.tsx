@@ -67,7 +67,6 @@ export const metadata: Metadata = {
         alt: 'Interexy Hero Image',
       },
     ],
-    creator: '@StanSakharchuk',
   },
 };
 
