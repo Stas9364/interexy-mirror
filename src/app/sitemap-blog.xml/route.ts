@@ -71,6 +71,7 @@ ${posts
     return new NextResponse(emptySitemap, {
       headers: {
         'Content-Type': 'application/xml; charset=utf-8',
+        'Cache-Control': 'no-store',
       },
       status: 500,
     });
