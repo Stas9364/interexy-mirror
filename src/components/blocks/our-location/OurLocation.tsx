@@ -41,7 +41,7 @@ export const OurLocation = () => {
                 </span>
 
                 <a
-                  href={`tel:${phone_number}`}
+                  href={`tel:${phone_number.replace(/ /g, '')}`}
                   className='text-sm leading-[140%] font-medium text-[#1B39F4] md:text-xl'
                 >
                   {phone_number}

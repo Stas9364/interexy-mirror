@@ -20,7 +20,7 @@ export const pagesMetadata = {
     title: 'Cannabis App Development Company | Interexy',
     description:
       'We provide custom cannabis mobile app development services, including medical marijuana delivery app development for the cannabis industry',
-    imagePath: '/services/cannabis-apps/ai-hero.webp',
+    imagePath: '/services/cannabis-apps/hero.png',
     imageAlt: 'Cannabis App Image',
   },
 
@@ -125,8 +125,7 @@ export const pagesMetadata = {
     title: 'Machine Learning and AI App Development Company | Interexy',
     description:
       'We provide ML and AI app development service and can help in different industry sectors. ✅ Let’s build competitive businesses in partnership',
-    imagePath:
-      '/services/machine-learning-and-ai-app-development-services/ai-hero-img.png',
+    imagePath: '/services/machine-learning-and-ai/ai-hero-img.png',
     imageAlt: 'Machine Learning and AI App Image',
   },
 

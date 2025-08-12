@@ -19,7 +19,7 @@ export const CompanyLocations = () => {
               <p>{address.street}</p>
               <p>{address.city}</p>
             </address>
-            <a href={`tel:${phone}`}>{phone}</a>
+            <a href={`tel:${phone.replace(/ /g, '')}`}>{phone}</a>
           </div>
         );
       })}
