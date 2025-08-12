@@ -84,10 +84,7 @@ export default function Home() {
 
             <Container className='relative z-2'>
               <div className='flex w-full flex-col items-start md:items-end'>
-                <h1
-                  role='heading'
-                  className='mb-4 text-left text-[28px] leading-[130%] font-extrabold text-white md:mb-6 md:max-w-[597px] md:text-right md:text-5xl lg:text-6xl'
-                >
+                <h1 className='mb-4 text-left text-[28px] leading-[130%] font-extrabold text-white md:mb-6 md:max-w-[597px] md:text-right md:text-5xl lg:text-6xl'>
                   Build AI-Powered Apps Faster — with Top-Rated Teams in 10 Days
                 </h1>
 
