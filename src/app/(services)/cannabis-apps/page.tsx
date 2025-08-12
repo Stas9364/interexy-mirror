@@ -7,21 +7,25 @@ import {
   Process,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   cannabisCompetitive,
   cannabisExperience,
   cannabisInterexy,
   cannabisServices,
 } from './data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import { cases } from '../blockchain-app-development-services/data';
 
-export const metadata: Metadata = {
-  title: 'Cannabis App Development Company | Interexy',
-  description:
-    'We provide custom cannabis mobile app development services, including medical marijuana delivery app development for the cannabis industry',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'cannabis-apps';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function CannabisApps() {
   return (

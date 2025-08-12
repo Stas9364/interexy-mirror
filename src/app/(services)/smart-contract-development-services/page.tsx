@@ -13,20 +13,24 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data/cases';
 import {
   smartContractBenefits,
   smartContractExpertise,
   smartContractServices,
 } from './data';
-import { cases } from '../blockchain-app-development-services/data/cases';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Smart Contract Development Services | Interexy',
-  description:
-    'Setting standards in the industry, we develop craft fail-proof smart contracts for businesses across sectors and help startups fill their expertise gaps',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'smart-contract-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function SmartContractDevelopmentServices() {
   return (

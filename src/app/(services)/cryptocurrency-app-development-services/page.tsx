@@ -8,7 +8,8 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   cryptocurrencyFeatures,
   cryptocurrencyInterexy,
@@ -16,14 +17,17 @@ import {
   cryptocurrencyServices,
   cryptocurrencyWorks,
 } from './data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import { cases } from '../blockchain-app-development-services/data';
 
-export const metadata: Metadata = {
-  title: 'Cryptocurrency App Development Company | Interexy',
-  description:
-    'Let’s build a cryptocurrency app or wallet and boost your business growth. ✅ Enter this booming industry with our cryptocurrency development services!',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'cryptocurrency-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function CryptocurrencyAppDevelopmentServices() {
   return (

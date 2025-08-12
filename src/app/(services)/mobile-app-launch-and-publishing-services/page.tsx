@@ -9,16 +9,20 @@ import {
   Reviews,
   SupportPackages,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
-import { mobileCompany, mobileProcess } from './data';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { cases } from '../blockchain-app-development-services/data';
+import { mobileCompany, mobileProcess } from './data';
 
-export const metadata: Metadata = {
-  title: 'Mobile App Launch and Publishing Services | Interexy',
-  description:
-    'Let’s set your app up for growth with well planned and executed mobile app launch services.',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'mobile-app-launch-and-publishing-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function MobileAppLaunchAndPublishingServices() {
   return (

@@ -8,19 +8,23 @@ import {
   Reviews,
   Steps,
 } from '@/components/service-blocks';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { MoveRight } from 'lucide-react';
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { cases } from '../blockchain-app-development-services/data';
 import { advantages, ensure, mobileAppSteps, oneRover } from './data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Delivery App Development Services | Interexy',
-  description:
-    'Become a hero in the delivery industry with a mobile app optimized for speed, choice, and personalized customer experience.',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'delivery-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function DeliveryAppDevelopmentServices() {
   return (

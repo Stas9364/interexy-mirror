@@ -22,7 +22,6 @@ import {
   Safeguarding,
   SecondBanner,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
 import {
   healthcareCompany,
   healthcareDesigns,
@@ -34,11 +33,16 @@ import {
   healthcareSecurity,
 } from './data';
 
-export const metadata: Metadata = {
-  title: 'Healthcare App Development Company | Interexy',
-  description:
-    'Explore our healthcare app development services now! Hire Interexy’s healthcare app developers to build HIPAA-compliant, innovative solutions',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'healthcare-mobile-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function HealthcareMobileAppDevelopmentServices() {
   return (

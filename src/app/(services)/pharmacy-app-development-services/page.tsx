@@ -1,3 +1,4 @@
+import { Blog, OurExpertise } from '@/components/blocks';
 import {
   Banner,
   FAQ,
@@ -7,7 +8,7 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import {
   pharmacyBenefits,
   pharmacyBlog,
@@ -18,14 +19,17 @@ import {
   pharmacyInterexy,
   pharmacySolutions,
 } from './data';
-import { Blog, OurExpertise } from '@/components/blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Pharmacy App Development Services | Interexy',
-  description:
-    'We are a leading medical development company, offering pharmacy development services ✅ Explore our expertise in following healthcare app regulations',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'pharmacy-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function PharmacyAppDevelopmentServices() {
   return (

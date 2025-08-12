@@ -6,15 +6,19 @@ import {
   FullCycleDevelopment,
   HeroService,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
 import { cases } from '../blockchain-app-development-services/data';
 import { augmentedVr, benefits, coreTechs, industries, vrDev } from './data';
 
-export const metadata: Metadata = {
-  title: 'Virtual & Augmented Reality (AR/VR) App Development Company | Interexy',
-  description:
-    'We provide augmented and virtual reality (AR/VR) software development service. ✅ So let’s build custom competitive product in partnership',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'augmented-and-virtual-reality-ar-vr-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function AugmentedAndVirtualRealityArVrAppDevelopmentServices() {
   return (

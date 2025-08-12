@@ -7,15 +7,19 @@ import {
   Steps,
   Testimonials,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
 import { appWeDevelop, realEstateCategories, roomSnap } from './data';
 import { steps } from './data/steps';
 
-export const metadata: Metadata = {
-  title: 'Real Estate App Development Services | Interexy',
-  description:
-    'We’re at the cutting edge of mainstream Airbnb-like app development as well as in innovative custom software design.',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'real-estate-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function RealEstateAppDevelopmentServices() {
   return (

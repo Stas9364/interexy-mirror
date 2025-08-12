@@ -6,14 +6,18 @@ import {
   Process,
   Testimonials,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
 import { coreFeatures, oneRoverTaxi } from './data';
 
-export const metadata: Metadata = {
-  title: 'Taxi Application Development Services | Interexy',
-  description:
-    'Give your business a lift to success. Book our taxi app development services.',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'taxi-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function TaxiAppDevelopmentServices() {
   return (

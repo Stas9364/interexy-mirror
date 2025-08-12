@@ -1,3 +1,5 @@
+import { Blog, InfiniteImageScroll, OurExpertise } from '@/components/blocks';
+import { images } from '@/components/blocks/infinite-image-scroll/images';
 import {
   Banner,
   FAQ,
@@ -8,7 +10,7 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import {
   fitnessApp,
   fitnessAppDev,
@@ -21,15 +23,17 @@ import {
   fitnessServices,
   fitnessStepsDescription,
 } from './data';
-import { Blog, InfiniteImageScroll, OurExpertise } from '@/components/blocks';
-import { images } from '@/components/blocks/infinite-image-scroll/images';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Fitness App Development Company | Interexy',
-  description:
-    'Our company provides fitness app development services. ✅ Hire top-notch fitness application developers to reach your business goals faster.',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'fitness-app-development';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function FitnessAppDevelopment() {
   return (

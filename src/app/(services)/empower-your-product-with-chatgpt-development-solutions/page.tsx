@@ -13,7 +13,8 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   chatgptBenefits,
   chatgptInterexy,
@@ -22,14 +23,17 @@ import {
   chatgptServices,
   chatgptSolutions,
 } from './data';
-import { cases } from '../blockchain-app-development-services/data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Empower your Product with ChatGPT Development Solutions | Interexy',
-  description:
-    'We offer throught-out Internet of Things app development services, covering custom needs, business requirements and integrations to help you reach the next level of your business',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'empower-your-product-with-chatgpt-development-solutions';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function EmpowerYourProductWithChatGPTDevelopmentSolutions() {
   return (

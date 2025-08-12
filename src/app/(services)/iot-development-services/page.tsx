@@ -13,16 +13,20 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
-import { acrossIndustries, engagementModels, IoTDevelopmentServices } from './data';
-import { cases } from '../blockchain-app-development-services/data';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
+import { acrossIndustries, engagementModels, IoTDevelopmentServices } from './data';
 
-export const metadata: Metadata = {
-  title: 'Internet Of Things (IOT) App Development Services | Interexy',
-  description:
-    '✅ Benefit from our in-depth expertise and highly skilled developers by hiring us as your trusted Internet Of Things (IoT) app development company',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'iot-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function IotDevelopmentServices() {
   return (
