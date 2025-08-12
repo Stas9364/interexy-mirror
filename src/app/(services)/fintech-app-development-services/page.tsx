@@ -11,16 +11,20 @@ import {
   ServicesExpertise,
 } from '@/components/service-blocks';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import { cases } from '../blockchain-app-development-services/data';
 import { chooseInterexy, faq, fintechExpertise, mustHaveFeatures } from './data';
 
-export const metadata: Metadata = {
-  title: 'FinTech App Development Company | Interexy',
-  description:
-    "Elevate your business with Interexy's fintech app development services. Craft FinTech mobile solutions with us to thrive in a flourishing market",
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'fintech-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function FintechAppDevelopmentServices() {
   return (

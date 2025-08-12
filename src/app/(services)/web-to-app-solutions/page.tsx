@@ -9,7 +9,7 @@ import {
   Steps,
   Testimonials,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   webAdvantages,
   webChoose,
@@ -19,13 +19,17 @@ import {
   webSolutions,
   webSteps,
 } from './data';
-import { cases } from '../blockchain-app-development-services/data';
 
-export const metadata: Metadata = {
-  title: 'Web to App Solutions - Convert Website to Mobile App | Interexy',
-  description:
-    'Let’s convert your web app to mobile app with our practice-proven techniques and latest technologies. Turn your web product into a native app',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'web-to-app-solutions';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function WebToAppSolutions() {
   return (

@@ -7,16 +7,20 @@ import {
   OurProcess,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
-import { nftPartner, nftProcess, nftServices } from './data';
-import { cases } from '../blockchain-app-development-services/data';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
+import { nftPartner, nftProcess, nftServices } from './data';
 
-export const metadata: Metadata = {
-  title: 'Non-Fungible Token (NFT) Development Services | Interexy',
-  description:
-    '✅ Let’s craft your NFT development solutions with our experts in blockchain! Boost your business with cryptocurrency partnering our development team',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'non-fungible-token-nft-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function NonFungibleTokenNftDevelopmentServices() {
   return (

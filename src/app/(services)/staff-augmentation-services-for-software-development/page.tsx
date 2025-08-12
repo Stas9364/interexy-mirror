@@ -13,7 +13,8 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   staffAugmentationBenefits,
   staffAugmentationIndustries,
@@ -22,13 +23,17 @@ import {
   staffAugmentationServices,
   staffAugmentationTechStack,
 } from './data';
-import { cases } from '../blockchain-app-development-services/data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Staff Augmentation Services For Software Development | Interexy',
-  description: 'Hire coders despite borders. Hire IT staff augmentation company',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'staff-augmentation-services-for-software-development';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function StaffAugmentationServicesForSoftwareDevelopment() {
   return (

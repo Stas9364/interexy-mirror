@@ -9,15 +9,19 @@ import {
   SupportPackages,
 } from '@/components/service-blocks';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import type { Metadata } from 'next';
 import { cases } from '../blockchain-app-development-services/data';
 import { fullCycleItems } from './data';
 
-export const metadata: Metadata = {
-  title: 'Full-cycle App Development Company | Interexy',
-  description:
-    'Your reliable partner in full-cycle app development services. Hire app developers at Interexy to craft custom mobile apps and web apps',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'full-cycle-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function FullCycleAppDevelopmentServices() {
   return (

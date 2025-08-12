@@ -1,3 +1,4 @@
+import { Blog, OurExpertise } from '@/components/blocks';
 import {
   Banner,
   FAQ,
@@ -8,7 +9,6 @@ import {
   Steps,
   Testimonials,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
 import {
   customersEvolution,
   nftExpertise,
@@ -18,13 +18,17 @@ import {
   nftSolutions,
   whyChoose,
 } from './data';
-import { Blog, OurExpertise } from '@/components/blocks';
 
-export const metadata: Metadata = {
-  title: 'NFT Marketplace App Development Company | Interexy',
-  description:
-    'Let’s learn about our NFT marketplace app development services. ✅ Get your stable income with a custom NFT marketplace!',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'nft-marketplace-app-development-service';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function NftMarketplaceAppDevelopmentServices() {
   return (

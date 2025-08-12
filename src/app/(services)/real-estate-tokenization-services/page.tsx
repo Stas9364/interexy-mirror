@@ -8,15 +8,19 @@ import {
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 import { Banner, HeroService, OurProcess, Reviews } from '@/components/service-blocks';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import type { Metadata } from 'next';
 import { cases } from '../blockchain-app-development-services/data';
 import { benefitsTokenization, processTokenization, typesTokenization } from './data';
 
-export const metadata: Metadata = {
-  title: 'Real Estate Tokenization Development Company - Interexy',
-  description:
-    'We offer real estate tokenization solutions benefiting from our exceptional expertise in the field. ✅ Open doors for a new decentralized business',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'real-estate-tokenization-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function RealEstateTokenizationServices() {
   return (

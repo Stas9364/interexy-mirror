@@ -13,7 +13,8 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   web3Industries,
   web3Interexy,
@@ -23,14 +24,17 @@ import {
   web3Solutions,
   web3Technologies,
 } from './data';
-import { cases } from '../blockchain-app-development-services/data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Web3 Development Company | Interexy',
-  description:
-    'Use our Web3 development services to benefit from advanced and latest technology. ✅ Explore how we can turn your dream into reality',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'custom-web3-development-app-solutions';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function CustomWeb3DevelopmentAppSolutions() {
   return (

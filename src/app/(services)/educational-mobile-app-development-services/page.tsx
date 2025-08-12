@@ -6,15 +6,19 @@ import {
   Reviews,
 } from '@/components/service-blocks';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import type { Metadata } from 'next';
 import { cases } from '../blockchain-app-development-services/data';
 import { benefits, educationData, ensure } from './data';
 
-export const metadata: Metadata = {
-  title: 'Educational Mobile App Development Services | Interexy',
-  description:
-    'Deliver the best learning experience in the most modern way with mobile application development for education.',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'educational-mobile-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function EducationalMobileAppDevelopmentServices() {
   return (

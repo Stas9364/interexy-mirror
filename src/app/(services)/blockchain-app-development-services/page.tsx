@@ -18,14 +18,18 @@ import {
   Reviews,
 } from '@/components/service-blocks';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import type { Metadata } from 'next';
 import { blogPosts, cases, customDevelopmentServices, faq, industries } from './data';
 
-export const metadata: Metadata = {
-  title: 'Blockchain App Development Company | Interexy',
-  description:
-    'Your reliable partner in blockchain application development services. Upgrade or build your custom blockchain solution for Android, iOS, web',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'blockchain-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function BlockchainAppDevelopmentServices() {
   return (

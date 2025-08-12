@@ -1,3 +1,4 @@
+import { OurExpertise } from '@/components/blocks';
 import {
   FAQ,
   HeroService,
@@ -7,7 +8,7 @@ import {
   Reviews,
   ServicesExpertise,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import {
   marketplaceDevelopment,
   marketplaceExpertise,
@@ -18,14 +19,17 @@ import {
   marketplaceRoadmap,
   marketplaceServices,
 } from './data';
-import { OurExpertise } from '@/components/blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Marketplace App Development Company | Interexy',
-  description:
-    'Let’s build your next-gen marketplace application with our marketplace app development services. ✅ All services you were looking for in one place!',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'marketplace-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function MarketplaceAppDevelopmentServices() {
   return (

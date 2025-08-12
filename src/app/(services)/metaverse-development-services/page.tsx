@@ -7,21 +7,25 @@ import {
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 import { Banner, HeroService, Reasons, Reviews } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   benefitsMetaverse,
   flexibleModels,
   solutionsMetaverse,
   technologiesMetaverse,
 } from './data';
-import { cases } from '../blockchain-app-development-services/data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 
-export const metadata: Metadata = {
-  title: 'Metaverse Development Company | Interexy',
-  description:
-    'Are you looking to enter the most flourishing industry in 2023? ✅ Let’s explore our metaverse development services, technologies and expertise',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'metaverse-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function MetaverseDevelopmentServices() {
   return (

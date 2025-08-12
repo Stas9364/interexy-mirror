@@ -17,15 +17,19 @@ import {
 } from '@/components/service-blocks';
 
 import { goodSolution } from '@/components/service-blocks/reasons/goodSolution';
-import type { Metadata } from 'next';
-import { blogPosts, cases, coreTechnologies, industries, mlInfo } from './data';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { blogPosts, cases, coreTechnologies, industries, mlInfo } from './data';
 
-export const metadata: Metadata = {
-  title: 'Machine Learning and AI App Development Company | Interexy',
-  description:
-    'We provide ML and AI app development service and can help in different industry sectors. ✅ Let’s build competitive businesses in partnership',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'machine-learning-and-ai-app-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function MachineLearningAndAi() {
   return (

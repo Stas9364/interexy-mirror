@@ -19,8 +19,8 @@ import {
   Steps,
   Testimonials,
 } from '@/components/service-blocks';
+import { ReviewsSwiper } from '@/components/service-blocks/reviews-swiper/ReviewsSwiper';
 import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import type { Metadata } from 'next';
 import {
   telemedicineDev,
   telemedicineFaq,
@@ -34,13 +34,17 @@ import {
   telemedicineReview,
   telemedicineService,
 } from './data';
-import { ReviewsSwiper } from '@/components/service-blocks/reviews-swiper/ReviewsSwiper';
 
-export const metadata: Metadata = {
-  title: 'Telemedicine App Development Services | Interexy',
-  description:
-    '✅ As a custom telehealth app development company, Interexy offers end-to-end telemedicine app development services to improve client’s workflow',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'telemedicine-app-development';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function TelemedicineAppDevelopmentServices() {
   return (

@@ -1,3 +1,4 @@
+import { OurExpertise, OurPortfolio } from '@/components/blocks';
 import {
   Banner,
   FullCycleDevelopment,
@@ -5,16 +6,19 @@ import {
   Process,
   Reasons,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
-import { kotlinExperience, kotlinIndustries, kotlinSolutions, kotlinTry } from './data';
-import { OurExpertise, OurPortfolio } from '@/components/blocks';
 import { cases } from '../blockchain-app-development-services/data';
+import { kotlinExperience, kotlinIndustries, kotlinSolutions, kotlinTry } from './data';
 
-export const metadata: Metadata = {
-  title: 'Kotlin App Development Company | Interexy',
-  description:
-    'Kotlin multiplatform app development is a cross-platform solution that helps reduce business costs & team efforts. Let our kotlin app developers help you!',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'kotlin';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function Kotlin() {
   return (

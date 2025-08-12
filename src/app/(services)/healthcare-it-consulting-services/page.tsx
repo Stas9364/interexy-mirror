@@ -14,21 +14,25 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { reviews } from '@/components/service-blocks/reviews/reviews-data';
+import { cases } from '../machine-learning-and-ai-app-development-services/data';
 import {
   healthcareEngagement,
   healthcareOptions,
   healthcareProcess,
   healthcareWhy,
 } from './data';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
-import { cases } from '../machine-learning-and-ai-app-development-services/data';
 
-export const metadata: Metadata = {
-  title: 'Healthcare IT Consulting Company | Interexy',
-  description:
-    'content="Explore tailored solutions with our healthcare IT consulting company. ✅ Redefine healthcare efficiency with our expert IT consulting services."',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'healthcare-it-consulting-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function HealthcareItConsultingServices() {
   return (

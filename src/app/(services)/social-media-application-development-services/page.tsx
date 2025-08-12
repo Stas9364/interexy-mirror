@@ -7,7 +7,7 @@ import {
   SecondBanner,
   Statistics,
 } from '@/components/service-blocks';
-import type { Metadata } from 'next';
+import { cases } from '../blockchain-app-development-services/data';
 import {
   addFacts,
   progress,
@@ -16,13 +16,17 @@ import {
   socialReviews,
   socialServices,
 } from './data';
-import { cases } from '../blockchain-app-development-services/data';
 
-export const metadata: Metadata = {
-  title: 'Social Media App Development Services | Interexy',
-  description:
-    'Planning to develop a dating or social networking app? We provide social media app development services and are ready to help you! ✅ Contact us today',
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'social-media-application-development-services';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function SocialMediaApplicationDevelopmentServices() {
   return (
