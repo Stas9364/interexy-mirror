@@ -20,7 +20,7 @@ export const footerMenuList: MenuData[] = [
     submenu: [
       {
         title: 'Blockchain Development',
-        link: '/',
+        link: '',
         items: [
           { title: 'NFT', link: '/non-fungible-token-nft-development-services/' },
           { title: 'Smart Contracts', link: '/smart-contract-development-services/' },
@@ -56,34 +56,6 @@ export const footerMenuList: MenuData[] = [
         title: 'Back-end',
         link: '',
         items: [{ title: 'NestJS', link: 'https://interexy.com/portfolio/nestjs/' }],
-      },
-      {
-        title: 'Front-end',
-        link: '',
-        items: [
-          { title: 'React', link: '/' },
-          { title: 'Angular', link: '/' },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Technology',
-    submenu: [
-      {
-        title: 'Angular',
-        link: '/',
-        items: [],
-      },
-      {
-        title: 'NestJS',
-        link: '/',
-        items: [],
-      },
-      {
-        title: 'Express',
-        link: '/',
-        items: [],
       },
     ],
   },

@@ -20,7 +20,6 @@ import {
   Testimonials,
 } from '@/components/service-blocks';
 import { ReviewsSwiper } from '@/components/service-blocks/reviews-swiper/ReviewsSwiper';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import {
   telemedicineDev,
   telemedicineFaq,
@@ -216,7 +215,7 @@ export default function TelemedicineAppDevelopmentServices() {
         blogPosts={telemedicineIdeas}
       />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
     </>
   );
 }

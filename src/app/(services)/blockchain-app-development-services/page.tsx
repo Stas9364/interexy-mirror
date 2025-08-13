@@ -17,7 +17,6 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { blogPosts, cases, customDevelopmentServices, faq, industries } from './data';
 
 import { pagesMetadata } from '@/config/pagesMetadata';
@@ -227,7 +226,7 @@ export default function BlockchainAppDevelopmentServices() {
 
       <Blog title='AI Business Ideas for Entrepreneurs' blogPosts={blogPosts} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <FAQ title='Blockchain App Development FAQ' items={faq} />
     </>

@@ -23,6 +23,8 @@ export const CEO = () => {
             <Link
               href={link}
               className='md:inherit absolute top-[25px] right-[15px] xl:absolute xl:top-auto xl:bottom-[30px] xl:left-[25px]'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <Image
                 src={'/social-networks/in.svg'}

@@ -8,7 +8,6 @@ import {
   Reviews,
   SupportPackages,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { cases } from '../blockchain-app-development-services/data';
 import { fullCycleItems } from './data';
 
@@ -279,7 +278,7 @@ export default function FullCycleAppDevelopmentServices() {
         ]}
       />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <OurPortfolio title='See our experience' cases={cases} />
     </>

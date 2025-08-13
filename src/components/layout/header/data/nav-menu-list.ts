@@ -43,7 +43,7 @@ export const menuData: MenuData[] = [
       },
       {
         title: 'Blockchain Developments',
-        link: '/blockchain-app-development-services/',
+        link: '',
         items: [
           {
             title: 'Web3 Development Company',
@@ -82,36 +82,12 @@ export const menuData: MenuData[] = [
     submenu: [
       {
         title: 'Blockchain Development',
-        link: '/blockchain-app-development-services/',
+        link: '',
         items: [
-          {
-            title: 'Web3 Development Company',
-            link: '/custom-web3-development-app-solutions/',
-          },
-          {
-            title: 'NFT Development',
-            link: '/non-fungible-token-nft-development-services/',
-          },
-          { title: 'NFT Marketplace', link: '/nft-marketplace-app-development-service/' },
-          {
-            title: 'Tokens & Crypto Wallets',
-            link: '/cryptocurrency-app-development-services/',
-          },
-          { title: 'Smart Contract', link: '/smart-contract-development-services/' },
           {
             title: 'Real Estate Tokenization',
             link: '/real-estate-tokenization-services/',
           },
-          { title: 'Metaverse Development', link: '/metaverse-development-services/' },
-        ],
-      },
-      {
-        title: 'FullStack',
-        link: '',
-        items: [
-          { title: 'NFT Marketplace', link: '/nft-marketplace-app-development-service/' },
-          { title: 'Tokens & Crypto', link: '/cryptocurrency-app-development-services/' },
-          { title: 'Smart Contract', link: '/smart-contract-development-services/' },
         ],
       },
     ],
@@ -150,22 +126,6 @@ export const menuData: MenuData[] = [
             title: 'Artificial Intelligence Development',
             link: '/machine-learning-and-ai-app-development-services/',
           },
-          {
-            title: 'AI Consulting Services',
-            link: '/machine-learning-and-ai-app-development-services/',
-          },
-          {
-            title: 'Machine Learning Solutions',
-            link: '/machine-learning-and-ai-app-development-services/',
-          },
-          {
-            title: 'Data Science & Analytics',
-            link: '/machine-learning-and-ai-app-development-services/',
-          },
-          {
-            title: 'Data Engineering',
-            link: '/machine-learning-and-ai-app-development-services/',
-          },
         ],
       },
       {
@@ -175,10 +135,6 @@ export const menuData: MenuData[] = [
           {
             title: 'FinTech App Development',
             link: '/fintech-app-development-services/',
-          },
-          {
-            title: 'Real Estate Tokenization',
-            link: '/real-estate-tokenization-services/',
           },
         ],
       },
@@ -220,7 +176,6 @@ export const menuData: MenuData[] = [
         items: [
           { title: 'About us', link: '/about-us' },
           { title: 'Process', link: '/process' },
-          { title: 'Company Values', link: '/' },
         ],
       },
     ],

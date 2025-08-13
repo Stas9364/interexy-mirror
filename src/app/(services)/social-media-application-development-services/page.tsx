@@ -13,7 +13,6 @@ import {
   progress,
   smaExperience,
   socialNetworking,
-  socialReviews,
   socialServices,
 } from './data';
 
@@ -113,7 +112,7 @@ export default function SocialMediaApplicationDevelopmentServices() {
         title='Keep up with the mobile-first world!'
       />
 
-      <Reviews title='What our customers say' reviews={socialReviews} />
+      <Reviews title='What our customers say' />
 
       <OurPortfolio title='Explore our latest projects case studies' cases={cases} />
     </>

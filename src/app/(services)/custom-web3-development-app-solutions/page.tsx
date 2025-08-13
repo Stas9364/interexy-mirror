@@ -13,7 +13,6 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { cases } from '../blockchain-app-development-services/data';
 import {
   web3Industries,
@@ -132,7 +131,7 @@ export default function CustomWeb3DevelopmentAppSolutions() {
 
       <OurPortfolio title='Find the perfect Project' cases={cases} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
     </>
   );
 }

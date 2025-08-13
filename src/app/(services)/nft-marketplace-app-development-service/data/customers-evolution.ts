@@ -8,8 +8,8 @@ export const customersEvolution: PostT[] = [
       '$11M NFT launch – Lil Durk NFT Drop with Gary Vee Involved – American rapper with best album 2022',
     link: 'https://www.nxtg3nz.com/',
     tags: [
-      { title: 'Android', link: '#' },
-      { title: 'iOS', link: '#' },
+      { title: 'Android', link: '' },
+      { title: 'iOS', link: '' },
     ],
   },
   {
@@ -18,8 +18,8 @@ export const customersEvolution: PostT[] = [
     excerpt: 'Sci-Fi 3D NFT drop & website development – Advent Robots NFT collection',
     link: 'https://opensea.io/collection/advent-robots-collection',
     tags: [
-      { title: 'Android', link: '#' },
-      { title: 'iOS', link: '#' },
+      { title: 'Android', link: '' },
+      { title: 'iOS', link: '' },
     ],
   },
   {
@@ -29,8 +29,8 @@ export const customersEvolution: PostT[] = [
       '4444 unique Vending Machine NFTs have been introduced to the Avalanche network.',
     link: 'https://www.vendingmachinesnft.io/',
     tags: [
-      { title: 'Android', link: '#' },
-      { title: 'iOS', link: '#' },
+      { title: 'Android', link: '' },
+      { title: 'iOS', link: '' },
     ],
   },
   {
@@ -40,8 +40,8 @@ export const customersEvolution: PostT[] = [
       'The company CyberMetaverse Productions, Inc. will help the CyberAgent Group’s track record in DX support in retail enterprises, AI, and 3DCG technology. This will help many brands like retail and apparel companies create new revenue streams via virtual stores.',
     link: 'https://www.cyberagent.co.jp/en/news/detail/id=27346',
     tags: [
-      { title: 'Android', link: '#' },
-      { title: 'iOS', link: '#' },
+      { title: 'Android', link: '' },
+      { title: 'iOS', link: '' },
     ],
   },
 ];

@@ -9,7 +9,6 @@ import {
   Reviews,
   SupportPackages,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { cases } from '../blockchain-app-development-services/data';
 import { mobileCompany, mobileProcess } from './data';
 
@@ -102,7 +101,7 @@ export default function MobileAppLaunchAndPublishingServices() {
         items={mobileCompany}
       />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <OurPortfolio
         title='Interexy’s Experience in Сross-Platform Mobile App Development'

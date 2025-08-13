@@ -21,15 +21,24 @@ export const Post: FC<PostT> = ({ title, author, date, excerpt, image, link, tag
 
       <div className='flex h-full flex-col gap-y-5 bg-[#F8F8F8] px-[10px] py-5 lg:p-6'>
         <div className='flex flex-wrap gap-[10px]'>
-          {tags.map(({ link, title }, idx) => (
-            <Link
-              key={idx}
-              href={link}
-              className='hover: rounded-[5px] bg-[#E9E9E9] p-3 text-sm leading-[1.4] font-normal duration-200 hover:brightness-[0.85] 2xl:text-lg'
-            >
-              {title}
-            </Link>
-          ))}
+          {tags.map(({ link, title }, idx) =>
+            link ? (
+              <Link
+                key={idx}
+                href={link}
+                className='hover: rounded-[5px] bg-[#E9E9E9] p-3 text-sm leading-[1.4] font-normal duration-200 hover:brightness-[0.85] 2xl:text-lg'
+              >
+                {title}
+              </Link>
+            ) : (
+              <span
+                key={idx}
+                className='hover: rounded-[5px] bg-[#E9E9E9] p-3 text-sm leading-[1.4] font-normal duration-200 hover:brightness-[0.85] 2xl:text-lg'
+              >
+                {title}
+              </span>
+            ),
+          )}
         </div>
 
         <Link href={link} className='mt-auto'>

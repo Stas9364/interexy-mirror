@@ -10,7 +10,6 @@ import {
   Reviews,
   ServicesExpertise,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import Image from 'next/image';
 import { cases } from '../blockchain-app-development-services/data';
 import { chooseInterexy, faq, fintechExpertise, mustHaveFeatures } from './data';
@@ -173,7 +172,7 @@ export default function FintechAppDevelopmentServices() {
 
       <OurPortfolio title='Find the perfect Project' cases={cases} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <FAQ title='FAQ' items={faq} />
     </>

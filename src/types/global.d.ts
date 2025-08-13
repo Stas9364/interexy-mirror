@@ -13,4 +13,7 @@ interface Window {
     safe: () => void;
     set: () => void;
   };
+  CLUTCHCO?: {
+    Init: () => void;
+  };
 }

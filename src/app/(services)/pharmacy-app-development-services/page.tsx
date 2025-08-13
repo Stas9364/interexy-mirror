@@ -8,7 +8,6 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import {
   pharmacyBenefits,
   pharmacyBlog,
@@ -117,7 +116,7 @@ export default function PharmacyAppDevelopmentServices() {
 
       <OurExpertise title='We ensure:' items={pharmacyEnsure} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <Blog title='Pharmacy Business Ideas for Entrepreneurs' blogPosts={pharmacyBlog} />
 

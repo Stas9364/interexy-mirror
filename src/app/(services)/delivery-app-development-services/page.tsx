@@ -8,7 +8,6 @@ import {
   Reviews,
   Steps,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -108,7 +107,7 @@ export default function DeliveryAppDevelopmentServices() {
 
       <FullCycleDevelopment title='See our customers’ evolution' items={oneRover} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <OurPortfolio title='See our experience' cases={cases} />
     </>
