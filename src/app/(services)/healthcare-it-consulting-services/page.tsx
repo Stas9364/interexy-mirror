@@ -14,7 +14,6 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { cases } from '../machine-learning-and-ai-app-development-services/data';
 import {
   healthcareEngagement,
@@ -143,7 +142,7 @@ export default function HealthcareItConsultingServices() {
 
       <OurPortfolio title='You May Also Be Interested' cases={cases} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
     </>
   );
 }

@@ -8,7 +8,6 @@ import {
   Reviews,
   ServicesExpertise,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import {
   marketplaceDevelopment,
   marketplaceExpertise,
@@ -87,7 +86,7 @@ export default function MarketplaceAppDevelopmentServices() {
         btn_title='Tell me more!'
       />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <FAQ title='FAQ' items={marketplaceFaq} />
     </>

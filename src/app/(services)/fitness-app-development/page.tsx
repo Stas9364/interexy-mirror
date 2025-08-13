@@ -10,7 +10,6 @@ import {
   Reasons,
   Reviews,
 } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import {
   fitnessApp,
   fitnessAppDev,
@@ -91,7 +90,7 @@ export default function FitnessAppDevelopment() {
 
       <Reasons title='Benefits of Fitness Mobile Apps' items={fitnessBenefits} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
 
       <OurExpertise
         title='Must-have Fitness Application Features'

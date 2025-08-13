@@ -12,6 +12,8 @@ export const SocialNetworks = () => {
             href={link}
             className='rounded-[5px] transition-colors duration-200 hover:bg-[var(--hover-social-color)]'
             style={{ '--hover-social-color': bg } as React.CSSProperties}
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <Image
               alt={alt}

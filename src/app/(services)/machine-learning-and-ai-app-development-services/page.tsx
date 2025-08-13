@@ -17,7 +17,6 @@ import {
 } from '@/components/service-blocks';
 
 import { goodSolution } from '@/components/service-blocks/reasons/goodSolution';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { blogPosts, cases, coreTechnologies, industries, mlInfo } from './data';
 
 import { pagesMetadata } from '@/config/pagesMetadata';
@@ -108,7 +107,7 @@ export default function MachineLearningAndAi() {
         technologies={coreTechnologies}
       />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
     </>
   );
 }

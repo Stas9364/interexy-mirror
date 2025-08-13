@@ -7,7 +7,6 @@ import {
 } from '@/components/blocks';
 import { images } from '@/components/blocks/infinite-image-scroll/images';
 import { Banner, HeroService, Reasons, Reviews } from '@/components/service-blocks';
-import { reviews } from '@/components/service-blocks/reviews/reviews-data';
 import { cases } from '../blockchain-app-development-services/data';
 import {
   benefitsMetaverse,
@@ -112,7 +111,7 @@ export default function MetaverseDevelopmentServices() {
 
       <OurPortfolio title='See our experience' cases={cases} />
 
-      <Reviews title='Highly Satisfied Clients' reviews={reviews} />
+      <Reviews title='Highly Satisfied Clients' />
     </>
   );
 }

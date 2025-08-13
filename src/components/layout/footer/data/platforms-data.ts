@@ -7,13 +7,13 @@ type PlatformData = {
 };
 
 export const platformsData: PlatformData[] = [
-  {
-    logo_src: '/platforms/clutch.svg',
-    link: 'https://clutch.co/profile/interexy#reviews',
-    star_src: '/platforms/clutch_star.svg',
-    reviews_number: '60+ reviews',
-    alt: 'Clutch',
-  },
+  // {
+  //   logo_src: '/platforms/clutch.svg',
+  //   link: 'https://clutch.co/profile/interexy#reviews',
+  //   star_src: '/platforms/clutch_star.svg',
+  //   reviews_number: '60+ reviews',
+  //   alt: 'Clutch',
+  // },
   {
     logo_src: '/platforms/upwork.svg',
     link: '',

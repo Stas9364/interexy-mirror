@@ -11,7 +11,7 @@ type Image = {
 const images: Image[] = [
   {
     src: '/blocks/our-achievements/Clutch_60.webp',
-    link: '',
+    link: 'https://clutch.co/profile/interexy',
     alt: 'Clutch',
   },
   {
@@ -48,6 +48,8 @@ export const OurAchievements = () => {
                   href={link}
                   key={src}
                   className='group relative h-[143px] w-full max-w-[300px]'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   {img}
                 </Link>

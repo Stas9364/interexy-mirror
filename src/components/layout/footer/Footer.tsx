@@ -35,7 +35,7 @@ export const Footer = ({ children }: { children?: React.ReactNode }) => {
             </div>
 
             <div className='flex flex-col gap-y-[46px] pt-[46px]'>
-              <Platforms containerClassName='flex justify-around' />
+              <Platforms containerClassName='flex justify-around md:flex-row flex-col justify-center items-center gap-y-5' />
 
               <div className='flex flex-col justify-between gap-y-4 text-lg lg:flex-row lg:gap-y-0'>
                 <Copyright />

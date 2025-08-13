@@ -8,8 +8,8 @@ export const telemedicineIdeas: PostT[] = [
       'We all saw how the COVID-19 pandemic changed the market, especially the healthcare industry. This was the first domain experiencing the most significant transformation in the market. The situation seems...',
     link: 'https://interexy.com/8-hottest-healthcare-mobile-app-trends-to-watch-for-in-2023/',
     tags: [
-      { title: 'App development', link: '#' },
-      { title: 'Health & Wellbeing', link: '#' },
+      { title: 'App development', link: '' },
+      { title: 'Health & Wellbeing', link: '' },
     ],
     author: 'Stan Sakharchuk',
     date: 'January 17, 2023',
@@ -21,8 +21,8 @@ export const telemedicineIdeas: PostT[] = [
       'Technology has helped us uncover the full potential of the healthcare industry. Although some kinds of devices have already been implemented in medicine and procedures that doctors perform daily, only...',
     link: 'https://interexy.com/6-great-mobile-app-ideas-for-your-healthcare-startup/',
     tags: [
-      { title: 'App development', link: '#' },
-      { title: 'Health & Wellbeing', link: '#' },
+      { title: 'App development', link: '' },
+      { title: 'Health & Wellbeing', link: '' },
       { title: 'Ideas', link: '#' },
     ],
     author: 'Stan Sakharchuk',
@@ -35,8 +35,8 @@ export const telemedicineIdeas: PostT[] = [
       'Healthcare data integration has become a vital element of modern health systems. The opportunity to gain data from sources like EHRs and telehealth devices allows healthcare companies to get a...',
     link: 'https://interexy.com/a-guide-to-healthcare-data-integration-best-practices/',
     tags: [
-      { title: 'App development', link: '#' },
-      { title: 'Health & Wellbeing', link: '#' },
+      { title: 'App development', link: '' },
+      { title: 'Health & Wellbeing', link: '' },
     ],
     author: 'Stan Sakharchuk',
     date: 'May 23, 2023',
@@ -49,8 +49,8 @@ export const telemedicineIdeas: PostT[] = [
       'According to statistics, in 2020, the digital health market was $216 billion, and by 2025 this number will more than triple. Is this not a reason to think about developing...',
     link: 'https://interexy.com/5-most-useful-types-of-telehealth-applications-examples-solutions-technologies/',
     tags: [
-      { title: 'App development', link: '#' },
-      { title: 'Health & Wellbeing', link: '#' },
+      { title: 'App development', link: '' },
+      { title: 'Health & Wellbeing', link: '' },
     ],
     author: 'Stan Sakharchuk',
     date: 'July 2, 2021',
@@ -62,8 +62,8 @@ export const telemedicineIdeas: PostT[] = [
       'The disparate sources of unstructured data that were prevalent in the medical field and long brought only human errors and challenges now became very useful assets to grow the use…',
     link: 'https://interexy.com/generative-ai-in-healthcare/',
     tags: [
-      { title: 'AI', link: '#' },
-      { title: 'Health & Wellbeing', link: '#' },
+      { title: 'AI', link: '' },
+      { title: 'Health & Wellbeing', link: '' },
     ],
     author: 'Stan Sakharchuk',
     date: 'October 11, 2023',
@@ -74,7 +74,7 @@ export const telemedicineIdeas: PostT[] = [
     excerpt:
       'Telehealth is a relatively new business model for the healthcare industry. However, its emergence and development were predicted almost 100 years ago. In 1925 Hugo Gernsback, a radio and publishing…',
     link: 'https://interexy.com/10-steps-how-to-create-a-telehealth-app-successfully/',
-    tags: [{ title: 'Health & Wellbeing', link: '#' }],
+    tags: [{ title: 'Health & Wellbeing', link: '' }],
     author: 'Stan Sakharchuk',
     date: 'July 26, 2021',
   },
