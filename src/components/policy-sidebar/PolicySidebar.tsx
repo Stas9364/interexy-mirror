@@ -8,7 +8,6 @@ import {
 
 export const PolicySidebar = ({ content }: { content: React.ReactNode }) => {
   const headings = useExtractH2FromJSX(content);
-// console.log(headings);
 
   return (
     <aside className='mb-[25px] lg:mb-0'>
@@ -51,4 +50,3 @@ export const PolicySidebar = ({ content }: { content: React.ReactNode }) => {
     </aside>
   );
 };
-
