@@ -43,6 +43,7 @@ export default function SmartContractDevelopmentServices() {
         btn_link={'/contact-us'}
         btn_text={'Book A Call'}
         src='/services/smart-contract-development-services/hero.png'
+        imgClasses='!object-contain'
       />
       <InfiniteImageScroll
         images={images}
