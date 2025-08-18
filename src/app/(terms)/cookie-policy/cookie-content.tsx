@@ -1,5 +1,5 @@
 /**
- * must add section-id to each <h2> tag for navigation links to work;
+ * must add content <h2> in the form of slug to each <h2> tag for navigation links to work;
  */
 
 export const cookieContent = (
