@@ -1,7 +1,8 @@
 /**
- * must add section-id to each <h2> tag for navigation links to work;
- * start with section then section-2, etc.
+ * must add content <h2> in the form of slug to each <h2> tag for navigation links to work;
  */
+
+import Link from 'next/link';
 
 export const privacyContent = (
   <>
@@ -27,7 +28,7 @@ export const privacyContent = (
       questions or concerns, please contact us at info@interexy.com.
     </p>
 
-    <h2 id='section'>1. What information do we collect?</h2>
+    <h2 id='what-information-do-we-collect'>1. What information do we collect?</h2>
 
     <h3>Personal information you disclose to us</h3>
 
@@ -161,7 +162,9 @@ export const privacyContent = (
       and custom profiles, for purposes of targeted advertising and event promotion.
     </p>
 
-    <h2 id='section-2'>2. How do we process your information?</h2>
+    <h2 id='how-do-we-process-your-information'>
+      2. How do we process your information?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -237,7 +240,7 @@ export const privacyContent = (
       </li>
     </ul>
 
-    <h2 id='section-3'>
+    <h2 id='what-legal-bases-do-we-rely-on-to-process-your-personal-information'>
       3. What legal bases do we rely on to process your personal information?
     </h2>
 
@@ -371,7 +374,9 @@ export const privacyContent = (
       </li>
     </ul>
 
-    <h2 id='section-4'>4. When and with whom do we share your personal information?</h2>
+    <h2 id='when-and-with-whom-do-we-share-your-personal-information'>
+      4. When and with whom do we share your personal information?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -394,7 +399,9 @@ export const privacyContent = (
       </li>
     </ul>
 
-    <h2 id='section-5'>5. Do we use cookies and other tracking technologies?</h2>
+    <h2 id='do-we-use-cookies-and-other-tracking-technologies'>
+      5. Do we use cookies and other tracking technologies?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -413,7 +420,9 @@ export const privacyContent = (
       technologies and how you can refuse certain cookies is set out in our Cookie Notice.
     </p>
 
-    <h2 id='section-6'>6. How long do we keep your information?</h2>
+    <h2 id='how-long-do-we-keep-your-information'>
+      6. How long do we keep your information?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -442,7 +451,9 @@ export const privacyContent = (
       further processing until it can be permanently removed.
     </p>
 
-    <h2 id='section-7'>7. How do we keep your information safe?</h2>
+    <h2 id='how-do-we-keep-your-information-safe'>
+      7. How do we keep your information safe?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -489,7 +500,9 @@ export const privacyContent = (
       remain vigilant when sharing your personal information online.
     </p>
 
-    <h2 id='section-8'>8. Do we collect information from minors?</h2>
+    <h2 id='do-we-collect-information-from-minors'>
+      8. Do we collect information from minors?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -510,7 +523,7 @@ export const privacyContent = (
       have collected from children under age 18, please contact us at info@interexy.com.
     </p>
 
-    <h2 id='section-9'>9. What are your privacy rights?</h2>
+    <h2 id='what-are-your-privacy-rights'>9. What are your privacy rights?</h2>
 
     <p className='footnote'>
       <strong>
@@ -615,7 +628,9 @@ export const privacyContent = (
       info@interexy.com.
     </p>
 
-    <h2 id='section-10'>10. Controls for do-not-track features</h2>
+    <h2 id='controls-for-do-not-track-features'>
+      10. Controls for do-not-track features
+    </h2>
 
     <p>
       Most web browsers and some mobile operating systems and mobile applications include
@@ -629,7 +644,9 @@ export const privacyContent = (
       version of this privacy notice.
     </p>
 
-    <h2 id='section-11'>11. Do United States residents have specific privacy rights?</h2>
+    <h2 id='do-united-states-residents-have-specific-privacy-rights'>
+      11. Do United States residents have specific privacy rights?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -985,7 +1002,7 @@ export const privacyContent = (
     <p>
       To exercise your right to limit use and disclosure of sensitive personal
       information, please email info@interexy.com or submit a{' '}
-      <a href='https://interexy.com/contact-us/'>data subject access request</a>.
+      <Link href='/contact-us/'>data subject access request</Link>.
     </p>
 
     <h4>Verification process</h4>
@@ -1037,9 +1054,9 @@ export const privacyContent = (
     <p>
       To exercise these rights, you can contact us by submitting a data subject access
       request, by email at info@interexy.com, by visiting{' '}
-      <a href='https://interexy.com/contact-us/'>https://interexy.com/contact-us/</a>, or
-      by referring to the contact details at the bottom of this document. If you have a
-      complaint about how we handle your data, we would like to hear from you.
+      <Link href='/contact-us/'>https://interexy.com/contact-us/</Link>, or by referring
+      to the contact details at the bottom of this document. If you have a complaint about
+      how we handle your data, we would like to hear from you.
     </p>
 
     <h3>Colorado residents</h3>
@@ -1066,7 +1083,7 @@ export const privacyContent = (
     <p>
       To submit a request to exercise these rights described above, please email
       info@interexy.com or submit a{' '}
-      <a href='https://interexy.com/contact-us/'>data subject access request</a>.
+      <Link href='/contact-us/'>data subject access request</Link>.
     </p>
 
     <p>
@@ -1101,7 +1118,7 @@ export const privacyContent = (
     <p>
       To submit a request to exercise these rights described above, please email
       info@interexy.com or submit a{' '}
-      <a href='https://interexy.com/contact-us/'>data subject access request</a>.
+      <Link href='/contact-us/'>data subject access request</Link>.
     </p>
 
     <p>
@@ -1134,7 +1151,7 @@ export const privacyContent = (
     <p>
       To submit a request to exercise these rights described above, please email
       info@interexy.com or submit a{' '}
-      <a href='https://interexy.com/contact-us/'>data subject access request</a>.
+      <Link href='/contact-us/'>data subject access request</Link>.
     </p>
 
     <h3>Virginia residents</h3>
@@ -1182,7 +1199,7 @@ export const privacyContent = (
 
     <p>
       You may contact us by email at info@interexy.com or submit a{' '}
-      <a href='https://interexy.com/contact-us/'>data subject access request</a>.
+      <Link href='/contact-us/'>data subject access request</Link>.
     </p>
 
     <p>
@@ -1227,7 +1244,9 @@ export const privacyContent = (
       .
     </p>
 
-    <h2 id='section-12'>12. Do other regions have specific privacy rights?</h2>
+    <h2 id='do-other-regions-have-specific-privacy-rights'>
+      12. Do other regions have specific privacy rights?
+    </h2>
 
     <p className='footnote'>
       <strong>
@@ -1318,7 +1337,7 @@ export const privacyContent = (
       POPIAComplaints@inforegulator.org.za
     </p>
 
-    <h2 id='section-13'>13. Do we make updates to this notice?</h2>
+    <h2 id='do-we-make-updates-to-this-notice'>13. Do we make updates to this notice?</h2>
 
     <p className='footnote'>
       <strong>
@@ -1338,7 +1357,9 @@ export const privacyContent = (
       frequently to be informed of how we are protecting your information.
     </p>
 
-    <h2 id='section-14'>14. How can you contact us about this notice?</h2>
+    <h2 id='how-can-you-contact-us-about-this-notice'>
+      14. How can you contact us about this notice?
+    </h2>
 
     <p>
       If you have questions or comments about this notice, you may email us at
@@ -1350,7 +1371,7 @@ export const privacyContent = (
     <p>Miramar, FL 33025</p>
     <p>United States</p>
 
-    <h2 id='section-15'>
+    <h2 id='how-can-you-review-update-or-delete-the-data-we-collect-from-you'>
       15. How can you review, update, or delete the data we collect from you?
     </h2>
 
@@ -1358,8 +1379,7 @@ export const privacyContent = (
       Based on the applicable laws of your country, you may have the right to request
       access to the personal information we collect from you, change that information, or
       delete it. To request to review, update, or delete your personal information, please
-      fill out and submit a{' '}
-      <a href='https://interexy.com/contact-us/'>data subject access request</a>.
+      fill out and submit a <Link href='/contact-us/'>data subject access request</Link>.
     </p>
   </>
 );

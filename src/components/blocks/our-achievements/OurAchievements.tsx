@@ -21,7 +21,7 @@ const images: Image[] = [
   },
   {
     src: '/blocks/our-achievements/upwork-award.webp',
-    link: '/',
+    link: '',
     alt: 'Upwork',
   },
 ];

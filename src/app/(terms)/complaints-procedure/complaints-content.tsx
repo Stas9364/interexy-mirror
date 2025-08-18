@@ -1,10 +1,10 @@
 /**
- * must add section-id to each <h2> tag for navigation links to work;
+ * must add content <h2> in the form of slug to each <h2> tag for navigation links to work;
  */
 
 export const complaintsContent = (
   <>
-    <h2 id='section-1'>1. Introduction</h2>
+    <h2 id='introduction'>1. Introduction</h2>
     <p>
       At Interexy, we value your feedback. We are committed to addressing any concerns you
       may have about our services, website, or other matters. This page explains how to
@@ -15,7 +15,7 @@ export const complaintsContent = (
       <br />
     </p>
 
-    <h2 id='section-2'>2. How to Submit a Complaint</h2>
+    <h2 id='how-to-submit-a-complaint'>2. How to Submit a Complaint</h2>
     <p>
       We strive to make the complaint submission process as simple as possible. Here’s how
       you can raise your concerns:
@@ -69,7 +69,7 @@ export const complaintsContent = (
     <p>Office №M05-41</p>
     <p>Dubai, UAE</p>
 
-    <h2 id='section-3'>3. Escalation Process</h2>
+    <h2 id='escalation-process'>3. Escalation Process</h2>
     <p>
       If you’re not satisfied with our initial response, you can request further review
       by:
@@ -82,7 +82,7 @@ export const complaintsContent = (
       <li>Seeking external mediation if necessary (details provided upon request).</li>
     </ul>
 
-    <h2 id='section-4'>4. Confidentiality & Data Protection</h2>
+    <h2 id='confidentiality--data-protection'>4. Confidentiality & Data Protection</h2>
     <p>
       All complaints are handled with the utmost confidentiality. Any personal data you
       share will be processed in accordance with our Privacy Policy and applicable data
@@ -93,7 +93,7 @@ export const complaintsContent = (
       <br />
     </p>
 
-    <h2 id='section-5'>5. Commitment to Fair Resolution</h2>
+    <h2 id='commitment-to-fair-resolution'>5. Commitment to Fair Resolution</h2>
     <p>
       Interexy is dedicated to resolving complaints in a fair, transparent, and efficient
       manner. Every complaint is an opportunity to enhance our services and ensure client
@@ -102,7 +102,7 @@ export const complaintsContent = (
       <br />
     </p>
 
-    <h2 id='section-6'>6. Need More Help?</h2>
+    <h2 id='need-more-help'>6. Need More Help?</h2>
     <p>
       If you have any questions regarding our complaints procedure, feel free to contact
       us at info@interexy.com. We appreciate your feedback and will do our best to assist
