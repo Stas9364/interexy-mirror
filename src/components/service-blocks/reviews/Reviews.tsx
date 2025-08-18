@@ -18,15 +18,17 @@ export const Reviews = ({ title }: { title: string }) => {
           </div>
         </BlockTitle>
 
-        <ClutchReviewWidget
-          companyId={'802189'}
-          reviews={['373538', '362096', '350785', '331052', '324248', '320004']}
-          height={300}
-          widgetType={8}
-          nofollow={true}
-          expandIfr={true}
-          scale={100}
-        />
+        <div>
+          <ClutchReviewWidget
+            companyId={'802189'}
+            reviews={['373538', '362096', '350785', '331052', '324248', '320004']}
+            height={300}
+            widgetType={12}
+            nofollow={true}
+            expandIfr={true}
+            scale={100}
+          />
+        </div>
 
         {/* <div className='flex justify-center'>
           <div className='max-w-[1160px] rounded-[20px] bg-[#f7f8fc] p-[15px] md:rounded-[42px] md:p-[25px]'>

@@ -11,7 +11,7 @@ export const CompanyLocations = () => {
             className='flex flex-col gap-5 border-[#433F4E] pb-5 md:border-b-0 md:pb-0 [&:not(:last-child)]:border-b md:[&:not(:last-child)]:border-r md:[&:not(:last-child)]:border-b-0'
           >
             <div className='flex items-center gap-2'>
-              <Image alt='' src={flag_src} width={24} height={16} />
+              <Image alt={location} src={flag_src} width={24} height={16} />
               <span>{location}</span>
             </div>
 

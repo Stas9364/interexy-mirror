@@ -5,7 +5,7 @@ export const expertise: ExpertiseT[] = [
     title: 'Artificial Intelligence',
     text: 'Unlock efficiency and innovation with AI solutions that automate tasks, predict outcomes, and transform decisions at scale.',
     link: '/machine-learning-and-ai-app-development-services/',
-    img_src: '/blocks/expertise/artificial-Intelligence.png',
+    img_src: '/blocks/expertise/ai.png',
   },
   {
     title: 'Healthcare',
@@ -58,7 +58,7 @@ export const expertise: ExpertiseT[] = [
   {
     title: 'On-Demand Apps',
     text: 'Enhance your service delivery and drive growth with our seamless and efficient on-demand app solutions.',
-    link: '/',
+    link: '',
     img_src: '/blocks/expertise/on-demand.png',
   },
 ];

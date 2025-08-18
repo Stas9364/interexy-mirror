@@ -10,18 +10,18 @@ type Image = {
 };
 const images: Image[] = [
   {
-    src: '/blocks/our-achievements/Clutch_60.webp',
+    src: '/blocks/our-achievements/clutch.svg',
     link: 'https://clutch.co/profile/interexy',
     alt: 'Clutch',
   },
   {
-    src: '/blocks/our-achievements/techviewer-award.webp',
+    src: '/blocks/our-achievements/teachviewer.svg',
     link: 'https://techreviewer.co/companies/interexy-llc',
     alt: 'Techreviewer',
   },
   {
-    src: '/blocks/our-achievements/upwork-award.webp',
-    link: '/',
+    src: '/blocks/our-achievements/upwork.svg',
+    link: '',
     alt: 'Upwork',
   },
 ];

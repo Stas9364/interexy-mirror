@@ -37,7 +37,7 @@ export default function HealthcareItConsultingServices() {
   return (
     <>
       <HeroService
-        sectionClassName='bg-[#07041e] text-white'
+        sectionClassName='bg-[url(/services/healthcare-it-consulting-services/hero-bg.png)] bg-no-repeat bg-cover text-white'
         title={'Healthcare IT Consulting Services'}
         subtitle={
           'As a top-notch healthcare IT consulting company, we offer clients a practice-proven strategy and stress-free tech implementation. Our deep expertise in healthcare IT consulting services allows health organizations to implement latest technologies and employ smarter ways of working in order to improve patient care, improve efficiency, create better consumer experiences and drive better outcomes.'

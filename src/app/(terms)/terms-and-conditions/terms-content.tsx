@@ -1,10 +1,10 @@
 /**
- * must add section-id to each <h2> tag for navigation links to work;
+ * must add content <h2> in the form of slug to each <h2> tag for navigation links to work;
  */
 
 export const termsContent = (
   <>
-    <h2 id='section-1'>1. Acceptance of Terms</h2>
+    <h2 id='acceptance-of-terms'>1. Acceptance of Terms</h2>
     <p>
       By accessing and using the Interexy website (“Website”), you agree to these Terms &
       Conditions (“Terms”). If you do not agree with these Terms, please do not use our
@@ -12,7 +12,7 @@ export const termsContent = (
       continued use of the Website constitutes your acceptance of any changes.
     </p>
 
-    <h2 id='section-2'>2. Usage Rights and Restrictions</h2>
+    <h2 id='usage-rights-and-restrictions'>2. Usage Rights and Restrictions</h2>
     <p>
       You are granted a limited, non-exclusive, and revocable license to access and use
       this Website for lawful purposes only. You agree not to:
@@ -37,7 +37,7 @@ export const termsContent = (
       Website if you violate these restrictions.
     </p>
 
-    <h2 id='section-3'>3. Intellectual Property Rights</h2>
+    <h2 id='intellectual-property-rights'>3. Intellectual Property Rights</h2>
     <p>
       All content, logos, trademarks, software, images, and materials on this Website are
       the property of Interexy LLC or its licensors. This intellectual property is
@@ -50,7 +50,7 @@ export const termsContent = (
       under local, national, or international law.
     </p>
 
-    <h2 id='section-4'>4. Privacy and Data Protection</h2>
+    <h2 id='privacy-and-data-protection'>4. Privacy and Data Protection</h2>
     <p>
       Interexy processes personal data in accordance with applicable data privacy laws. We
       are committed to safeguarding user data through encryption, secure servers, and
@@ -58,7 +58,7 @@ export const termsContent = (
       personal data, please see our Privacy Policy.
     </p>
 
-    <h2 id='section-5'>5. Limitation of Liability</h2>
+    <h2 id='limitation-of-liability'>5. Limitation of Liability</h2>
     <p>
       To the fullest extent permitted by applicable law, Interexy LLC, its officers,
       directors, employees, and agents shall not be held liable for:
@@ -78,7 +78,7 @@ export const termsContent = (
       United States, Poland, and the UAE.
     </p>
 
-    <h2 id='section-6'>6. Disclaimers</h2>
+    <h2 id='disclaimers'>6. Disclaimers</h2>
     <p>
       While we strive to provide accurate, up-to-date information, Interexy makes no
       representations or warranties of any kind, expressed or implied, regarding the
@@ -89,7 +89,9 @@ export const termsContent = (
       warranty of merchantability, fitness for a particular purpose, or non-infringement.
     </p>
 
-    <h2 id='section-7'>7. User Responsibilities and Compliance</h2>
+    <h2 id='user-responsibilities-and-compliance'>
+      7. User Responsibilities and Compliance
+    </h2>
     <p>
       By using this Website, you agree to comply with all applicable laws and regulations,
       including:
@@ -105,7 +107,7 @@ export const termsContent = (
       </li>
     </ul>
 
-    <h2 id='section-8'>8. External Links Disclaimer</h2>
+    <h2 id='external-links-disclaimer'>8. External Links Disclaimer</h2>
     <p>
       Our Website may contain links to external websites not owned or controlled by
       Interexy. We do not endorse or assume responsibility for the content, privacy
@@ -113,7 +115,7 @@ export const termsContent = (
       your own risk.
     </p>
 
-    <h2 id='section-9'>9. Governing Law and Jurisdiction</h2>
+    <h2 id='governing-law-and-jurisdiction'>9. Governing Law and Jurisdiction</h2>
     <p>
       These Terms are governed by and construed in accordance with the laws of the State
       of Florida, USA, without regard to conflict-of-law principles.
@@ -125,7 +127,7 @@ export const termsContent = (
       jurisdictions, including Poland and the UAE.
     </p>
 
-    <h2 id='section-10'>10. Dispute Resolution</h2>
+    <h2 id='dispute-resolution'>10. Dispute Resolution</h2>
     <p>
       If any dispute arises between you and Interexy, both parties agree to resolve the
       dispute through good faith negotiations. If the dispute cannot be resolved, it will
@@ -138,7 +140,7 @@ export const termsContent = (
       small claims court) or to participate in class-action lawsuits.
     </p>
 
-    <h2 id='section-11'>11. Termination of Access</h2>
+    <h2 id='termination-of-access'>11. Termination of Access</h2>
     <p>
       Interexy may, at its discretion, suspend or terminate your access to the Website for
       reasons including, but not limited to:
@@ -150,14 +152,16 @@ export const termsContent = (
     </ul>
     <p>Termination may occur without prior notice.</p>
 
-    <h2 id='section-12'>12. Indemnification</h2>
+    <h2 id='indemnification'>12. Indemnification</h2>
     <p>
       You agree to indemnify and hold Interexy, its affiliates, employees, and partners
       harmless from any claims, damages, losses, or expenses (including legal fees) that
       arise from your use of the Website or breach of these Terms.
     </p>
 
-    <h2 id='section-13'>13. Modifications to the Terms & Conditions</h2>
+    <h2 id='modifications-to-the-terms-conditions'>
+      13. Modifications to the Terms & Conditions
+    </h2>
     <p>
       Interexy may update or modify these Terms at any time without prior notice. Any
       changes will be posted on this page with the “Last Updated” date at the top. Your
@@ -165,7 +169,7 @@ export const termsContent = (
       the revised Terms.
     </p>
 
-    <h2 id='section-14'>14. Force Majeure</h2>
+    <h2 id='force-majeure'>14. Force Majeure</h2>
     <p>
       Interexy will not be liable for any delays or failures in performance resulting from
       circumstances beyond its control, including but not limited to:
@@ -181,21 +185,21 @@ export const termsContent = (
       Poland, and the UAE.
     </p>
 
-    <h2 id='section-15'>15. Severability</h2>
+    <h2 id='severability'>15. Severability</h2>
     <p>
       If any part of these Terms is deemed unenforceable or invalid, that provision will
       be limited or removed, and the remainder of the Terms will remain in full force and
       effect.
     </p>
 
-    <h2 id='section-16'>16. Entire Agreement</h2>
+    <h2 id='entire-agreement'>16. Entire Agreement</h2>
     <p>
       These Terms & Conditions constitute the entire agreement between you and Interexy
       concerning your use of the Website. They supersede any prior agreements,
       understandings, or representations.
     </p>
 
-    <h2 id='section-17'>17. Contact Us</h2>
+    <h2 id='contact-us'>17. Contact Us</h2>
     <p>
       If you have any questions, feedback, or concerns regarding these Terms & Conditions,
       please reach out to us at info@interexy.com or contact us by post at:
