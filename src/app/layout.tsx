@@ -126,7 +126,7 @@ const organizationSchema = {
   award: ['Top Mobile App Development Company', 'Best React Native Development Team'],
   numberOfEmployees: {
     '@type': 'QuantitativeValue',
-    value: '50-100',
+    value: '100',
   },
 };
 
