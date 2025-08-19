@@ -17,50 +17,17 @@ import { TeamComposition } from '@/components/blocks/team-composition/TeamCompos
 import { Container } from '@/components/layout';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { Overlay } from '@/components/overlay/Overlay';
-import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'About us | Interexy',
-  description:
-    'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
-  authors: [
-    {
-      name: 'Stan Sakharchuk',
-      url: '',
-    },
-  ],
-  openGraph: {
-    type: 'article',
-    title: 'About us | Interexy',
-    description:
-      'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/about-us`,
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'Interexy Hero Image',
-      },
-    ],
-    siteName: 'About us | Interexy',
-    locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary',
-    title: 'About us | Interexy',
-    description:
-      'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/blocks/hero/hero.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'About us Image',
-      },
-    ],
-  },
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'about-us';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function AboutUs() {
   return (
