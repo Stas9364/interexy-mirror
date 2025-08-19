@@ -1,51 +1,18 @@
 import { HeroPolicy } from '@/components/blocks/hero-policy/HeroPolicy';
 import { Container, Section } from '@/components/layout';
 import { PolicySidebar } from '@/components/policy-sidebar/PolicySidebar';
-import type { Metadata } from 'next';
 import { termsContent } from './terms-content';
 
-export const metadata: Metadata = {
-  title: 'Terms & Conditions: Usage, Rights & Policies | Interexy',
-  description:
-    "Explore Interexy's Terms & Conditions: understand your rights, responsibilities, and our policies on usage and more when using our services",
-  authors: [
-    {
-      name: 'Stan Sakharchuk',
-      url: '',
-    },
-  ],
-  openGraph: {
-    type: 'article',
-    title: 'Terms & Conditions: Usage, Rights & Policies | Interexy',
-    description:
-      "Explore Interexy's Terms & Conditions: understand your rights, responsibilities, and our policies on usage and more when using our services",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/terms-and-conditions`,
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/logo/logo-purple.svg`,
-        width: 1200,
-        height: 630,
-        alt: 'Logo Image',
-      },
-    ],
-    siteName: 'Terms & Conditions: Usage, Rights & Policies | Interexy',
-    locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary',
-    title: 'Terms & Conditions: Usage, Rights & Policies | Interexy',
-    description:
-      "Explore Interexy's Terms & Conditions: understand your rights, responsibilities, and our policies on usage and more when using our services",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/logo/logo-purple.svg`,
-        width: 1200,
-        height: 630,
-        alt: 'Logo Image',
-      },
-    ],
-  },
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'terms-and-conditions';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function TermsAndConditions() {
   return (

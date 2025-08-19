@@ -12,50 +12,17 @@ import { Container } from '@/components/layout';
 import { Platforms } from '@/components/layout/footer/components/Platforms';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { Overlay } from '@/components/overlay/Overlay';
-import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Contact us | Interexy',
-  description:
-    'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
-  authors: [
-    {
-      name: 'Stan Sakharchuk',
-      url: '',
-    },
-  ],
-  openGraph: {
-    type: 'article',
-    title: 'Contact Us | Interexy',
-    description:
-      'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/contact-us`,
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/contact-us/contact-us-bg.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'Contact Us Image',
-      },
-    ],
-    siteName: 'Contact Us | Interexy',
-    locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary',
-    title: 'Contact Us | Interexy',
-    description:
-      'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/contact-us/contact-us-bg.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'Contact Us Image',
-      },
-    ],
-  },
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'contact-us';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function ContactUs() {
   return (

@@ -239,4 +239,70 @@ export const pagesMetadata = {
     imagePath: '/services/web-to-app-solutions/hero.png',
     imageAlt: 'Web to App Image',
   },
+
+  //common pages
+
+  referral: {
+    title: 'Our Referral Program | Interexy',
+    description:
+      'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
+    imagePath: '/referral/referral-bg.webp',
+    imageAlt: 'Our Referral Program Image',
+  },
+
+  'contact-us': {
+    title: 'Contact us | Interexy',
+    description:
+      'Contact our IT experts to digitize your business with app development solutions. Offices in the USA (Florida), UAE (Dubai), and Poland (Warsaw)',
+    imagePath: '/contact-us/contact-us-bg.webp',
+    imageAlt: 'Contact Us Image',
+  },
+
+  'about-us': {
+    title: 'About Us | Interexy',
+    description:
+      'Partner with Interexy, a trusted mobile app development company, ready to bring your ideas to life and align them with today’s industry standards',
+    imagePath: '/blocks/hero/hero.webp',
+    imageAlt: 'About Us Image',
+  },
+
+  'complaints-procedure': {
+    title: "Interexy's Complaints Procedure | Interexy",
+    description:
+      'Learn how to submit a complaint with Interexy, our escalation process, and how we ensure confidentiality and fair resolution of issues',
+    imagePath: '/logo/logo-purple.svg',
+    imageAlt: 'Logo Image',
+  },
+
+  'cookie-policy': {
+    title: 'Interexy Cookie Policy: How We Manage Cookies | Interexy',
+    description:
+      "Discover Interexy's Privacy Notice: learn how we collect, use, store, and shares your personal information when you interact with our services",
+    imagePath: '/logo/logo-purple.svg',
+    imageAlt: 'Logo Image',
+  },
+
+  'privacy-policy': {
+    title: 'Privacy Policy: How We Collect, Use &Protect Data | Interexy',
+    description:
+      "Discover Interexy's Privacy Notice: learn how we collect, use, store, and shares your personal information when you interact with our services",
+    imagePath: '/logo/logo-purple.svg',
+    imageAlt: 'Logo Image',
+  },
+
+  'terms-and-conditions': {
+    title: 'Terms & Conditions: Usage, Rights & Policies | Interexy',
+    description:
+      "Explore Interexy's Terms & Conditions: understand your rights, responsibilities, and our policies on usage and more when using our services",
+    imagePath: '/logo/logo-purple.svg',
+    alt: 'Logo Image',
+  },
+
+  process: {
+    title: 'Our Process | Interexy',
+    description:
+      'Read about Interexy’s workflow. ✅ Software Specifications & Estimation Presentation, Development, QA testing, Support & Launch (App Store & Google Play)',
+    imagePath: '/blocks/hero/hero.webp',
+    imageAlt: 'Our Process Image',
+  },
 };

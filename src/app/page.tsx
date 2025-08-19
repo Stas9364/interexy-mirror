@@ -37,6 +37,9 @@ export const metadata: Metadata = {
       url: '',
     },
   ],
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}`,
+  },
   openGraph: {
     type: 'website',
     title: 'Interexy: Software Development Company',

@@ -10,50 +10,17 @@ import { Container } from '@/components/layout';
 import { Platforms } from '@/components/layout/footer/components/Platforms';
 import { InterexyLink } from '@/components/link/InterexyLink';
 import { Overlay } from '@/components/overlay/Overlay';
-import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Our Referral Program | Interexy',
-  description:
-    'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
-  authors: [
-    {
-      name: 'Stan Sakharchuk',
-      url: '',
-    },
-  ],
-  openGraph: {
-    type: 'article',
-    title: 'Our Referral Program | Interexy',
-    description:
-      'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/referral`,
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/referral/referral-bg.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'Our Referral Program Image',
-      },
-    ],
-    siteName: 'Our Referral Program | Interexy',
-    locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary',
-    title: 'Our Referral Program | Interexy',
-    description:
-      'Earn 1000$ for each successful hire with our referral program for Software Development Services & IT Consulting! ? Get started here!',
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/referral/referral-bg.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'Our Referral Program Image',
-      },
-    ],
-  },
-};
+import { pagesMetadata } from '@/config/pagesMetadata';
+import { generateMetadata as createMetadata } from '@/utils/generateMetadata';
+
+const pageKey = 'referral';
+const pageData = pagesMetadata[pageKey];
+
+export const metadata = createMetadata({
+  ...pageData,
+  slug: pageKey,
+});
 
 export default function Referral() {
   return (
