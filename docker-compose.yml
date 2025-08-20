@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  nextjs-app:
+    # Service name
+    container_name: nextjs-app-container
+
+    # Build the image from the Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # Передаём build-аргументы напрямую с указанием значения
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL}
+
+    # Port mapping: host:container
+    ports:
+      - '3000:3000'
+
+    # Restart the container on failure
+    restart: unless-stopped
+
+    # Переменные окружения для контейнера на этапе выполнения
+    env_file:
+      - .env
