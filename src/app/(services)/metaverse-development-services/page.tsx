@@ -37,7 +37,7 @@ export default function MetaverseDevelopmentServices() {
         }
         btn_link={'/contact-us'}
         btn_text={'Book A Call'}
-        src='/services/metaverse-development-services/hero.webp'
+        src='/services/metaverse-development-services/hero.png'
         imgWrapperClasses='lg:block hidden'
       />
 

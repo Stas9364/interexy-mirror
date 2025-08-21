@@ -41,7 +41,7 @@ export default function WebToAppSolutions() {
         }
         btn_link={'/contact-us'}
         btn_text={'Get Consultation'}
-        src='/services/web-to-app-solutions/hero.png'
+        src='/services/web-to-app-solutions/hero.webp'
         imgClasses='!object-contain'
       />
 

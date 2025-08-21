@@ -30,7 +30,7 @@ export const HeroService = ({
       <Container>
         <div
           className={cn(
-            'flex flex-col-reverse items-center lg:flex-row',
+            'flex flex-col-reverse justify-between lg:flex-row lg:items-center',
             contentWrapperClasses,
           )}
         >

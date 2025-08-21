@@ -45,6 +45,7 @@ export default function StaffAugmentationServicesForSoftwareDevelopment() {
         btn_link={'/contact-us'}
         btn_text={'Book A Call'}
         src='/services/staff-augmentation-services-for-software-development/hero.png'
+        imgClasses='!object-contain'
       />
 
       <InfiniteImageScroll

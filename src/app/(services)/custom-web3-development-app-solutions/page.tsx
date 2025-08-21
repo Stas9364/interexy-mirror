@@ -46,7 +46,7 @@ export default function CustomWeb3DevelopmentAppSolutions() {
         }
         btn_link={'/contact-us'}
         btn_text={'Consult Out Experts'}
-        src='/services/custom-web3-development-app-solutions/hero.webp'
+        src='/services/custom-web3-development-app-solutions/hero.png'
         imgClasses='!object-contain'
       />
 
