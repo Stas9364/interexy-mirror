@@ -40,7 +40,7 @@ export default function BlockchainAppDevelopmentServices() {
         }
         btn_link={'/contact-us'}
         btn_text={'Get Stared'}
-        src='/services/blockchain-app-development-services/blockchain-hero.webp'
+        src='/services/blockchain-app-development-services/hero.png'
         sectionClassName='md:!pb-0'
       />
       <InfiniteImageScroll

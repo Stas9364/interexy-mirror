@@ -33,7 +33,8 @@ export default function FullCycleAppDevelopmentServices() {
         btn_link={'/contact-us'}
         btn_text={'Get Stared'}
         src='/services/full-cycle-app-development-services/hero.png'
-        sectionClassName=''
+        sectionClassName='bg-[url(/services/full-cycle-app-development-services/hero_bg.webp)] bg-cover text-white'
+        imgClasses='!object-contain'
       />
 
       <OurClients title='Trusted by' />
